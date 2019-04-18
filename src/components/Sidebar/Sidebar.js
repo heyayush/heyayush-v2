@@ -7,15 +7,7 @@ import Copyright from './Copyright';
 import Menu from './Menu';
 import styles from './Sidebar.module.scss';
 
-type Props = {
-  +isIndex: ?boolean
-};
-
-type PureProps = Props & {
-  +data: Object
-};
-
-export const PureSidebar = ({ data, isIndex }: PureProps) => {
+export const PureSidebar = ({ data, isIndex }) => {
   const { author, copyright, menu } = data.site.siteMetadata;
 
   return (
@@ -30,7 +22,7 @@ export const PureSidebar = ({ data, isIndex }: PureProps) => {
   );
 };
 
-export const Sidebar = (props: Props) => (
+export const Sidebar = (props) => (
   <StaticQuery
     query={graphql`
       query SidebarQuery {
@@ -48,12 +40,15 @@ export const Sidebar = (props: Props) => (
               photo
               bio
               contacts {
-                twitter
-                telegram
-                github
                 email
+                github
+                linkedin
+                twitter
+                facebook
+                instagram
+                codepen
+                stackoverflow
                 rss
-                vkontakte
               }
             }
           }

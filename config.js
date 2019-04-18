@@ -28,11 +28,14 @@ module.exports = {
     bio: 'Web developer, front-end specialist',
     contacts: {
       email: 'ayush.sharma1505@gmail.com',
-      telegram: '#',
       twitter: 'heyayush',
       github: 'ayu15',
       rss: '#',
-      vkontakte: '#'
+      linkedin: 'ayu15',
+      instagram: 'ayush.sharma15',
+      facebook: 'ayush.sharma.5015',
+      codepen: 'ayu15',
+      stackoverflow: '4337809/ayush-sharma'
     }
   }
 };

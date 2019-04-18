@@ -1,7 +1,7 @@
 // @flow
 import { ICONS } from '../constants';
 
-const getIcon = (name: string) => {
+const getIcon = (name) => {
   let icon;
 
   switch (name) {
@@ -11,17 +11,26 @@ const getIcon = (name: string) => {
     case 'github':
       icon = ICONS.GITHUB;
       break;
-    case 'vkontakte':
-      icon = ICONS.VKONTAKTE;
-      break;
-    case 'telegram':
-      icon = ICONS.TELEGRAM;
-      break;
     case 'email':
       icon = ICONS.EMAIL;
       break;
     case 'rss':
       icon = ICONS.RSS;
+      break;
+    case 'linkedin':
+      icon = ICONS.LINKEDIN;
+      break;
+    case 'facebook':
+      icon = ICONS.FACEBOOK;
+      break;
+    case 'instagram':
+      icon = ICONS.INSTAGRAM;
+      break;
+    case 'codepen':
+      icon = ICONS.CODEPEN;
+      break;
+    case 'stackoverflow':
+      icon = ICONS.STACKOVERFLOW;
       break;
     default:
       icon = {};
