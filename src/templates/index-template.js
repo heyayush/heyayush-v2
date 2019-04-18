@@ -15,7 +15,9 @@ type Props = {
 const IndexTemplate = ({ data, pageContext }: Props) => {
   const { title: siteTitle, subtitle: siteSubtitle } = data.site.siteMetadata;
 
-  const { currentPage, hasNextPage, hasPrevPage, prevPagePath, nextPagePath } = pageContext;
+  const {
+    currentPage, hasNextPage, hasPrevPage, prevPagePath, nextPagePath
+  } = pageContext;
 
   const { edges } = data.allMarkdownRemark;
   const pageTitle = currentPage > 0 ? `Posts - Page ${currentPage} - ${siteTitle}` : siteTitle;

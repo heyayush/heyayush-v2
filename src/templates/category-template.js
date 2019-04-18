@@ -9,7 +9,9 @@ import Pagination from '../components/Pagination';
 const CategoryTemplate = ({ data, pageContext }) => {
   const { title: siteTitle, subtitle: siteSubtitle } = data.site.siteMetadata;
 
-  const { category, currentPage, prevPagePath, nextPagePath, hasPrevPage, hasNextPage } = pageContext;
+  const {
+    category, currentPage, prevPagePath, nextPagePath, hasPrevPage, hasNextPage
+  } = pageContext;
 
   const { edges } = data.allMarkdownRemark;
   const pageTitle = currentPage > 0 ? `${category} - Page ${currentPage} - ${siteTitle}` : `${category} - ${siteTitle}`;
