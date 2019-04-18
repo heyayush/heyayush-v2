@@ -15,12 +15,6 @@ const createPages = async ({ graphql, actions }) => {
     component: path.resolve('./src/templates/not-found-template.js')
   });
 
-  // tech stack
-  createPage({
-    path: '/tech-stack',
-    component: path.resolve('./src/custom-pages/tech-stack.js')
-  });
-
   // Tags list
   createPage({
     path: '/tags',
@@ -41,6 +35,7 @@ const createPages = async ({ graphql, actions }) => {
           node {
             frontmatter {
               template
+              customPage
             }
             fields {
               slug
@@ -61,12 +56,18 @@ const createPages = async ({ graphql, actions }) => {
         context: { slug: edge.node.fields.slug }
       });
     } else if (_.get(edge, 'node.frontmatter.template') === 'post') {
-      createPage({
-        path: edge.node.fields.slug,
-        component: path.resolve('./src/templates/post-template.js'),
-        context: { slug: edge.node.fields.slug }
-      });
-    }
+        createPage({
+          path: edge.node.fields.slug,
+          component: path.resolve('./src/templates/post-template.js'),
+          context: { slug: edge.node.fields.slug }
+        });
+    } else if (_.get(edge, 'node.frontmatter.template') === 'custom') {
+        createPage({
+          path: edge.node.fields.slug,
+          component: path.resolve(`./src/custom-pages/${edge.node.frontmatter.customPage}.js`),
+          context: {slug: edge.node.fields.slug}
+        })
+      }
   });
 
   // Feeds

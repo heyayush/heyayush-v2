@@ -7,7 +7,7 @@ module.exports = {
   copyright: '© All rights reserved.',
   disqusShortname: 'heyayush',
   postsPerPage: 6,
-  googleAnalyticsId: 'process.env.GOOGLE_ANALYTICS',
+  googleAnalyticsId: process.env.GOOGLE_ANALYTICS,
   menu: [
     {
       label: 'Articles',
@@ -20,6 +20,10 @@ module.exports = {
     {
       label: 'Contact me',
       path: '/pages/contacts'
+    },
+    {
+      label: 'Tech Stack',
+      path: '/tech-stack'
     }
   ],
   author: {

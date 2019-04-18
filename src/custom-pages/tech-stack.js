@@ -1,22 +1,34 @@
 import React from 'react';
-import Layout from '../components/Layout';
-import Sidebar from '../components/Sidebar';
 import WordCloud from '../components/word-cloud/word-cloud';
-import Page from '../components/Page';
+import CustomPageTemplate from '../templates/custom-page-template';
 
-const TechStack = () => {
-  const siteTitle = 'Ayush Sharma | Web developer';
-  const pageTitle = 'Tech Stack';
-  const metaDescription = 'Technical stack of author represented as word cloud';
-
+const TechStack = ({data}) => {
   return (
-    <Layout title={`${pageTitle} - ${siteTitle}`} description={metaDescription}>
-      <Sidebar />
-      <Page title={pageTitle}>
-        <WordCloud />
-      </Page>
-    </Layout>
+    <CustomPageTemplate data={data}>
+      <WordCloud />
+    </CustomPageTemplate>
   );
 };
+
+export const query = graphql`
+  query ($slug: String!) {
+    site {
+      siteMetadata {
+        title
+        subtitle
+      }
+    }
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      id
+      html
+      frontmatter {
+        customPage
+        title
+        date
+        description
+      }
+    }
+  }
+`;
 
 export default TechStack;
