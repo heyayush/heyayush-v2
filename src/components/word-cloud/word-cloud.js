@@ -1,19 +1,23 @@
 import React from 'react';
-import '../../lib/tag-cloud';
+if (process.browser) {
+  import '../../lib/tag-cloud';
+}
 
 class WordCloud extends React.Component {
   renderTagCloud() {
-    try {
-      TagCanvas.Start('myCanvas', 'tags', {
-        textColour: '#08fdd8',
-        outlineColour: '#ff00ff',
-        reverse: true,
-        depth: 0.8,
-        maxSpeed: 0.05
-      });
-    } catch (e) {
-      // something went wrong, hide the canvas container
-      document.getElementById('myCanvasContainer').style.display = 'none';
+    if(process.browser) {
+      try {
+        TagCanvas.Start('myCanvas', 'tags', {
+          textColour: '#08fdd8',
+          outlineColour: '#ff00ff',
+          reverse: true,
+          depth: 0.8,
+          maxSpeed: 0.05
+        });
+      } catch (e) {
+        // something went wrong, hide the canvas container
+        document.getElementById('myCanvasContainer').style.display = 'none';
+      }
     }
   }
 
