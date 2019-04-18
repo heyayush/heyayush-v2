@@ -23,14 +23,14 @@ module.exports = {
     }
   ],
   author: {
-    name: 'John Doe',
+    name: 'Ayush Sharma',
     photo: '/photo.png',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    bio: 'Web developer, front-end specialist',
     contacts: {
-      email: '#',
+      email: 'ayush.sharma1505@gmail.com',
       telegram: '#',
-      twitter: '#',
-      github: '#',
+      twitter: 'heyayush',
+      github: 'ayu15',
       rss: '#',
       vkontakte: '#'
     }
