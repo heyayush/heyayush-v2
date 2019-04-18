@@ -6,7 +6,9 @@ import styles from './Pagination.module.scss';
 
 const cx = classNames.bind(styles);
 
-const Pagination = ({ prevPagePath, nextPagePath, hasNextPage, hasPrevPage }) => {
+const Pagination = ({
+  prevPagePath, nextPagePath, hasNextPage, hasPrevPage
+}) => {
   const prevClassName = cx({
     'pagination__prev-link': true,
     'pagination__prev-link--disable': !hasPrevPage

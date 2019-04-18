@@ -22,7 +22,7 @@ export const PureSidebar = ({ data, isIndex }) => {
   );
 };
 
-export const Sidebar = (props) => (
+export const Sidebar = props => (
   <StaticQuery
     query={graphql`
       query SidebarQuery {
