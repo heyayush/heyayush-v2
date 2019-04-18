@@ -1,6 +1,6 @@
 import React from 'react';
 if (process.browser) {
-  import '../../lib/tag-cloud';
+  require('../../lib/tag-cloud');
 }
 
 class WordCloud extends React.Component {
