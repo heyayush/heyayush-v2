@@ -1,6 +1,6 @@
 ---
 template: post
-title: 'Case study: Hybrid app development using Ionic3'
+title: 'Case study: Hybrid app development using Ionic-3'
 slug: case-study-hybrid-app-ionic3
 draft: false
 date: 'Apr 03, 2019'
@@ -68,5 +68,7 @@ Anyway, the conclusion was to feature freeze our app and start migrating feature
 It was a decent learning experience. I believe that hybrid apps will continue in the market as Ionic4, react-native, flutter, native-script communities are active and providing a bridge between web and native environment.
 
 Hybrid apps have huge potential to serve as an ideal solution for small or maybe mid scale apps. Basically, situations where quick prototyping or an MVP product is required. However, Progressive web apps (PWA) are amazing  alternative and I will recommend them anytime over hybrid apps unless I want to use some core native functionality which isn't possible otherwise.
+
+What are your opinions on hybrid apps vs PWA? Post your comments below.
 
 \- Ayush
