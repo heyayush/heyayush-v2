@@ -3,7 +3,7 @@ template: post
 title: Kheer Ganga
 slug: kheer-ganga
 draft: false
-date: 'Jan 13, 2019'
+date: 'Jan 05, 2019'
 description: >-
   "Where God Meditates".
 

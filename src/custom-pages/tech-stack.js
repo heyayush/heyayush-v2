@@ -1,6 +1,7 @@
 import React from 'react';
 import WordCloud from '../components/word-cloud/word-cloud';
 import CustomPageTemplate from '../templates/custom-page-template';
+import { graphql } from 'gatsby'
 
 const TechStack = ({data}) => {
   return (

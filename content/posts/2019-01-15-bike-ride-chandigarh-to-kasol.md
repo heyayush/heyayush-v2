@@ -3,7 +3,7 @@ template: post
 title: Bike ride Chandigarh to Kasol
 slug: bike-ride-chandigarh-to-kasol
 draft: false
-date: 'Jan 18, 2019'
+date: 'Jan 15, 2019'
 description: >-
   It's Friday 16:00 and I am at work at my Chandigarh office. I knew the clock
   is ticking and I won't be able to cover much distance on bike once it's dark
