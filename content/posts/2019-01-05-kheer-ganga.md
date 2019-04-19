@@ -12,9 +12,9 @@ description: >-
   experiences to Kheer-ganga in winters...
 category: Travel
 tags:
-  - travel
-  - trekking
-  - himachal
+  - Travel
+  - Trekking
+  - Himachal
 ---
 >Where God meditates
 

@@ -8,10 +8,10 @@ description: >-
   Around May-June 2018 We started developing an Ionic app. I have knowledge of web apps, hence thought of leveraging those skills to create a hybrid application which can work on Android, IOS, and on the Web...
 category: Front-end
 tags:
-  - mobile web
-  - ionic
-  - angular
-  - javascript
+  - Mobile Web
+  - Ionic
+  - Angular
+  - Javascript
 ---
 
 ### The kick start
