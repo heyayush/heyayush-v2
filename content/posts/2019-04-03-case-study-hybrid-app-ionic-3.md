@@ -3,7 +3,7 @@ template: post
 title: 'Case study: Hybrid app development using Ionic-3'
 slug: case-study-hybrid-app-ionic3
 draft: false
-date: 'Apr 03, 2019'
+date: '2019-04-02T18:30:00.000Z'
 description: >-
   Around May-June 2018 We started developing an Ionic app. I have knowledge of web apps, hence thought of leveraging those skills to create a hybrid application which can work on Android, IOS, and on the Web...
 category: Front-end

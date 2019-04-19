@@ -3,7 +3,7 @@ template: post
 title: Upgrading an Ionic-3 Angular-5 app
 slug: upgrading-ionic3-angular5-app
 draft: false
-date: 'Feb 20, 2019'
+date: '2019-02-19T18:30:00.000Z'
 description: >-
   With the release of ionic 4 and angular 7, we knew the time has come to finally migrate our ionic 3 angular 5 app to the latest versions. But there are so many breaking changes. So, what should be the migration strategy and what will be it's impact...
 category: Front-end
