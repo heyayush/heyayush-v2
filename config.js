@@ -2,8 +2,8 @@
 
 module.exports = {
   url: 'https://heyayush.com',
-  title: 'Ayush Sharma | Web developer',
-  subtitle: 'Web developer, front-end specialist',
+  title: 'Ayush Sharma | Web developer freelancer',
+  subtitle: 'Portfolio and Personal blog of Ayush Sharma | Web developer, front-end specialist, freelancer, web consultant, travel blogger',
   copyright: '© All rights reserved.',
   disqusShortname: 'heyayush',
   postsPerPage: 6,

@@ -7,14 +7,8 @@ import Feed from '../components/Feed';
 import Page from '../components/Page';
 import Pagination from '../components/Pagination';
 
-type Props = {
-  +data: Object,
-  +pageContext: Object
-};
-
-const IndexTemplate = ({ data, pageContext }: Props) => {
+const IndexTemplate = ({ data, pageContext }) => {
   const { title: siteTitle, subtitle: siteSubtitle } = data.site.siteMetadata;
-
   const {
     currentPage, hasNextPage, hasPrevPage, prevPagePath, nextPagePath
   } = pageContext;
