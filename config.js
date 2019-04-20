@@ -1,4 +1,8 @@
 'use strict';
+let activeEnv = process.env.ACTIVE_ENV || process.env.NODE_ENV || 'development';
+require('dotenv').config({
+  path: `.env.${activeEnv}`
+});
 
 module.exports = {
   url: 'https://heyayush.com',
