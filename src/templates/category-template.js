@@ -7,7 +7,7 @@ import Page from '../components/Page';
 import Pagination from '../components/Pagination';
 
 const CategoryTemplate = ({ data, pageContext }) => {
-  const { title: siteTitle, subtitle: siteSubtitle } = data.site.siteMetadata;
+  const { title: siteTitle, categoryMeta } = data.site.siteMetadata;
 
   const {
     category, currentPage, prevPagePath, nextPagePath, hasPrevPage, hasNextPage
@@ -15,9 +15,10 @@ const CategoryTemplate = ({ data, pageContext }) => {
 
   const { edges } = data.allMarkdownRemark;
   const pageTitle = currentPage > 0 ? `${category} - Page ${currentPage} - ${siteTitle}` : `${category} - ${siteTitle}`;
+  const pageMetaDescription = `Collection of ${category} ${categoryMeta}`
 
   return (
-    <Layout title={pageTitle} description={siteSubtitle}>
+    <Layout title={pageTitle} description={pageMetaDescription}>
       <Sidebar />
       <Page title={category}>
         <Feed edges={edges} />
@@ -37,7 +38,7 @@ export const query = graphql`
     site {
       siteMetadata {
         title
-        subtitle
+        categoryMeta
       }
     }
     allMarkdownRemark(
