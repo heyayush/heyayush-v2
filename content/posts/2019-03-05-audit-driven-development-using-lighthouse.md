@@ -30,4 +30,4 @@ Here’s the [link](https://googlechrome.github.io/lighthouse/viewer/?gist=d7095
 
 **Bonus-** This also helped me bring my website to 3<sup>rd</sup> number in google search if someone searches `"travel blog ayush sharma"`.
 
-\- Ayush
+\- Ayush 🙂

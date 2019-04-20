@@ -45,4 +45,4 @@ Source code is available [here](https://github.com/ayu15/drinks-menu).
 
 Have fun!
 
-\- Ayush
+\- Ayush 🙂

@@ -95,4 +95,4 @@ Finally, keep on regression testing ionic 4 app and once it is stable then shut 
 
 All the best!
 
-\- Ayush
+\- Ayush 🙂

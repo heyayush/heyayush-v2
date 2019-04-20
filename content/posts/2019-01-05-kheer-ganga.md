@@ -44,4 +44,4 @@ Let me know your comments and feedback.
 
 Happy travelling and lots of love,
 
-\- Ayush
+\- Ayush 🙂

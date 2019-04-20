@@ -19,6 +19,14 @@ const Post = ({ post }) => {
         All Articles
       </Link>
 
+      <Link className={styles['post__categories-button']} to="/categories">
+        Categories
+      </Link>
+
+      <Link className={styles['post__tags-button']} to="/tags">
+        All Tags
+      </Link>
+
       <div className={styles['post__content']}>
         <Content body={html} title={title} />
       </div>
