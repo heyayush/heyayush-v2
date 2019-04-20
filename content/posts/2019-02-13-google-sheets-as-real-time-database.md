@@ -24,7 +24,7 @@ This was just a small POC showcasing the integration of different tools.
 Here's the google sheet which has simple table of data
 ![Google Sheet's screentshot](/media/google-sheets-as-database-1.png) 
 
-And the front-end looks like this ![Cafe's Menu Card](/media/google-sheets-as-database-2.png)
+And the front-end looks like [this](https://ayu15.github.io/cafe-menu-card/) ![Cafe's Menu Card](/media/google-sheets-as-database-2.png)
 
 This removes the need of CMS and admin interfaces for tiny apps.  
 Admin can simply update data in his google sheet and it will trigger a new deployment of front-end app.  
