@@ -33,8 +33,8 @@ module.exports = {
   ],
   author: {
     name: 'Ayush Sharma',
-    photo: '/photo.png',
-    bio: 'Web developer, front-end specialist',
+    photo: '/photo.jpg',
+    bio: 'Web developer, front-end specialist, Batman fan',
     contacts: {
       email: 'ayush.sharma1505@gmail.com',
       twitter: 'heyayush',

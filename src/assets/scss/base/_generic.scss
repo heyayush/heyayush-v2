@@ -151,6 +151,23 @@ figcaption {
   padding-right: 14px !important;
 }
 
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  border:2px solid #000;
+}
+
+th{
+  padding: 0 6px;
+  border: 1px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+td{
+  padding: 0 6px;
+  border: 1px solid #000;
+}
+
 @include breakpoint-sm {
   figure.float-left,
   figure.float-right {
