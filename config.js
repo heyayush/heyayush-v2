@@ -1,5 +1,6 @@
 'use strict';
-let activeEnv = process.env.ACTIVE_ENV || process.env.NODE_ENV || 'development';
+
+const activeEnv = process.env.ACTIVE_ENV || process.env.NODE_ENV || 'development';
 require('dotenv').config({
   path: `.env.${activeEnv}`
 });
@@ -25,10 +26,6 @@ module.exports = {
     {
       label: 'Contact me',
       path: '/pages/contacts'
-    },
-    {
-      label: 'Tech Stack',
-      path: '/tech-stack'
     }
   ],
   author: {

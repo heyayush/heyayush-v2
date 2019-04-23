@@ -1,11 +1,12 @@
 import React from 'react';
+
 if (process.browser) {
   require('../../lib/tag-cloud');
 }
 
 class WordCloud extends React.Component {
   renderTagCloud() {
-    if(process.browser) {
+    if (process.browser) {
       try {
         TagCanvas.Start('myCanvas', 'tags', {
           textColour: '#08fdd8',
