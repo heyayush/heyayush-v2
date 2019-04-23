@@ -42,11 +42,16 @@
     "portfolio"
   ],
   "dependencies": {
+    "@mdx-js/mdx": "^1.0.14",
+    "@mdx-js/react": "^1.0.6",
+    "@mdx-js/tag": "^0.20.3",
     "bluebird": "^3.5.4",
     "classnames": "^2.2.6",
     "codecov": "^3.3.0",
+    "dotenv": "^7.0.0",
     "gatsby": "^2.3.14",
     "gatsby-link": "^2.0.16",
+    "gatsby-mdx": "^0.6.2",
     "gatsby-plugin-catch-links": "^2.0.13",
     "gatsby-plugin-feed": "^2.1.0",
     "gatsby-plugin-flow": "^1.0.4",

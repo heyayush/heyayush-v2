@@ -35,7 +35,6 @@ const createPages = async ({ graphql, actions }) => {
           node {
             frontmatter {
               template
-              customPage
             }
             fields {
               slug
@@ -56,18 +55,40 @@ const createPages = async ({ graphql, actions }) => {
         context: { slug: edge.node.fields.slug }
       });
     } else if (_.get(edge, 'node.frontmatter.template') === 'post') {
-        createPage({
-          path: edge.node.fields.slug,
-          component: path.resolve('./src/templates/post-template.js'),
-          context: { slug: edge.node.fields.slug }
-        });
-    } else if (_.get(edge, 'node.frontmatter.template') === 'custom') {
-        createPage({
-          path: edge.node.fields.slug,
-          component: path.resolve(`./src/custom-pages/${edge.node.frontmatter.customPage}.js`),
-          context: {slug: edge.node.fields.slug}
-        })
+      createPage({
+        path: edge.node.fields.slug,
+        component: path.resolve('./src/templates/post-template.js'),
+        context: { slug: edge.node.fields.slug }
+      });
+    }
+  });
+
+  const mdxPages = await graphql(`
+  {
+    allMdx (filter: { frontmatter: { draft: { ne: true } } }) {
+      edges {
+        node {
+          frontmatter {
+            template
+          }
+          fields {
+            slug
+          }
+        }
       }
+    }
+  }
+`);
+
+  const { edges: mdxEdges } = mdxPages.data.allMdx;
+  _.each(mdxEdges, edge => {
+    if (_.get(edge, 'node.frontmatter.template') === 'page') {
+      createPage({
+        path: edge.node.fields.slug,
+        component: path.resolve('./src/templates/mdx-page-template.js'),
+        context: { slug: edge.node.fields.slug }
+      });
+    }
   });
 
   // Feeds
