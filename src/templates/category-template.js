@@ -15,7 +15,7 @@ const CategoryTemplate = ({ data, pageContext }) => {
 
   const { edges } = data.allMarkdownRemark;
   const pageTitle = currentPage > 0 ? `${category} - Page ${currentPage} - ${siteTitle}` : `${category} - ${siteTitle}`;
-  const pageMetaDescription = `Collection of ${category} ${categoryMeta}`
+  const pageMetaDescription = `Collection of ${category} ${categoryMeta}`;
 
   return (
     <Layout title={pageTitle} description={pageMetaDescription}>

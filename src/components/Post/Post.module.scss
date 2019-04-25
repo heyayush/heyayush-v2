@@ -14,6 +14,10 @@
     padding: 0 15px;
   }
 
+  &__categories-button, &__tags-button {
+    display: none;
+  }
+
   &__home-button, &__categories-button, &__tags-button {
     display: block;
     max-width: 90px;
@@ -35,10 +39,6 @@
       color: $color-primary;
     }
 
-  }
-
-  &__categories-button, &__tags-button {
-    display: none;
   }
 
 }

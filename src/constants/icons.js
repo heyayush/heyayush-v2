@@ -1,4 +1,4 @@
-// @flow
+/*eslint-disable*/
 const ICONS = {
   TWITTER: {
     path:

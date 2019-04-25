@@ -35,6 +35,8 @@
           "devDependencies": true
         }
       ],
+      "linebreak-style": 0,
+      "max-len": ["error", { "code" : 120}],
       "no-debugger": 0,
       "dot-notation": 0,
       "no-console": 0,

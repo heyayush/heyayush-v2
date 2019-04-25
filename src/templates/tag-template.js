@@ -17,7 +17,7 @@ const TagTemplate = ({ data, pageContext }) => {
   const pageTitle = currentPage > 0
     ? `All Posts tagged as "${tag}" - Page ${currentPage} - ${siteTitle}`
     : `All Posts tagged as "${tag}" - ${siteTitle}`;
-  const pageMetaDescription = `Collection of ${tag} ${categoryMeta}`
+  const pageMetaDescription = `Collection of ${tag} ${categoryMeta}`;
 
   return (
     <Layout title={pageTitle} description={pageMetaDescription}>

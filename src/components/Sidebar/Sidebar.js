@@ -1,4 +1,3 @@
-// @flow
 import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
 import Author from './Author';

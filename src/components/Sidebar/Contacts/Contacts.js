@@ -1,4 +1,3 @@
-// @flow
 import React from 'react';
 import { getContactHref, getIcon } from '../../../utils';
 import Icon from '../../Icon';

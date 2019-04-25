@@ -1,4 +1,3 @@
-// @flow
 const getContactHref = (name, contact) => {
   let href;
 
