@@ -10,6 +10,18 @@ exports[`Post renders correctly 1`] = `
   >
     All Articles
   </Link>
+  <Link
+    className="post__categories-button"
+    to="/categories"
+  >
+    Categories
+  </Link>
+  <Link
+    className="post__tags-button"
+    to="/tags"
+  >
+    All Tags
+  </Link>
   <div
     className="post__content"
   >
