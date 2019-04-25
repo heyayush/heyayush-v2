@@ -41,6 +41,10 @@ jobs:
           name: Check Linting
           command: yarn lint
 
+      - run: # run tests
+          name: Verify Tests
+          command: yarn test
+
 workflows:
     version: 2
     build_and_lint:
