@@ -28,6 +28,10 @@ class WordCloud extends React.Component {
 
   componentWillUnmount() {}
 
+  doNothing(e) {
+    e.preventDefault();
+  }
+
   render() {
     return (
       <>
@@ -39,61 +43,61 @@ class WordCloud extends React.Component {
         <div id="tags">
           <ul>
             <li>
-              <a href="/">Python</a>
+              <a onClick={this.doNothing}>Python</a>
             </li>
             <li>
-              <a href="/">Javascript</a>
+              <a onClick={this.doNothing}>Javascript</a>
             </li>
             <li>
-              <a href="/">Typescript</a>
+              <a onClick={this.doNothing}>Typescript</a>
             </li>
             <li>
-              <a href="/">Angular</a>
+              <a onClick={this.doNothing}>Angular</a>
             </li>
             <li>
-              <a href="/">React</a>
+              <a onClick={this.doNothing}>React</a>
             </li>
             <li>
-              <a href="/">JQuery</a>
+              <a onClick={this.doNothing}>JQuery</a>
             </li>
             <li>
-              <a href="/">CSS</a>
+              <a onClick={this.doNothing}>CSS</a>
             </li>
             <li>
-              <a href="/">HTML</a>
+              <a onClick={this.doNothing}>HTML</a>
             </li>
             <li>
-              <a href="/">GraphQL</a>
+              <a onClick={this.doNothing}>GraphQL</a>
             </li>
             <li>
-              <a href="/">REST</a>
+              <a onClick={this.doNothing}>REST</a>
             </li>
             <li>
-              <a href="/">Firebase</a>
+              <a onClick={this.doNothing}>Firebase</a>
             </li>
             <li>
-              <a href="/">RxJS</a>
+              <a onClick={this.doNothing}>RxJS</a>
             </li>
             <li>
-              <a href="/">Material design</a>
+              <a onClick={this.doNothing}>Material design</a>
             </li>
             <li>
-              <a href="/">Devops</a>
+              <a onClick={this.doNothing}>Devops</a>
             </li>
             <li>
-              <a href="/">NodeJS</a>
+              <a onClick={this.doNothing}>NodeJS</a>
             </li>
             <li>
-              <a href="/">Mongo DB</a>
+              <a onClick={this.doNothing}>Mongo DB</a>
             </li>
             <li>
-              <a href="/">Cloud services</a>
+              <a onClick={this.doNothing}>Cloud services</a>
             </li>
             <li>
-              <a href="/">Data Visualization</a>
+              <a onClick={this.doNothing}>Data Visualization</a>
             </li>
             <li>
-              <a href="/">Progressive Web Apps</a>
+              <a onClick={this.doNothing}>Progressive Web Apps</a>
             </li>
           </ul>
         </div>

@@ -16,6 +16,8 @@ tags:
 ---
 >Reaching summit doesn't seem feasible, but let's see how far we can make it...
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1z88W7EqofQ?rel=0&amp" frameborder="0" allow="accelerometer; autoplay; loop;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 It's a long weekend due to holi festival and pleasing wheather in mid of march is tempting to go for another trip to the mountains before summer arrives.
 
 Me and my friend Rahul decided to go for Churdhar trek.
@@ -27,7 +29,7 @@ Initial trail thorugh grassy and rocky path is quite steep. Then, it's moderate 
 As soon as the middle part of forest area ends. We get to see outstanding views.
 
 ### Getting There
-Nohradhar is the base camp for Churdhar trek. It's 5-6 hours drive from Chandigarh.
+Nohradhar is the base camp for Churdhar trek. It's 5-6 hours drive from Chandigarh.  
 Road was in average condition. Traffic was much less then expectation. Beautiful views of the valley area makes it pleasant driving and I prefer taking many breaks along the way to see those views.
 
 ### Planning
@@ -35,10 +37,12 @@ We left around 13:00 from Chandigarh. Our target was to reach Nohradhar by the e
 
 Rahul had been to Churdhar before and based on his experiences our plan was to reach summit by late afternoon and then stay there in one of cottages near the temple.
 
+Upon interacting with the locals, we came to know that it's pretty heavy snow up there, hence route is closed and we won't be able to make it as there is no availability of food, water and shelter in the way.
+
+We 
 ### Let's go
 
-
-
+We woke up early around 6:30 and by 8:00 we finished breakfast, packed parathe for lunch and lot's of chocolates, biscuits for enery. 
 ### It's beautiful but it isn't supposed to be like this
 
 
