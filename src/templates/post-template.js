@@ -21,8 +21,16 @@ export const query = graphql`
   query PostBySlug($slug: String!) {
     site {
       siteMetadata {
+        author {
+          name
+          contacts {
+            twitter
+          }
+        }
+        disqusShortname
         subtitle
         title
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {

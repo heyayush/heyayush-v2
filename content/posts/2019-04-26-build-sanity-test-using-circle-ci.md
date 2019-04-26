@@ -1,6 +1,6 @@
 ---
 template: post
-title: 'Continuous Integration for sanity tests using CircleCI'
+title: 'CI for sanity tests using CircleCI'
 slug: build-sanity-test-using-circle-ci
 draft: false
 date: '2019-04-26T12:00:00.000Z'
@@ -8,7 +8,6 @@ description: >-
   Isn't it nice to automate running of basic sanity tests like checking linting and unit tests before proceeding with merging of a pull request or deploying a new build?It's easy to setup such a CI pipeline for your git repo. Let's see how...
 category: DevOps
 tags:
-  - CircleCI
   - CI-CD
 ---
 
