@@ -9,12 +9,14 @@ description: >-
 category: DevOps
 tags:
   - CircleCI
+  - CI-CD
 ---
 
-It's good to see some green checks before merging a pull request and proceeding with deployment of new build.  
-It also enforces developers to make sure they comply with good practices like checking lint errors and verifying unit tests are passing.
+Isn't it good to see some green checks before merging a pull request and proceeding with deployment of new build.  
+This also enforces developers to make sure they comply with good practices like checking lint errors and verifying unit tests are passing.
 
-I want to quickly get started so quickly compared CircleCI and TravisCI as these are awesome tools.  
+I was looking to quickly get started so I compared CircleCI and TravisCI.  
+Both of these are awesome tools.  
 CircleCI fits my use case as I have a small project and I want to quickly get started with the free plan.  
 TravisCI looks good when we need to run on Linux and Mac OS X at same time and require support of various programming languages. It's free for open source projects.
 
