@@ -168,6 +168,10 @@ td{
   border: 1px solid #000;
 }
 
+pre[class*="language-"] {
+  font-size: small;
+}
+
 @include breakpoint-sm {
   figure.float-left,
   figure.float-right {
