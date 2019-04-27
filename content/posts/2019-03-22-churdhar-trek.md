@@ -1,6 +1,6 @@
 ---
 template: post
-title: Churdhar trek
+title: Mountains calling @Churdhar
 slug: churdhar-trek
 draft: false
 date: '2019-03-22T12:00:00.000Z'
