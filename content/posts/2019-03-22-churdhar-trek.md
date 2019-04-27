@@ -16,8 +16,6 @@ tags:
 ---
 >Reaching summit doesn't seem feasible, but let's see how far we can make it...
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1z88W7EqofQ?rel=0&amp" frameborder="0" allow="accelerometer; autoplay; loop;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 It's a long weekend due to holi festival and pleasing wheather in mid of march is tempting to go for another trip to the mountains before summer arrives.
 
 Me and my friend Rahul decided to go for Churdhar trek.
@@ -79,12 +77,14 @@ My guess is that it might be leopard. First impression is of a dog. But size of 
 
 ### Wow that's outstanding! and risky
 
-We were tired and exhausted walking in such snow and frequent slips, but we didn't give up and continued. Around 14:30 we reached the third major stop aka 'Teesri'.
 ![Third major stop at Teesri](/media/churdhar-trek-10.jpg 'Third major stop at Teesri')
+We were tired and exhausted walking in such snow and frequent slips, but we didn't give up and continued. Around 14:30 we reached the third major stop aka 'Teesri'.
 
 This is the place where we took lunch break. And suddenly it started to snow along with strong winds. Temperature also plummeted and any part of our body which is exposed to cold wind was freezing. Rahul removed gloves for a while and soon he started to feel numbness in his hands.
 
-From here, it was difficult to find the way up and then coming back from there in dark was extremely risky. Also, walking in thick snow already consumed lot of our energy. Also, we did not have much water left. Usually there are few water sources around this area during summer season but there wasn't any at the moment.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1z88W7EqofQ?rel=0&amp" frameborder="0" allow="accelerometer; autoplay; loop;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+From here, it was difficult to find the way up and then coming back from there in dark was extremely risky. Also, walking in thick snow consumed lot of our energy and we did not have much water left. Usually there are few water sources around this area during summer season but there wasn't any at that time.
 We decided to turn back even we did not wait for the storm to calm and started walking back.
 ![Protecting from cold winds](/media/churdhar-trek-2.jpg 'Protecting myself from cold winds and snow')
 

@@ -3,14 +3,14 @@ import { graphql, StaticQuery } from 'gatsby';
 import ReactDisqusComments from 'react-disqus-comments';
 
 export const PureComments = ({ data, postTitle, postSlug }) => {
-  const { url, disqusShortname } = data.site.siteMetadata;
+  const { siteUrl, disqusShortname } = data.site.siteMetadata;
 
   if (!disqusShortname) {
     return null;
   }
 
   return (
-    <ReactDisqusComments shortname={disqusShortname} identifier={postTitle} title={postTitle} url={url + postSlug} />
+    <ReactDisqusComments shortname={disqusShortname} identifier={siteUrl + postSlug} title={postTitle} url={siteUrl + postSlug} />
   );
 };
 
