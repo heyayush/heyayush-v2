@@ -10,7 +10,12 @@ export const PureComments = ({ data, postTitle, postSlug }) => {
   }
 
   return (
-    <ReactDisqusComments shortname={disqusShortname} identifier={siteUrl + postSlug} title={postTitle} url={siteUrl + postSlug} />
+    <ReactDisqusComments
+      shortname={disqusShortname}
+      identifier={siteUrl + postSlug}
+      title={postTitle}
+      url={siteUrl + postSlug}
+    />
   );
 };
 
