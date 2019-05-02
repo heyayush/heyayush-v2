@@ -168,7 +168,11 @@ td{
   border: 1px solid #000;
 }
 
-pre[class*="language-"] {
+code[class*="language-"] {
+  font-size: initial;
+}
+
+pre[class*="language-"] > code[class*="language-"] {
   font-size: small;
 }
 

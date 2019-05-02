@@ -37,7 +37,7 @@ module.exports = {
       email: 'ayush.sharma1505@gmail.com',
       twitter: 'heyayush',
       github: 'ayu15',
-      rss: '#',
+      rss: '/rss.xml',
       linkedin: 'ayu15',
       instagram: 'ayush.sharma15',
       facebook: 'ayush.sharma.5015',
