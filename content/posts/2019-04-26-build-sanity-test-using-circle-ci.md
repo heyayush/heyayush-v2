@@ -26,6 +26,7 @@ TravisCI looks good when we need to run on Linux and Mac OS X at same time and r
 4. Configure the jobs you want to run in this `config.yml` file (scroll down for a sample config).
 5. You may enable github's protected branches feature to enable/disable merging based upon the result of executed jobs. `config.yml` needs to have `workflows:` in it for this feature to work.
 6. That's all!. You have successfully added ✔️ or ❌ in front of every commit.
+7. Now add a nice build status badge in your README.md by going to your circleci project setting and get the embed code for markdown from status badge option under notifications.
 
 Here's a sample `config.yml` configuration. This simply performs sanity check by installing all npm packages and then running lint and unit tests. It uses cache to speed up the run and runs both the lint and test steps in parallel for faster execution.
 
