@@ -6,7 +6,7 @@ draft: false
 date: '2018-11-04T12:00:00.000Z'
 description: >-
   It always interesting to make sense from some raw data. Let's scrap some data from IMDB and then create visualizations from it, which will help us derive some insights about those movies...
-category: Data Analytics
+category: Data Science
 tags:
   - Data Visualization
   - Data Scraping
