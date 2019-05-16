@@ -1,6 +1,7 @@
 ---
 title: "Contact me"
 template: "page"
+slug: "contact"
 ---
 
 Let's talk!

@@ -17,8 +17,8 @@ module.exports = {
   googleAnalyticsId: process.env.GOOGLE_ANALYTICS,
   menu: [
     {
-      label: 'Articles',
-      path: '/'
+      label: 'Articles by category',
+      path: '/categories'
     },
     {
       label: 'About me',
@@ -26,7 +26,7 @@ module.exports = {
     },
     {
       label: 'Contact me',
-      path: '/pages/contacts'
+      path: '/contact'
     }
   ],
   author: {
