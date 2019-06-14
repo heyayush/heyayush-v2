@@ -4,6 +4,8 @@ if (process.browser) {
   require('../../../lib/tag-cloud');
 }
 
+const skills = ["Javascript", "Typescript", "Python", "Angular", "React", "JQuery", "HTML", "CSS", "Styled-components", "Material-Design", "GraphQL", "REST", "MongoDB", "PostgreSQL", "NodeJS", "Microservices", "RxJS", "DevOps", "AWS", "Google Cloud", "Firebase", "Data Visualization", "Design Patterns", "Progressive Web Apps"]
+
 class WordCloud extends React.Component {
   renderTagCloud() {
     if (process.browser) {
@@ -27,13 +29,18 @@ class WordCloud extends React.Component {
     this.renderTagCloud();
   }
 
-  componentWillUnmount() {}
+  componentWillUnmount() { }
 
   doNothing(e) {
     e.preventDefault();
   }
 
   render() {
+    const listItems = skills.map((name, index) => (
+      <li key={index}>
+        <a onClick={this.doNothing}>{name}</a>
+      </li>
+    ))
     return (
       <>
         <div id="myCanvasContainer" style={{ background: '#000' }}>
@@ -43,63 +50,7 @@ class WordCloud extends React.Component {
         </div>
         <div id="tags">
           <ul>
-            <li>
-              <a onClick={this.doNothing}>Python</a>
-            </li>
-            <li>
-              <a onClick={this.doNothing}>Javascript</a>
-            </li>
-            <li>
-              <a onClick={this.doNothing}>Typescript</a>
-            </li>
-            <li>
-              <a onClick={this.doNothing}>Angular</a>
-            </li>
-            <li>
-              <a onClick={this.doNothing}>React</a>
-            </li>
-            <li>
-              <a onClick={this.doNothing}>JQuery</a>
-            </li>
-            <li>
-              <a onClick={this.doNothing}>CSS</a>
-            </li>
-            <li>
-              <a onClick={this.doNothing}>HTML</a>
-            </li>
-            <li>
-              <a onClick={this.doNothing}>GraphQL</a>
-            </li>
-            <li>
-              <a onClick={this.doNothing}>REST</a>
-            </li>
-            <li>
-              <a onClick={this.doNothing}>Firebase</a>
-            </li>
-            <li>
-              <a onClick={this.doNothing}>RxJS</a>
-            </li>
-            <li>
-              <a onClick={this.doNothing}>Material design</a>
-            </li>
-            <li>
-              <a onClick={this.doNothing}>Devops</a>
-            </li>
-            <li>
-              <a onClick={this.doNothing}>NodeJS</a>
-            </li>
-            <li>
-              <a onClick={this.doNothing}>Mongo DB</a>
-            </li>
-            <li>
-              <a onClick={this.doNothing}>Cloud services</a>
-            </li>
-            <li>
-              <a onClick={this.doNothing}>Data Visualization</a>
-            </li>
-            <li>
-              <a onClick={this.doNothing}>Progressive Web Apps</a>
-            </li>
+            {listItems}
           </ul>
         </div>
       </>
