@@ -34,14 +34,14 @@ module.exports = {
     photo: '/photo.jpg',
     bio: 'Web developer, front-end specialist, Batman fan',
     contacts: {
-      email: 'ayush.sharma1505@gmail.com',
+      email: 'hey.ayush.sharma@gmail.com',
       twitter: 'heyayush',
-      github: 'ayu15',
+      github: 'heyayush',
       rss: '/rss.xml',
-      linkedin: 'ayu15',
-      instagram: 'ayush.sharma15',
+      linkedin: 'hey-ayush',
+      instagram: 'hey.ayush.sharma',
       facebook: 'ayush.sharma.5015',
-      codepen: 'ayu15',
+      codepen: 'heyayush',
       stackoverflow: '4337809/ayush-sharma'
     }
   }
