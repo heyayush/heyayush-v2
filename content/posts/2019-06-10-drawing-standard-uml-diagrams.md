@@ -1,9 +1,9 @@
 ---
 template: post
-title: Drawing standard diagrams in UML
-slug: drawing-standard-diagrams-in-uml
-draft: true
-date: '2019-06-10T12:00:00.000Z'
+title: Drawing standard UML diagrams
+slug: drawing-standard-uml-diagrams
+draft: false
+date: '2019-06-24T12:00:00.000Z'
 description: >-
   Technical architects must be using UML diagrams to effectively propose and document their solutions. Because UML is the standard which can communicate precisely and accurately across technical and business background people.
 category: Dev Tools
@@ -15,6 +15,7 @@ tags:
 # Introduction
 
 Unified Modeling Language (UML) is a standard pictorial language for specifying, visualizing, contructing, and documenting the artifacts of software systems.
+This articles answers common questions like what was the need of UML, what are the different kind of models, and how to draw and interpret these models.
 
 ### History
 
@@ -34,112 +35,68 @@ Informal tools like whiteboard and camera or some formal tools that can generate
 
 # Basics
 
-- Types of models
+- Types of models (Structural and Behavioral)
 - Basic Building Blocks
-- Common Extensions
-- Key Considerations
+- Key Considerations to keep in mind
 
 ## Structural Modelling
 
-- Things
-    - Physical
-    - Conceptual
-- Static Parts
-- Nouns
-- Diagrams
-    - Class
-    - Component
-    - Package
-    - Deployment
+It represents the physical component of the system. What those components consists of and where are they placed. So, it's like a blueprint of the system. Thus, it shows the conceptual view of the system consisting of static parts.
+
+_Examples include Class diagram, Component diagram, and Deployment diagram._
 
 ## Behavioral Modeling
-It represents the interaction between the structural diagrams.
 
-- Functionality
-    - Process
-    - Interactions
-- Dynamic Parts
-- Verbs
-- Diagrams
-    - Use Case
-    - Sequence
-    - State
-    - Activity
+It represents the interaction between the structural diagrams. Thus it deals with the functionality of the system. It shows how the process occurs in real time system which consists of dynamic parts.
+
+_Examples include Use Case diagram, Sequence diagram, State diagram, and Activity diagram._
 
 ## Basic Building Blocks
 
-- Things
-    - Class
-    - Use Case
-    - Component
-    - Node
-- Messages, States, and Actions
-- Relationships
-    - Association
-    - Generalization
-    - Implementation
-    - Dependency
+Basic building blocks required are Things (class, component, node, actor), Activities (messages, states, actions) and Relationships (association, inheritence, dependency etc.)
+Here are some figures to explain these symbols and relationships.
 
-### Basic Notations
+![UML symbols](/media/uml-symbols.png 'UML symbols')
 
-1. Class  
+![UML relationships](/media/uml-relationships.png 'UML relationships')
 
-2. Interface
-
-3. Collaboration
-
-4. Use Case
-
-5. Actor
-
-6. Initial State  
-
-7. Final state
-
-8. Relationships
-
-## Common Extensions
-
-- Annotations/ Notes
-- Streotype
-- Iconic Streotype
-
-## Key Considerations
+## Key Considerations to keep in mind
 
 - Keep diagram clean
-    - Readable
-        Number of lines crossing each other should be minimum.
-    - Focused
-        What is needed must be there and nothing extra.
-    - Precise
-        Make sure everyone understand the same meaning.
+  - Readable
+    Number of lines crossing each other should be minimum.
+  - Focused
+    What is needed must be there and nothing extra.
+  - Precise
+    Make sure everyone understand the same meaning.
 - Goals
-    - Visualize
-    - Specify
-    - Document
-- Keep the audience in mind
+  - Visualize
+  - Specify
+  - Document
+- Keep the target audience in mind and try to put yourself in their shoes.
+
+---
+
+Now let's deep dive into each different type of Structural and Behavioral models
 
 # Structural Modelling
 
-Blueprint of the system.
+- Class Diagram
+- Component Diagram
+- Deployment Diagram
 
-- Class Diagram  
-- Component Diagram  
-- Package Diagram  
-- Deployment Diagram  
-   
 ## Class Diagram
 
-Identifies the vocabulary and relationships.
+Identifies the vocabulary and relationships. It's commonly used in Object Oriented Programming, where the class diagram shows the name of class, it's attributes and their data types, and the methods of that class.
+
+_Eg: Trip class diagram._
+![UML class diagram](/media/uml-class-diagram.jpg 'UML class diagram')
 
 ## Component Diagram
 
-- Identify Interfaces
-- Define replaceable parts  
+Model the physical aspects of the system. Visualize how the components are organized in a system. It does not describes the functionality, just the components used to make those functionalities. Hence, here we identify the interfaces and define replaceable parts.
 
-Model the physical aspects of the system. Visualize how the components are organized in a system. It does not describes the functionality, just the components used to make those functionalities.
-
-*Eg: Modelling a database schema.*
+_Eg: Modelling a database schema._
 
 ## Deployment Diagrams
 
@@ -147,12 +104,13 @@ Map components to physical systems.
 Visualize hardware and network dependencies of a system, where those components are deployed. Represented using nodes which are physical hardware used to deploy the app.
 Big picture of how the system is functioning.
 
-*Eg: Visualize the hardware topology of a system.*
+_Eg: Visualize the hardware topology of a system._
 
-*ATM Deployment diagram example*
+_ATM Deployment diagram example_
 ![ATM Deployment diagram](/media/atm-deployment-diagram.png 'ATM Deployment diagram')
 
 # Behavioral Modelling
+
 How the components interact with each other.
 What our system does and how.
 Interaction is basically a message exchange between two UML components.
@@ -163,38 +121,42 @@ Interaction is basically a message exchange between two UML components.
 - Activity Diagram
 
 ## Use Case Diagram
+
 Represents a particular functionality of a system using actors, and their relationships. They convey details about what is happening but doesn't say anything about how it is happening.
 
-*Eg: Requirement analysis of a user story or visualization of System Interations.*
+_Eg: Requirement analysis of a user story or visualization of System Interations._
 
-*ATM Use Case diagram example*
+_ATM Use Case diagram example_
 ![ATM Use Case diagram](/media/atm-use-case-diagram.png 'ATM Use Case diagram')
 
 ## Sequence Diagrams
+
 Visualize the sequence of message flow in a system to perform a specific functionality. It represents the dynamic aspect of the system. It's like a snapshot of the running system at a particular moment.
 
-*Eg: sequentially ordered messages between objects.*
+_Eg: sequentially ordered messages between objects._
 
-*ATM transaction sequence diagram example*
+_ATM transaction sequence diagram example_
 ![ATM transaction sequence diagram](/media/atm-transaction-sequence-diagram.png 'ATM transaction sequence diagram')
 
 ## State Diagram
+
 Real-time system is expected to be reacted by some kind of internal/external events.  
 State diagrams represents the event driven state change of a system during it's lifetime.
 
-*Eg: Modelling states of an object in a system and the events causing this state transitions.*
+_Eg: Modelling states of an object in a system and the events causing this state transitions._
 
-*ATM transaction state diagram example*
+_ATM transaction state diagram example_
 ![ATM transaction state diagram](/media/atm-transaction-state-diagram.png 'ATM transaction state diagram')
 
 ## Activity Diagram
+
 It is simply a flowchart describing the flow of control in a system. The flow can be sequential, concurrent (fork and join), or branched (decisional). It gives an idea of how the system will work when executed.
 
 It consists of Actions and Activities. Where action is logically a single step/operation which cannot be broken down. While Activities can be decomposed into smaller activities/actions.
 
-*Eg: Modeling workflow by using activities.*
+_Eg: Modeling workflow by using activities._
 
-*ATM activity diagram example*
+_ATM activity diagram example_
 ![ATM Activity diagram](/media/atm-activity-diagram.png 'ATM Activity diagram')
 
 ---
