@@ -18,7 +18,7 @@ Check this out. [Interactive visualization of tech skills](https://festive-menin
 
 I have used python's library called **plotly** for drawing chart. It also allows exporting that chart as ready to use html file, which I took and hosted on netlify.
 
-For those who want to see the code and play with it, here is the [Jupyter notebook](https://nbviewer.jupyter.org/gist/ayu15/4ff62ac1d3f81b190222d1978d09fb51)
+For those who want to see the code and play with it, here is the [Jupyter notebook](https://nbviewer.jupyter.org/gist/heyayush/4ff62ac1d3f81b190222d1978d09fb51)
 
 Currently all labels are assigned equal weightage, however they can be configured as desired.
 

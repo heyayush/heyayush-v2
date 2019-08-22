@@ -20,7 +20,7 @@
     "pretty": "prettier --write config.js",
     "prod-preview": "yarn run clean && gatsby build && gatsby serve"
   },
-  "repository": "https://github.com/ayu15/heyayush-v2",
+  "repository": "https://github.com/heyayush/heyayush-v2",
   "author": "Ayush Sharma <ayush15may@gmail.com>",
   "license": "MIT",
   "keywords": [

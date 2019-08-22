@@ -1,4 +1,4 @@
-Build Status: [![Build Status](https://circleci.com/gh/ayu15/heyayush-v2/tree/master.svg?style=svg)](https://circleci.com/gh/ayu15/heyayush-v2/tree/master)
+Build Status: [![Build Status](https://circleci.com/gh/heyayush/heyayush-v2/tree/master.svg?style=svg)](https://circleci.com/gh/heyayush/heyayush-v2/tree/master)
 
 My personal website which provides details about me, my social contacts and my blog where I keep on posting my thoughts, ideas, travel experiences, developer tutorials and some random shit.
 
