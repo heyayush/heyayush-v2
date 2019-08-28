@@ -41,7 +41,7 @@ Here is the step by step procedure:
 8. Set config using private keys from step 4 to allow accessing data from that sheet.
 9. Create UI layout and put the fetched data at required places.
 
-Source code is available [here](https://github.com/heyayush/drinks-menu).
+Source code is available [here](https://github.com/heyayush/cafe-menu-card).
 
 Have fun!
 
