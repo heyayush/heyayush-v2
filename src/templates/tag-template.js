@@ -9,11 +9,11 @@ import Pagination from '../components/Pagination';
 const TagTemplate = ({ data, pageContext }) => {
   const { title: siteTitle, categoryMeta } = data.site.siteMetadata;
 
-  const {
-    tag, currentPage, prevPagePath, nextPagePath, hasPrevPage, hasNextPage
-  } = pageContext;
+  const { tag, currentPage, prevPagePath, nextPagePath, hasPrevPage, hasNextPage } = pageContext;
 
   const { edges } = data.allMarkdownRemark;
+
+  // prettier-ignore
   const pageTitle = currentPage > 0
     ? `All Posts tagged as "${tag}" - Page ${currentPage} - ${siteTitle}`
     : `All Posts tagged as "${tag}" - ${siteTitle}`;

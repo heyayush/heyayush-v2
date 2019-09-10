@@ -64,21 +64,21 @@ const createPages = async ({ graphql, actions }) => {
   });
 
   const mdxPages = await graphql(`
-  {
-    allMdx (filter: { frontmatter: { draft: { ne: true } } }) {
-      edges {
-        node {
-          frontmatter {
-            template
-          }
-          fields {
-            slug
+    {
+      allMdx(filter: { frontmatter: { draft: { ne: true } } }) {
+        edges {
+          node {
+            frontmatter {
+              template
+            }
+            fields {
+              slug
+            }
           }
         }
       }
     }
-  }
-`);
+  `);
 
   const { edges: mdxEdges } = mdxPages.data.allMdx;
   _.each(mdxEdges, edge => {

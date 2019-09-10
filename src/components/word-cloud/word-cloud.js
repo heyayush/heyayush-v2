@@ -5,7 +5,32 @@ if (process.browser) {
 }
 
 // eslint-disable-next-line
-const skills = ["Javascript", "Typescript", "Python", "Angular", "React", "JQuery", "HTML", "CSS", "Styled-components", "Material-Design", "GraphQL", "REST", "MongoDB", "PostgreSQL", "NodeJS", "Microservices", "RxJS", "DevOps", "AWS", "Google Cloud", "Firebase", "Data Visualization", "Design Patterns", "Progressive Web Apps"]
+const skills = [
+  'Javascript',
+  'Typescript',
+  'Python',
+  'Angular',
+  'React',
+  'JQuery',
+  'HTML',
+  'CSS',
+  'Styled-components',
+  'Material-Design',
+  'GraphQL',
+  'REST',
+  'MongoDB',
+  'PostgreSQL',
+  'NodeJS',
+  'Microservices',
+  'RxJS',
+  'DevOps',
+  'AWS',
+  'Google Cloud',
+  'Firebase',
+  'Data Visualization',
+  'Design Patterns',
+  'Progressive Web Apps'
+];
 
 class WordCloud extends React.Component {
   renderTagCloud() {
@@ -30,7 +55,7 @@ class WordCloud extends React.Component {
     this.renderTagCloud();
   }
 
-  componentWillUnmount() { }
+  componentWillUnmount() {}
 
   doNothing(e) {
     e.preventDefault();
@@ -50,9 +75,7 @@ class WordCloud extends React.Component {
           </canvas>
         </div>
         <div id="tags">
-          <ul>
-            {listItems}
-          </ul>
+          <ul>{listItems}</ul>
         </div>
       </>
     );
