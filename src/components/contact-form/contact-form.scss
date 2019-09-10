@@ -25,6 +25,14 @@
     box-shadow: 0;
     border: 1px solid #3498db;
     outline: none;
+
+    &:valid {
+      border: 1px solid #00cc66;
+    }
+
+    &:invalid {
+      border: 1px solid #ff3860;
+    }
   }
 
   .focused {

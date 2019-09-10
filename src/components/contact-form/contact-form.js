@@ -6,15 +6,15 @@ const contactForm = () => (
     <input type="hidden" name="form-name" value="contact" />
     <div className="form-title">Or, you may fill this form to reach me</div>
     <p className="name">
-      <input name="name" type="text" className="feedback-input" placeholder="Name" id="name" />
+      <input name="name" type="text" className="feedback-input" placeholder="Name" id="name" required minLength="2" maxLength="40"/>
     </p>
 
     <p className="email">
-      <input name="email" type="text" className="feedback-input" id="email" placeholder="Email" />
+      <input name="email" type="text" className="feedback-input" id="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="please enter a valid email" required />
     </p>
 
     <p className="message">
-      <textarea name="message" className="feedback-input" id="comment" placeholder="Comment"></textarea>
+      <textarea name="message" className="feedback-input" id="comment" placeholder="Comment" required minLength="5" maxLength="1200"></textarea>
     </p>
 
     <div className="submit">

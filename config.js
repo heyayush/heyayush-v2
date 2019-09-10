@@ -21,6 +21,14 @@ module.exports = {
       path: '/categories'
     },
     {
+      label: 'Front-end/',
+      path: '/category/front-end'
+    },
+    {
+      label: 'Travel/',
+      path: '/category/travel'
+    },
+    {
       label: 'About me',
       path: '/about'
     },
