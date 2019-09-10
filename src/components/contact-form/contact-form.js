@@ -2,7 +2,7 @@ import React from 'react';
 import './contact-form.scss';
 
 const contactForm = () => (
-  <form name="contact" className="form" id="contact-form" method="POST" data-netlify="true">
+  <form name="contact" className="form" id="contact-form" data-netlify="true">
     <div className="form-title">Or, you may fill this form to reach me</div>
     <p className="name">
       <input name="name" type="text" className="feedback-input" placeholder="Name" id="name" />
