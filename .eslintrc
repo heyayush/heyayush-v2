@@ -64,5 +64,7 @@
       "react/jsx-uses-react": 1,
       "react/jsx-uses-vars": 1,
       "object-curly-newline": 0,
+      "implicit-arrow-linebreak": 0,
+      "function-paren-newline": 0,
     }
 }
