@@ -17,6 +17,8 @@ tags:
 
 > Shreekhand Mahadev is a difficult trek but offers magnificent views of the mountains and glaciers. Like Amarnath yatra, this is also considered a sacred pilgrim trail and lots of people from nearby places in himachal visit this every year. This year, I also took the challenge and went on an adventure trek...
 
+<iframe width="656" height="369" src="https://www.youtube.com/embed/-EJ18fNyAtE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### About the place
 
 Shreekhand Mahadev is a sacred pilgrim trail taking the devotees of Shiva to a magnificent journey full of breathtaking views and adventures.
@@ -70,6 +72,8 @@ Evening was even more beautiful at the time of sunset. We played ludo, cards for
 Monday is considered auspious for visiting Shiva and our plan was perfect to make sure summit climb comes on Monday. Its toughest journey from here to summit and hence we got up around 4:00 and started our journey by 4:30. Soon by 5:00 am sunlight started to take over and now I get to see that the views around me are astonishing. Soon we reached Parvati Bagh but it was mist around so could not see at distant. From here, it was a steep 5km non stop climb on the glacier to reach directly at summit. This was challenging as its slippery on snow and we need to make sure our first step is firm before taking the next step. Mist and sunlight kept on playing hide and seek with us. When the sun was shining brightly then the light getting reflected was too bright that it was getting tough for me to completely open my eyes. I was so excited today that I forgot to wear sunglasses.
 
 Reaching peak was an amazing feeling. There were tears of happiness rolling out of eyes and I was just lost in the moment. The magnificent 75 feet tall Shivlinga was in front of me and I could touch and feel it. This feeling of accomplishment is hard to describe in words. Many people turned around from mid way, couple of hours ago I was also in dual minds if I can make it or not but here I am at the top, chanting Jai Shri Mahakaal at 17,150 feets.  
+
+![Shreekhand Mahadev top](/media/shreekhand-mahadev-1.jpg 'Shreekhand Mahadev top')
 
 It was crowded at the top as it was Monday and there's isn't much space to accomodate many people. I clicked some pics in the mist and once weather was clear I clicked some more.
 I did not get to sit and rest since morning as the rocks were usually occupied and sitting on snow isn't a smart choice, so mostly I was resting by taking support on trekking pole. Finally, I came down a bit to find a plane area to sit and eat some dry fruits.

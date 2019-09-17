@@ -14,7 +14,7 @@ tags:
   - Trekking
   - Himachal
 ---
->Reaching summit doesn't seem feasible, but let's see how far we can make it...
+> Reaching summit doesn't seem feasible, but let's see how far we can make it...
 
 It's a long weekend due to holi festival and pleasing wheather in mid of march is tempting to go for another trip to the mountains before summer arrives.
 

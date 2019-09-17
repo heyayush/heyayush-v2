@@ -28,6 +28,8 @@ Using public transport and staying on the mainland are some ways of saving money
 
 ## Paris
 
+![Effiel Tower Paris](/media/paris-1.jpg 'Effiel Tower Paris')
+
 - I have taken some pics at Effiel tower. Now what?
 
 Effiel tower is an emotion and it's the first thing on every tourist's itenary. It's beautiful to see it sparkling in night. However, do think again that is it worth your time and money to just see a tower.
