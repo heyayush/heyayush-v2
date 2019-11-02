@@ -16,7 +16,7 @@ CSS offers some really cool features. Here I am showing a torch effect or say la
 
 It's basically changing the background color at your mouse pointer location. And that color change is in circular gradient hence creating a torch like effect.
 
-Here's the preview
+Here's the [preview](https://css-tricks.netlify.com/hover/Laser-torch/)
 <div>
   <video src="/media/torch-laser-effect.mp4" autoplay loop></video>
 </div>
