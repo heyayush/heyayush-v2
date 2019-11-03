@@ -11,6 +11,7 @@ tags:
   - CSS
   - UX
 ---
+
 **Do you know what is the name of this layout?**
 ![Masonry Layout](/media/masonry.png 'Masonry Layout')
 
@@ -22,7 +23,7 @@ And googling with Masonry layout I got ready to use lib code with which this can
 
 I picked [Colcade](https://github.com/desandro/colcade) which was apt for my need and within minutes the layout was looking good.
 
-Here's the beautiful [Preview](https://css-tricks.netlify.com/layouts/Masonry/)
+Here's the beautiful [Preview](https://css.heyayush.com/layouts/Masonry/)
 
 You may also check out the underlying code [here](https://github.com/heyayush/css-tricks/tree/develop/src/pages/layouts)
 
