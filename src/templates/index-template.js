@@ -13,8 +13,21 @@ const IndexTemplate = ({ data, pageContext }) => {
   const { edges } = data.allMarkdownRemark;
   const pageTitle = currentPage > 0 ? `Posts - Page ${currentPage} - ${siteTitle}` : siteTitle;
 
+  const focusFeeds = () => {
+    document.getElementById('feeds').classList.add('pointing-to');
+  };
+  const blurFeeds = () => {
+    document.getElementById('feeds').classList.remove('pointing-to');
+  };
   return (
     <Layout title={pageTitle} description={siteSubtitle}>
+      <ul className="skip-links">
+        <li>
+          <a href="#feeds" onFocus={focusFeeds} onBlur={blurFeeds}>
+            Skip to feeds
+          </a>
+        </li>
+      </ul>
       <Sidebar isIndex />
       <Page>
         <Feed edges={edges} />
