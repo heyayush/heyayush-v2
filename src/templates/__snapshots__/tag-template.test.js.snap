@@ -23,6 +23,7 @@ exports[`TagTemplate renders correctly 1`] = `
       >
         <div
           className="feed"
+          id="feeds"
         >
           <div
             className="feed__item"

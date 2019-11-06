@@ -4,6 +4,19 @@ exports[`IndexTemplate renders correctly 1`] = `
 <div
   className="layout"
 >
+  <ul
+    className="skip-links"
+  >
+    <li>
+      <a
+        href="#feeds"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        Skip to feeds
+      </a>
+    </li>
+  </ul>
   <StaticQuery
     render={[Function]}
   />
@@ -18,6 +31,7 @@ exports[`IndexTemplate renders correctly 1`] = `
       >
         <div
           className="feed"
+          id="feeds"
         >
           <div
             className="feed__item"
