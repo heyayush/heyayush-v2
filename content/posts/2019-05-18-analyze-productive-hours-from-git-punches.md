@@ -9,7 +9,7 @@ description: >-
   Git logs can tell our history, when and what we were working on. So let's use that to analyze our productivity.
 tags:
   - Data Visualization
-  - Dev Tools
+  - Developer Tools
 ---
 
 > Git logs can tell our history, when and what we were working on. So let's use that to analyze our productivity.
@@ -31,6 +31,7 @@ This makes complete sense since this data is of a side project. I tend to focus 
 
 Here's the codepen.
 You can also check such insights of anyone's work by just putting in github username and repository name in this codepen.
+
 <div>
   <iframe height="400" style="width: 100%;" scrolling="no" title="git-punches" src="//codepen.io/heyayush/embed/qGjogp/?height=265&theme-id=0&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
     See the Pen <a href='https://codepen.io/heyayush/pen/qGjogp/'>git-punches</a> by Ayush Sharma
