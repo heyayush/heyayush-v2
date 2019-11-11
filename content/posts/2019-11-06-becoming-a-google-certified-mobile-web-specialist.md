@@ -100,6 +100,22 @@ fetch('//google.com', {
    4. formData()
    5. text()
 
+Simple `POST` request is as follows
+```js
+fetch("https://jsonplaceholder.typicode.com/posts", {
+  method: "POST",
+  body: JSON.stringify({
+    title: "Title of post",
+    body: "Post Body"
+  })
+})
+  .then(res => {
+    if (!response.ok) throw Error(response.statusText);
+    return response.json();
+  })
+  .then(data => console.log(data))
+  .catch(error => console.log(error));
+```
 4. Adding Credentials to our request.
    - `credentials: 'include'` will always add credentials even if it is a cross origin request.
    - `credentials: 'same-origin'` will add credentials only if it is same origin.
@@ -145,8 +161,10 @@ fetch('https://example.com/posts', {
 
 ### General accessibility guidelines
 
-- Add `<tracks>` inside our `<video>`
+- Add `alt` text for images.
+- Add `<tracks>` inside `<video>`.
 - Ensure your page is accessible by not disabling user scaling.
+- Use `title` attribute for icon buttons with no text.
 
 ### Use of skip links to bypass navbar and asides
 
@@ -638,6 +656,7 @@ For good UX
 - Choose the best HTML5 input type to simplify data input.
 - Always use labels along with the input fields. Placeholders should not be used as labels.
 - Placeholders are for providing hints to the user about what is expected in the input.
+- Use autofocus attribute carefully.
 
 ### HTML5 Input types
 
@@ -654,6 +673,113 @@ url, tel, email, search, number, range, datetime-local, date, time, week, month,
   <option value="dark"> </option>
 </datalist>
 ```
+
+### Using correct autocomplete attributes
+
+| Name attribute    | Autocomplete attribute |
+| ----------------- | ---------------------- |
+| name              | name                   |
+| first name        | given-name             |
+| middle name       | additional-name        |
+| last name         | family-name            |
+| email             | email                  |
+| address           | street-address         |
+| state or province | address-level1         |
+| city              | address-level2         |
+| zip code          | postal-code            |
+| country           | country                |
+| phone             | tel                    |
+| credit card name  | cc-name                |
+| cc number         | cc-number              |
+| username          | username               |
+| password          | current-password       |
+| password          | new-password           |
+
+### Form validation
+
+- Leverage the browser's built-in validation attributes like pattern, required, min, max.
+
+#### The pattern attribute
+```html
+<input type="text" pattern="^\d{5,6}(?:[-\s]\d{4})?$" ...>
+```
+
+#### min, max, step, minlength, maxlength
+```html
+<input type="number" min="1" max="13" step="0.5" maxlength="12" minlength="8">
+```
+
+#### The novalidate attribute
+If we want to allow user to submit the invalid form then use novalidate attribute
+```html
+<form role="form" novalidate>...</form>
+```
+
+#### Constraint validation api
+This allows us to do things like set a custom error, check whether an element is valid, and determine the reason that an element is invalid.
+
+Basically, the idea is to trigger JavaScript on some form field event (like onchange) to calculate whether the constraint is violated, and then to use the method `field.setCustomValidity()` to set the result of the validation: an empty string means the constraint is satisfied, and any other string means there is an error and this string is the error message to display to the user.
+
+| Property            | Description                                                                                        |
+| ------------------- | -------------------------------------------------------------------------------------------------- |
+| setCustomValidity() | Sets a custom validation message and the customError property of the ValidityState object to true. |
+| validationMessage   | Returns a string with the reason the input failed the validation test.                             |
+| checkValidity()     | Returns true if the element satisfies all of its constraints, and false otherwise.                 |
+| reportValidity()    | Returns true if the element satisfies all of its constraints, and false otherwise.                 |
+| validity            | Returns a ValidityState object representing the validity states of the element.                    |
+
+##### File size constraint validation example
+
+```js
+function checkFileSize() {
+  var FS = document.getElementById("FS");
+  var files = FS.files;
+
+  // If there is (at least) one file selected
+  if (files.length > 0) {
+     if (files[0].size > 75 * 1024) { // Check the constraint
+       FS.setCustomValidity("The selected file must not be larger than 75 kB");
+       return;
+     }
+  }
+  // No custom constraint violation
+  FS.setCustomValidity("");
+}
+```
+
+##### Real time feedback with pseudo classes
+| class         | Description                                                 |
+| ------------- | ----------------------------------------------------------- |
+| :valid        | when the value meets all of the validation requirements.    |
+| :invalid      | when the value does not meet all of the validations.        |
+| :required     | where the required attribute set.                           |
+| :optional     | where the element does not have the required attribute set. |
+| :in-range     | where the value is in range.                                |
+| :out-of-range | where the value is out of range.                            |
+
+```css
+input.dirty:not(:focus):invalid {
+  background-color: #FFD9D9;
+}
+input.dirty:not(:focus):valid {
+  background-color: #D9FFD9;
+}
+```
+```js
+const inputs = document.getElementsByTagName("input");
+const inputs_len = inputs.length;
+const addDirtyClass = (evt) => {
+  sampleCompleted("Forms-order-dirty");
+  evt.srcElement.classList.toggle("dirty", true);
+};
+for (let i = 0; i < inputs_len; i++) {
+  const input = inputs[i];
+  input.addEventListener("blur", addDirtyClass);
+  input.addEventListener("invalid", addDirtyClass);
+  input.addEventListener("valid", addDirtyClass);
+}
+```
+
 
 Thanks for following along this huge summary.  
 I hope you learned some new concepts or taking away some points to investigate more on.  
