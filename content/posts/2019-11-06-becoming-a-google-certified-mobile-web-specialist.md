@@ -298,6 +298,10 @@ self.addEventListener('fetch', function(event) {
 - Manifest should be served using the `application/manifest+json` MIME type.
 - Manifest is required to show the `add to home screen` prompt.
 - Key properties like short_name, name,icons, start_url, background_color, display, orientation, scope, theme_color.
+- Chrome uses `short_name` when both `name` and `short_name` are available.
+- `display-mode` must be set to either `standalone` or `fullscreen` to trigger add to home screen prompt.
+- `theme_color` sets the toolbar color.
+- splash screen is constructed using `name`, `icons`, `background_color` and `theme_color`.
 - Having a registered service worker with fetch event handler is must for instaling a PWA.
 - Deferring the app install banner by saving the `beforeinstallprompt` event and calling the `prompt()` method of that event when needed.
 
