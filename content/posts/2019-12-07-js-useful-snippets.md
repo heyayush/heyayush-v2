@@ -18,14 +18,33 @@ const minN = (arr, n = 1) => [...arr].sort((a, b) => a - b).slice(0, n);
 minN([1, 2, 3]); // [1]
 minN([1, 2, 3], 2); // [1,2]
 ```
-2. Radians To Degrees
+
+2. Get n largest elements from a list
+It returns the list in descending order
+```js
+const maxN = (arr, n = 1) => [...arr].sort((a, b) => b - a).slice(0, n);
+
+maxN([1, 2, 3]); // [3]
+maxN([1, 2, 3], 2); // [3,2]
+```
+
+3. Radians To Degrees
 
 ```js
 const radsToDegrees = rad => (rad * 180.0) / Math.PI;
 
 radsToDegrees(Math.PI / 2); // 90
 ```
-3. Random Hexadecimal Color Code
+
+3. Degrees to Radian
+
+```js
+const degreesToRads = deg => (deg * Math.PI) / 180.0;
+
+degreesToRads(90.0); // ~1.5708
+```
+
+4. Random Hexadecimal Color Code
 
 ```js
 const randomHexColorCode = () => {
@@ -168,4 +187,213 @@ const words = (str, pattern = /[^a-zA-Z-]+/) => str.split(pattern).filter(Boolea
 
 words('I love javaScript!!'); // ["I", "love", "javaScript"]
 words('python, javaScript & coffee'); // ["python", "javaScript", "coffee"]
+```
+
+18. Is the bottom of page visible
+
+```js
+const bottomVisible = () =>
+  document.documentElement.clientHeight + window.scrollY >=
+  (document.documentElement.scrollHeight || document.documentElement.clientHeight);
+
+bottomVisible(); // true
+```
+
+19. Capitalize first letter
+
+```js
+const capitalize = ([first, ...rest]) =>
+  first.toUpperCase() + rest.join('');
+  
+capitalize('fooBar'); // 'FooBar'
+capitalize('fooBar', true); // 'FooBar'
+```
+20. Decapitalize first letter
+
+```js
+const decapitalize = ([first, ...rest]) =>
+  first.toLowerCase() + rest.join('')
+
+decapitalize('FooBar'); // 'fooBar'
+decapitalize('FooBar'); // 'fooBar'
+```
+
+22. Capitalize first letter of every word
+
+```js
+const capitalizeEveryWord = str => str.replace(/\b[a-z]/g, char => char.toUpperCase());
+
+capitalizeEveryWord('hello world!'); // 'Hello World!'
+```
+23. Clean up falsy values
+
+```js
+const compact = arr => arr.filter(Boolean);
+
+compact([0, 1, false, 2, '', 3, 'a', 'e' * 23, NaN, 's', 34]); 
+// [ 1, 2, 3, 'a', 's', 34 ]
+```
+
+24. Count Occurences of a particular value in an array
+
+```js
+const countOccurrences = (arr, val) => arr.reduce((a, v) => (v === val ? a + 1 : a), 0);
+countOccurrences([1, 1, 2, 1, 2, 3], 1); // 3
+```
+25. Day of the year
+
+```js
+const dayOfYear = date =>
+  Math.floor((date - new Date(date.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24);
+
+dayOfYear(new Date()); // 272
+```
+26. Deep Flatten an array
+
+```js
+const deepFlatten = arr => [].concat(...arr.map(v => (Array.isArray(v) ? deepFlatten(v) : v)));
+
+deepFlatten([1, [2], [[3], 4], 5]); // [1,2,3,4,5]
+```
+
+27. Difference between two arrays
+
+```js
+const difference = (a, b) => {
+  const s = new Set(b);
+  return a.filter(x => !s.has(x));
+};
+
+difference([1, 2, 3], [1, 2, 4]); // [3]
+```
+28. Array of digits from a number
+
+```js
+const digitize = n => [...`${n}`].map(i => parseInt(i));
+
+digitize(431); // [4, 3, 1]
+```
+29. Drop n Elements from left
+
+```js
+const drop = (arr, n = 1) => arr.slice(n);
+
+drop([1, 2, 3]); // [2,3]
+drop([1, 2, 3], 2); // [3]
+drop([1, 2, 3], 42); // []
+```
+30. Drop n Elements from Right
+
+```js
+const dropRight = (arr, n = 1) => arr.slice(0, -n);
+
+dropRight([1, 2, 3]); // [1,2]
+dropRight([1, 2, 3], 2); // [1]
+dropRight([1, 2, 3], 42); // []
+```
+31. Checks whether the parent element contains the child
+
+```js
+const elementContains = (parent, child) => parent !== child && parent.contains(child);
+
+elementContains(document.querySelector('head'), document.querySelector('title')); // true
+elementContains(document.querySelector('body'), document.querySelector('body')); // false
+```
+
+32. Filter Duplicate Elements
+
+```js
+const filterNonUnique = arr => [ …new Set(arr)];
+filterNonUnique([1, 2, 2, 3, 4, 4, 5]); // [1, 2, 3, 4, 5]
+```
+33. Get time from Date object as a string
+
+```js
+const getColonTimeFromDate = date => date.toTimeString().slice(0, 8);
+
+getColonTimeFromDate(new Date()); // "08:38:00"
+```
+34. Difference in days between two dates
+```js
+const getDaysDiffBetweenDates = (dateInitial, dateFinal) =>
+  (dateFinal - dateInitial) / (1000 * 3600 * 24);
+  
+getDaysDiffBetweenDates(new Date('2019-01-13'), new Date('2019-01-15')); // 2
+```
+
+35. Get the type of value
+
+```js
+const getType = v =>
+  v === undefined ? 'undefined' : v === null ? 'null' : v.constructor.name.toLowerCase();
+  
+getType(new Set([1, 2, 3])); // 'set'
+```
+
+36. Get all indexes of a value in an array
+
+```js
+const indexOfAll = (arr, val) => arr.reduce((acc, el, i) => (el === val ? [...acc, i] : acc), []);
+
+indexOfAll([1, 2, 3, 1, 2, 3], 1); // [0,3]
+indexOfAll([1, 2, 3], 4); // []
+```
+
+37. Intersection - Get elements that are present in both the arrays
+
+```js
+const intersection = (a, b) => {
+  const s = new Set(b);
+  return a.filter(x => s.has(x));
+};
+
+intersection([1, 2, 3], [4, 3, 2]); // [2, 3]
+```
+
+38. To check if a value is of particular type
+
+```js
+const is = (type, val) => ![, null].includes(val) && val.constructor === type;
+
+is(Array, [1]); // true
+is(ArrayBuffer, new ArrayBuffer()); // true
+is(Map, new Map()); // true
+is(RegExp, /./g); // true
+is(Set, new Set()); // true
+is(WeakMap, new WeakMap()); // true
+is(WeakSet, new WeakSet()); // true
+is(String, ''); // true
+is(String, new String('')); // true
+is(Number, 1); // true
+is(Number, new Number(1)); // true
+is(Boolean, true); // true
+is(Boolean, new Boolean(true)); // true
+```
+
+39. Check if it is a browser
+
+```js
+const isBrowser = () => ![typeof window, typeof document].includes('undefined');
+
+isBrowser(); // true (browser)
+isBrowser(); // false (Node)
+```
+
+40. Check if browser tab is focussed
+
+```js
+const isBrowserTabFocused = () => !document.hidden;
+
+isBrowserTabFocused(); // true
+```
+
+41. Check if the value is number
+
+```js
+function isNumber(n) {
+    return !isNaN(parseFloat(n)) && isFinite(n);
+}
+
+isNumber('1'); // false
+isNumber(1); // true
 ```
