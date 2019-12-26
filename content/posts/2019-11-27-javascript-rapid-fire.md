@@ -27,3 +27,21 @@ Number(undefined); // returns NaN
 null < 0  // false
 null == 0 // false
 null <= 0 // true
+
+To create a pure object with no prototype, we have to write:
+let obj = Object.create(null);
+
+void operator always returns undefined
+void 0 // undefined
+void ('abc') // undefined
+void {} // undefined
+
+We can change a new value to undefined
+undefined = "not-defined"
+
++ Plus operator to quickly convert a string to a number.
++'-4' // returns -4
++'0xFF' // returns 255
++true // returns 1
++false //returns 0
++'1,234' //returns NaN
