@@ -45,3 +45,41 @@ undefined = "not-defined"
 +true // returns 1
 +false //returns 0
 +'1,234' //returns NaN
+
+{name: "Ayush"} == {name: "Ayush"} // returns false
+
+const obj = { a: "one", b: "two", a: "three" }; // obj = { a: "three", b: "two" }
+
+```js
+const foo = () => console.log("First");
+const bar = () => setTimeout(() => console.log("Second"));
+const baz = () => console.log("Third");
+
+bar();
+foo();
+baz();
+
+// First Third Second
+```
+
+call is like bind with immediate execution.
+bind just returns a copy of the function along with bounded context.
+
+new Number(0) // returns true
+new Boolean(false) // returns true
+
+typeof typeof 1 // string
+
+```js
+const numbers = [1, 2, 3];
+numbers[10] = 11;
+console.log(numbers);
+// [1, 2, 3, 7 x empty, 11]
+```
+
+console.log(3 + 4 + "5"); // "75"
+parseInt("7*6", 10); // 7
+
+console.log(!!{}); //logs true
+console.log(!![]); //logs true
+console.log(!!NaN); //logs false
