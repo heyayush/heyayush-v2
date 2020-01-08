@@ -83,3 +83,16 @@ parseInt("7*6", 10); // 7
 console.log(!!{}); //logs true
 console.log(!![]); //logs true
 console.log(!!NaN); //logs false
+console.log(!!''); //logs false
+
+```js
+const one = (false || {} || null)
+const two = (null || false || "")
+const three = ([] || 0 || true)
+
+console.log(one, two, three)
+// {} "" []
+```
+With the || operator, we can return the first truthy operand. If all values are falsy, the last operand gets returned.
+
+Primitive data types interact by value and non-primitive data types such as objects interact by reference.
