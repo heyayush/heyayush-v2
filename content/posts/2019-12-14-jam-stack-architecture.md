@@ -11,7 +11,7 @@ tags:
   - Tech Architecture
 ---
 
-In the recent years there had been significant buzz about JAM stack, many people have adopted it and it has been a pleasant experience working towards a better web.
+In the recent years there had been significant buzz about JAM stack, many people have adopted it and it has been a pleasant experience working towards a better web. These are apps with pages that don't require an actual web server to dynamically render the content.
 
 ## What is JAM stack
 
