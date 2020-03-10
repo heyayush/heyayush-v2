@@ -8,7 +8,8 @@ description: >
   Summarized list of some good to know Node.js concepts.
 category: Back-end
 tags:
-  - Javascript, Node.js
+  - Javascript
+  - Node.js
 ---
 
 Advanced Node.js
