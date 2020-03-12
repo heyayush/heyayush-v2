@@ -1,8 +1,10 @@
 import React from 'react';
 import './contact-form.scss';
 
+const THANK_YOU_ROUTE = '/thank-you';
+
 const contactForm = () => (
-  <form name="contact" className="form" id="contact-form" action="/thank-you" method="POST" data-netlify="true">
+  <form name="contact" className="form" id="contact-form" action={THANK_YOU_ROUTE} method="POST" data-netlify="true">
     <input type="hidden" name="form-name" value="contact" />
     <div className="form-title">Or, you may fill this form to reach me</div>
     <p className="name">

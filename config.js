@@ -52,5 +52,8 @@ module.exports = {
       codepen: 'heyayush',
       stackoverflow: '4337809/ayush-sharma'
     }
+  },
+  api: {
+    emailSub: 'https://w11znw8r96.execute-api.ap-south-1.amazonaws.com/prod/hey-ayush'
   }
 };

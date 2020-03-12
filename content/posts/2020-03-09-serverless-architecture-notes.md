@@ -306,7 +306,7 @@ Take care of Environment differences.
 
 1. Create a new DynamoDB table.
 2. Create a IAM role and provide basic lambda function execution permissions.
-3. Create a lambda function with the role from alst step.
+3. Create a lambda function with the role from last step.
 4. Create API gateway and set it to trigger the lambda function from last step.
 
 ## Self: Writing Lambda functions

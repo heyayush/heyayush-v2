@@ -90,6 +90,9 @@ exports[`PostTemplate renders correctly 1`] = `
       <StaticQuery
         render={[Function]}
       />
+      <StaticQuery
+        render={[Function]}
+      />
     </div>
     <div
       className="post__comments"
