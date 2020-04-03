@@ -6,7 +6,7 @@ draft: false
 date: '2020-03-04T12:00:00.000Z'
 description: >
   Ability to change color theme is a powerful feature and here is an easier way to achieve it while ensuring that accessibility is not compromised and text colors automatically adjusts according to the choosen theme.
-category: Front-end
+category: CSS-Tricks
 tags:
   - CSS
   - UX
