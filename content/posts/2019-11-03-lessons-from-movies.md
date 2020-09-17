@@ -8,7 +8,7 @@ description: >-
   Movies do teach some good life lessons. There is something to learn from those stories. So here is a list of those life lessons from the movies.
 category: Life-Lessons
 tags:
-  - lessons
+  - Lessons
 ---
 
 ## Godfather

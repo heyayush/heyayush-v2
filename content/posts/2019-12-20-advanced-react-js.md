@@ -8,7 +8,8 @@ description: >
   Summarized list of some good to know React.js concepts.
 category: Front-end
 tags:
-  - Javascript, React
+  - Javascript
+  - React
 ---
 
 Prop-types vs typescript

@@ -6,7 +6,7 @@ draft: false
 date: '2019-06-24T12:00:00.000Z'
 description: >-
   Technical architects must be using UML diagrams to effectively propose and document their solutions. Because UML is the standard which can communicate precisely and accurately across technical and business background people.
-category: Dev Tools
+category: Developer Tools
 tags:
   - Tech Architecture
   - Developer Tools

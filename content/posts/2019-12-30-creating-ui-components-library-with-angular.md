@@ -8,7 +8,8 @@ description: >
   Concise steps to create a UI component library using angular and publish it to npm.
 category: Front-end
 tags:
-  - Javascript, Angular
+  - Javascript
+  - Angular
 ---
 
 > Feeling a need to create re-usable UI components for all of your projects or for all the projects across your organization? Here's a quick guide to creating such a library with angular and for angular apps and finally publish it to npm.

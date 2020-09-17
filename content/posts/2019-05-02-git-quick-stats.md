@@ -6,7 +6,7 @@ draft: false
 date: '2019-05-02T12:00:00.000Z'
 description: >-
   It's interesting to get insights from our git repository like contributions stats, commits per author, commits per month/week/date, code reviewers. There is an interesting tool called git-quick-stats to help generating these insights.
-category: Dev Tools
+category: Developer Tools
 tags:
   - Git
   - Developer Tools

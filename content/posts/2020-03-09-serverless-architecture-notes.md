@@ -6,7 +6,7 @@ draft: true
 date: '2020-01-10T12:00:00.000Z'
 description: >
   Playing with Serverless architecture
-category: Back-end
+category: Serverless
 tags:
   - DevOps
   - AWS
