@@ -5,7 +5,7 @@ slug: getting -started-with-aws-cognito
 draft: false
 date: '2020-09-17T12:00:00.000Z'
 description: >
-  Serverless solution for managing user authentication by making use of aws cognito
+  Serverless solution for managing user authentication by making use of aws Cognito
 category: Serverless
 tags:
   - AWS
@@ -14,9 +14,7 @@ tags:
 
 > Intro to AWS cognito and using it for app user authentication.
 
-# AWS Cognito
-
-Give users an identity so that they can interact with our application.
+Basic goal of authentication is to give users an identity so its like introducing the participant before having a conversation. Thus enabling the security feature as we know who the user is and what info can be shared with him. And for that we need to have a memory of all the known people and ability to add more people in that list. This is called *User Pool* in technical term. That is a collection of users that have interaction with our application.
 
 ## Cognito User Pools:
 - Sign in functionality for app users.
@@ -37,9 +35,13 @@ Give users an identity so that they can interact with our application.
 ### Some useful terms
 
 *Callback URL*- where to redirect user once he is authenticated.
+
 *Sign out URL*- where to redirect after signout.
+
 Authorization code grants.
+
 Allowed OAuth Flows and Implicit grant.
+
 *Hosted-ui* provides a ready to use ui interface for authentication actions. For example login form, signup form, forget password feature is available to use and user is redirected to pages based on it.
 
 ### Notes

@@ -1,11 +1,11 @@
 ---
 template: post
-title: Security
-slug: security
+title: Cybersecurity Basics
+slug: cybersecurity
 draft: false
 date: '2021-02-05T12:00:00.000Z'
 description: >-
-  Key takeaways from cyber security training.
+  Key takeaways from cybersecurity training.
 category: Security
 tags:
   - Cybersecurity
