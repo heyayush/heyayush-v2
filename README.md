@@ -21,3 +21,6 @@ Feel free to provide feedback, suggest enhancements, report issues, or contribut
 12. Continuous Integration using CircleCI which performs sanity checks like lint and unit tests.
 13. Google Analytics.
 14. Disqus comments.
+
+Dev Notes-
+You need to use Node v10 while installing node modules because node-sass depends on it.
