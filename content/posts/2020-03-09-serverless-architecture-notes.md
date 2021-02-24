@@ -170,7 +170,7 @@ CloudFormation Template.
 
 ### Serverless Resources
 
-- AWS LAmbda Functions
+- AWS Lambda Functions
 - AWS API Gateway APIs
 - AWS DynamoDB Tables
 
