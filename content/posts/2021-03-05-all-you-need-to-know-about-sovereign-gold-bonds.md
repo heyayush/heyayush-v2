@@ -20,7 +20,8 @@ tags:
 - This is the best way to invest in gold in digital form.
 - No risk of theft/steal as it is in your demat account and not physical.
 - Benefit is that we get 2.5% fixed interest paid semi-annually.
-- 8 years maturity period.
+- 8 years maturity period and 5 years of lock-in period.
+- RBI provides a buyback facility at the end of the fifth, sixth and seventh years.
 - If you hold them till maturity, the capital gains will be tax free. But tax will be there on the interest earned with it. This relaxation is only for individuals, not for trusts/institutions.
 - In case of premature redemption after the fifth year, the gains will be taxed at 20% post indexation.
 - So if going for 8 years then 20% net interest in 8 years and 3% saved on GST that's 23% benefit compared to buying phsyical gold.
