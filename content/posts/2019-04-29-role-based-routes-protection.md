@@ -2,7 +2,7 @@
 template: post
 title: Role based routes protection in React + MobX app
 slug: role-based-routes-protection-react-mobx
-draft: true
+draft: false
 date: '2019-04-29T12:00:00.000Z'
 description: >-
   Almost all admin dashboard apps require some kind of role based access to enable disable access to the features of app based upon the user's role...
@@ -163,7 +163,7 @@ const GET_ME = gql`
 `
 
 class AuthStore {
-  @observable googleAuthUrl = ZION_AUTH_URL
+  @observable googleAuthUrl = process.env.AUTH_URL
   @observable isAuthenticated = false
   @observable isAuthenticating = false
   @observable token = null

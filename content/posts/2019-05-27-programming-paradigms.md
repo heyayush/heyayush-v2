@@ -2,7 +2,7 @@
 template: post
 title: Programming paradigms
 slug: programming-paradigms
-draft: true
+draft: false
 date: '2019-05-27T12:00:00.000Z'
 category: Programming
 description: >-

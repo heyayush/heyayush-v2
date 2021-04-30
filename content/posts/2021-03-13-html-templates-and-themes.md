@@ -1,14 +1,14 @@
 ---
 template: post
-title: html Templates and Themes
+title: HTML Templates and Themes
 slug: html-templates-and-themes
-draft: true
+draft: false
 date: '2021-03-13T12:00:00.000Z'
 description: >
   Collection of free and premium resources of html templates and themes. Basically some ready to use stuff instead of writing front-end from scratch.
-category: Front-end
+category: Developer Tools
 tags:
-  - Tech Architecture
+  - Developer Tools
 ---
 
 Collection of free and premium resources of html templates and themes. Basically some ready to use stuff instead of writing front-end from scratch.
@@ -26,6 +26,5 @@ Collection of free and premium resources of html templates and themes. Basically
 11. Theme Forest https://themeforest.net/
 12. Template Monster
 13. Pixelarity https://pixelarity.com/
-14. 
 
 \- Ayush 🙂

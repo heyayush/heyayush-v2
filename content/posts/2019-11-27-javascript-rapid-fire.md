@@ -2,11 +2,11 @@
 template: post
 title: Javascript Rapid Fire
 slug: javascript-rapid-fire
-draft: true
+draft: false
 date: '2019-11-27T12:00:00.000Z'
 description: >
   Here is a collection of some core javascript question answers which can be used a rapid fire round in an interview...
-category: CSS-Tricks
+category: Programming
 tags:
   - Javascript
 ---
@@ -96,3 +96,5 @@ console.log(one, two, three)
 With the || operator, we can return the first truthy operand. If all values are falsy, the last operand gets returned.
 
 Primitive data types interact by value and non-primitive data types such as objects interact by reference.
+
+\- Ayush 🙂

@@ -1,8 +1,8 @@
 ---
 template: post
 title: Javascript Useful Snippets
-slug: js-useful-snippets
-draft: true
+slug: javascript-useful-snippets
+draft: false
 date: '2019-12-07T12:00:00.000Z'
 description: >
   Here is a collection of some useful JavaScript snippets.
@@ -397,3 +397,5 @@ function isNumber(n) {
 isNumber('1'); // false
 isNumber(1); // true
 ```
+
+\- Ayush 🙂

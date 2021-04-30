@@ -2,7 +2,7 @@
 template: post
 title: Eleventy for Static Sites
 slug: eleventy-for-static-sites
-draft: true
+draft: false
 date: '2021-03-12T12:00:00.000Z'
 description: >
   All we need to know about Eleventy and getting started
@@ -13,7 +13,7 @@ tags:
 
 Benefits of static site generation along with CMS driven content.
 
-Getting started
+## Getting started
 Create a new project folder and do `npm init` and `git init`
 Install dev dependency of 11ty `npm i @11ty/eleventy --save-dev`
 Copy the html or any template available.
@@ -37,7 +37,7 @@ Find theme/template and then run 11ty over them
 config file where we can specify what static assets we want to copy from src to publish dir
 Utility is that we can use template available in any format and use 11ty to compile a static site from it.
 
-Template Languages
+## Template Languages
 html, markdown, javascript, liquid, nunjucks .njk, handlebars .hbs, mustache .mustache, EJS, Haml, Pug
 
 Overriding template engines
@@ -49,7 +49,5 @@ templateEngineOverride: njk
 As far as data transformation from a CMS or any source to template is concerned we can keep on using gatsby as it offers the graphql api with data sources. So 11ty is useful in case if ready to use good ui templates are available in liquid or njk or handlebars or any other format.
 
 Plugins are availbale if you want to do some build time transformation of say images.
-
-
 
 \- Ayush 🙂
