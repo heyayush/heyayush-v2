@@ -9,4 +9,4 @@ gatsby-starter-lumen.iml
 
 .env.*
 
-.vscode/
+templates/

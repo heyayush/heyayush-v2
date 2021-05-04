@@ -20,11 +20,11 @@ tags:
 - ts-loader use to convert typescript to javascript and then babel-loader for converting that javascript to target browsers friendly javascript as per our requirement.
 - Better tree-shaking resulting in smaller bundle size.
 
-## So what are we doing?
+## What are we doing?
 1. We will convert typescript directly to target environment javascript bundle using babel-loader and its supporting presets and plugins.
 2. For the missing type-checking we will use eslint and tsc with --noEmit option, so that it does type-checking but do not output any files because babel is already doing that.
 
-## Alright, so how to do it?
+## Alright, how to do it?
 1. `npm install -D babel-loader @babel/core @babel/preset-react @babel/preset-typescript`
 2. Change your webpack configuration.
 ```js
@@ -60,10 +60,12 @@ module.exports = {
   ...
 }
 ```
+
 3. For detailed babel configuration and various presets and plugins you may add a .babelrc file.
 4. For specifying target environments you want your javascript to be transpiled for, you can add @babel/preset-env.
 
 And that's it.
+
 For the missing type-checking we can add a npm script in package.json say `"check-types": "tsc --project src/tsconfig.json --noEmit`.
 
 Hope you enjoyed reading this. Feel free to drop feedback in comments.
