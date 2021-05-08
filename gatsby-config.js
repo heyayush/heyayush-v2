@@ -10,11 +10,10 @@ module.exports = {
   siteMetadata: { ...meta },
   plugins: [
     {
-      resolve: `gatsby-plugin-typescript`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        isTSX: true, // defaults to false
-        jsxPragma: `React`, // defaults to "React"
-        allExtensions: true, // defaults to false
+        path: `${__dirname}/static/media`,
+        name: 'media',
       },
     },
     {
@@ -22,13 +21,6 @@ module.exports = {
       options: {
         path: `${__dirname}/static`,
         name: 'assets',
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/static/media`,
-        name: 'media',
       },
     },
     {
@@ -43,6 +35,14 @@ module.exports = {
       options: {
         name: 'posts',
         path: `${__dirname}/content/posts`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-typescript`,
+      options: {
+        isTSX: true, // defaults to false
+        jsxPragma: `React`, // defaults to "React"
+        allExtensions: true, // defaults to false
       },
     },
     'gatsby-plugin-netlify-cms',
@@ -96,7 +96,12 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          'gatsby-remark-relative-images',
+          {
+            resolve: `gatsby-remark-relative-images`,
+            options: {
+              name: 'media',
+            },
+          },
           {
             resolve: 'gatsby-remark-katex',
             options: {
