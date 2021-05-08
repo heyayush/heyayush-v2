@@ -31,7 +31,7 @@ $breakpoint-large: '1080px';
     medium-only: '(min-width: #{$breakpoint-small}) and (max-width: #{$breakpoint-medium})',
     large-only: '(min-width: #{$breakpoint-medium}) and (max-width: #{$breakpoint-large})',
     medium-up: '(min-width: #{$breakpoint-small})',
-    large-up: '(min-width: #{$breakpoint-medium})'
+    large-up: '(min-width: #{$breakpoint-medium})',
   );
 
   @if map-has-key($queries, $query) {
@@ -60,6 +60,7 @@ $breakpoint-large: '1080px';
   font-size: $text-medium;
 }
 ```
+
 That's all!
 Simple and elegant way of writing media queries and making sure our pages are responsive.
 

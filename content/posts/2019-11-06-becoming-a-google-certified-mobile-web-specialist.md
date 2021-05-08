@@ -67,29 +67,29 @@ mediaElem.load();
 
 ```js
 fetch(url)
-  .then(r => r.json())
-  .then(data => console.log(data))
-  .catch(e => console.log('Booo'));
+  .then((r) => r.json())
+  .then((data) => console.log(data))
+  .catch((e) => console.log('Booo'))
 ```
 
 ```js
-(async () => {
+;(async () => {
   try {
-    const response = await fetch(url);
-    const data = await response.json();
-    console.log(data);
+    const response = await fetch(url)
+    const data = await response.json()
+    console.log(data)
   } catch (e) {
-    console.log('Booo');
+    console.log('Booo')
   }
-})();
+})()
 ```
 
 2. No CORS mode
 
 ```js
 fetch('//google.com', {
-  mode: 'no-cors'
-}).then(response => console.log(response.type));
+  mode: 'no-cors',
+}).then((response) => console.log(response.type))
 ```
 
 3. Response.body is a readable stream which can be read by these readers. These are true stream readers which drains the stream. Hence response.clone() is used to avoid draining the original stream.
@@ -101,21 +101,23 @@ fetch('//google.com', {
    5. text()
 
 Simple `POST` request is as follows
+
 ```js
-fetch("https://jsonplaceholder.typicode.com/posts", {
-  method: "POST",
+fetch('https://jsonplaceholder.typicode.com/posts', {
+  method: 'POST',
   body: JSON.stringify({
-    title: "Title of post",
-    body: "Post Body"
-  })
+    title: 'Title of post',
+    body: 'Post Body',
+  }),
 })
-  .then(res => {
-    if (!response.ok) throw Error(response.statusText);
-    return response.json();
+  .then((res) => {
+    if (!response.ok) throw Error(response.statusText)
+    return response.json()
   })
-  .then(data => console.log(data))
-  .catch(error => console.log(error));
+  .then((data) => console.log(data))
+  .catch((error) => console.log(error))
 ```
+
 4. Adding Credentials to our request.
    - `credentials: 'include'` will always add credentials even if it is a cross origin request.
    - `credentials: 'same-origin'` will add credentials only if it is same origin.
@@ -123,38 +125,38 @@ fetch("https://jsonplaceholder.typicode.com/posts", {
 
 ```js
 fetch('https://example.com', {
-  credentials: 'include'
-});
+  credentials: 'include',
+})
 ```
 
 5. Uploading single file.
 
 ```js
-const formData = new FormData();
-const fileField = document.querySelector("input[type='file']");
-formData.append('avatar', fileField.files[0]);
+const formData = new FormData()
+const fileField = document.querySelector("input[type='file']")
+formData.append('avatar', fileField.files[0])
 
 fetch('https://example.com/profile/avatar', {
   method: 'PUT',
-  body: formData
-}).then(response => response.json());
+  body: formData,
+}).then((response) => response.json())
 ```
 
 6. Uploading multiple files
 
 ```js
-const formData = new FormData();
-const photos = document.querySelector("input[type='file'][multiple]");
+const formData = new FormData()
+const photos = document.querySelector("input[type='file'][multiple]")
 
-formData.append('title', 'My Vegas Vacation');
+formData.append('title', 'My Vegas Vacation')
 for (var i = 0; i < photos.files.length; i++) {
-  formData.append('photos', photos.files[i]);
+  formData.append('photos', photos.files[i])
 }
 
 fetch('https://example.com/posts', {
   method: 'POST',
-  body: formData
-}).then(response => response.json());
+  body: formData,
+}).then((response) => response.json())
 ```
 
 ## Accessibility
@@ -211,36 +213,36 @@ Skip link should always be the first item on the page.
 
 ```js
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
+  window.addEventListener('load', function () {
     navigator.serviceWorker.register('/sw.js').then(
-      function(registration) {
+      function (registration) {
         // Registration was successful
-        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        console.log('ServiceWorker registration successful with scope: ', registration.scope)
       },
-      function(err) {
+      function (err) {
         // registration failed :(
-        console.log('ServiceWorker registration failed: ', err);
+        console.log('ServiceWorker registration failed: ', err)
       }
-    );
-  });
+    )
+  })
 }
 ```
 
 ##### Install a service worker
 
 ```js
-var CACHE_NAME = 'my-site-cache-v1';
-var urlsToCache = ['/', '/styles/main.css', '/script/main.js'];
+var CACHE_NAME = 'my-site-cache-v1'
+var urlsToCache = ['/', '/styles/main.css', '/script/main.js']
 
-self.addEventListener('install', function(event) {
+self.addEventListener('install', function (event) {
   // Perform install steps
   event.waitUntil(
-    caches.open(CACHE_NAME).then(function(cache) {
-      console.log('Opened cache');
-      return cache.addAll(urlsToCache);
+    caches.open(CACHE_NAME).then(function (cache) {
+      console.log('Opened cache')
+      return cache.addAll(urlsToCache)
     })
-  );
-});
+  )
+})
 ```
 
 - The `event.waitUntil()` method takes a promise and uses it to know how long installation takes, and whether it succeeded or not.
@@ -249,37 +251,37 @@ self.addEventListener('install', function(event) {
 ##### Deleting old caches
 
 ```js
-self.addEventListener('activate', event => {
-  const cacheKeeplist = ['v2'];
+self.addEventListener('activate', (event) => {
+  const cacheKeeplist = ['v2']
 
   event.waitUntil(
-    caches.keys().then(keyList => {
+    caches.keys().then((keyList) => {
       return Promise.all(
-        keyList.map(key => {
+        keyList.map((key) => {
           if (cacheKeeplist.indexOf(key) === -1) {
-            return caches.delete(key);
+            return caches.delete(key)
           }
         })
-      );
+      )
     })
-  );
-});
+  )
+})
 ```
 
 ##### Cache and return requests
 
 ```js
-self.addEventListener('fetch', function(event) {
+self.addEventListener('fetch', function (event) {
   event.respondWith(
-    caches.match(event.request).then(function(response) {
+    caches.match(event.request).then(function (response) {
       // Cache hit - return response
       if (response) {
-        return response;
+        return response
       }
-      return fetch(event.request);
+      return fetch(event.request)
     })
-  );
-});
+  )
+})
 ```
 
 - `response.clone()` Cloning the response is necessary because request and response streams can only be read once.
@@ -320,24 +322,24 @@ window.addEventListener('beforeinstallprompt', (e) => {
 
 ```js
 // Show the prompt
-deferredPrompt.prompt();
+deferredPrompt.prompt()
 // Wait for the user to respond to the prompt
-deferredPrompt.userChoice.then(choiceResult => {
+deferredPrompt.userChoice.then((choiceResult) => {
   if (choiceResult.outcome === 'accepted') {
-    console.log('User accepted the A2HS prompt');
+    console.log('User accepted the A2HS prompt')
   } else {
-    console.log('User dismissed the A2HS prompt');
+    console.log('User dismissed the A2HS prompt')
   }
-  deferredPrompt = null;
-});
+  deferredPrompt = null
+})
 ```
 
 - To determine if pwa was successfully installed
 
 ```js
-window.addEventListener('appinstalled', evt => {
-  console.log('a2hs installed');
-});
+window.addEventListener('appinstalled', (evt) => {
+  console.log('a2hs installed')
+})
 ```
 
 - Use of `display-mode:standalone` media query to detect if app is launched from home screen.
@@ -370,23 +372,23 @@ window.addEventListener('appinstalled', evt => {
 ```js
 // main.js
 if (window.Worker) {
-  const myWorker = new Worker('worker.js');
-  myWorker.postMessage([first.value, second.value]);
-  myWorker.onmessage = function(e) {
-    result.textContent = e.data;
-    console.log('Message received from worker');
-  };
+  const myWorker = new Worker('worker.js')
+  myWorker.postMessage([first.value, second.value])
+  myWorker.onmessage = function (e) {
+    result.textContent = e.data
+    console.log('Message received from worker')
+  }
 }
 ```
 
 ```js
 // worker.js
-onmessage = function(e) {
-  console.log('Message received from main script');
-  const workerResult = 'Result: ' + e.data[0] * e.data[1];
-  console.log('Posting message back to main script');
-  postMessage(workerResult);
-};
+onmessage = function (e) {
+  console.log('Message received from main script')
+  const workerResult = 'Result: ' + e.data[0] * e.data[1]
+  console.log('Posting message back to main script')
+  postMessage(workerResult)
+}
 ```
 
 ### Resource Prioritization
@@ -501,56 +503,56 @@ Good for displaying high resolution images on high resolution displays
 #### Example of serving font of cache if available else fetching from network and adding to cache
 
 ```js
-const CACHE_VERSION = 1;
+const CACHE_VERSION = 1
 // Shorthand identifier mapped to specific versioned cache.
 const CURRENT_CACHES = {
-  font: 'font-cache-v' + CACHE_VERSION
-};
+  font: 'font-cache-v' + CACHE_VERSION,
+}
 
-self.addEventListener('activate', function(event) {
-  const expectedCacheNames = Object.values(CURRENT_CACHES);
+self.addEventListener('activate', function (event) {
+  const expectedCacheNames = Object.values(CURRENT_CACHES)
   // Active worker won't be treated as activated until promise
   // resolves successfully.
   event.waitUntil(
-    caches.keys().then(function(cacheNames) {
+    caches.keys().then(function (cacheNames) {
       return Promise.all(
-        cacheNames.map(function(cacheName) {
+        cacheNames.map(function (cacheName) {
           if (!expectedCacheNames.includes(cacheName)) {
-            console.log('Deleting out of date cache:', cacheName);
-            return caches.delete(cacheName);
+            console.log('Deleting out of date cache:', cacheName)
+            return caches.delete(cacheName)
           }
         })
-      );
+      )
     })
-  );
-});
+  )
+})
 
-self.addEventListener('fetch', function(event) {
-  console.log('Handling fetch event for', event.request.url);
+self.addEventListener('fetch', function (event) {
+  console.log('Handling fetch event for', event.request.url)
   event.respondWith(
     // Opens Cache objects that start with 'font'.
-    caches.open(CURRENT_CACHES['font']).then(function(cache) {
+    caches.open(CURRENT_CACHES['font']).then(function (cache) {
       return cache
         .match(event.request)
-        .then(function(response) {
+        .then(function (response) {
           if (response) {
-            console.log('Found response in cache:', response);
-            return response;
+            console.log('Found response in cache:', response)
+            return response
           }
-          console.log('Fetching request from the network');
-          return fetch(event.request).then(function(networkResponse) {
-            cache.put(event.request, networkResponse.clone());
-            return networkResponse;
-          });
+          console.log('Fetching request from the network')
+          return fetch(event.request).then(function (networkResponse) {
+            cache.put(event.request, networkResponse.clone())
+            return networkResponse
+          })
         })
-        .catch(function(error) {
+        .catch(function (error) {
           // Handles exceptions that arise from match() or fetch().
-          console.error('Error in fetch handler:', error);
-          throw error;
-        });
+          console.error('Error in fetch handler:', error)
+          throw error
+        })
     })
-  );
-});
+  )
+})
 ```
 
 ### Web Storage
@@ -672,9 +674,9 @@ url, tel, email, search, number, range, datetime-local, date, time, week, month,
 <label for="frmFavChocolate">Favorite Type of Chocolate</label>
 <input type="text" name="fav-choc" id="frmFavChocolate" list="chocType" />
 <datalist id="chocType">
-  <option value="white"> </option>
-  <option value="milk"> </option>
-  <option value="dark"> </option>
+  <option value="white"></option>
+  <option value="milk"></option>
+  <option value="dark"></option>
 </datalist>
 ```
 
@@ -704,22 +706,27 @@ url, tel, email, search, number, range, datetime-local, date, time, week, month,
 - Leverage the browser's built-in validation attributes like pattern, required, min, max.
 
 #### The pattern attribute
+
 ```html
-<input type="text" pattern="^\d{5,6}(?:[-\s]\d{4})?$" ...>
+<input type="text" pattern="^\d{5,6}(?:[-\s]\d{4})?$" ... />
 ```
 
 #### min, max, step, minlength, maxlength
+
 ```html
-<input type="number" min="1" max="13" step="0.5" maxlength="12" minlength="8">
+<input type="number" min="1" max="13" step="0.5" maxlength="12" minlength="8" />
 ```
 
 #### The novalidate attribute
+
 If we want to allow user to submit the invalid form then use novalidate attribute
+
 ```html
 <form role="form" novalidate>...</form>
 ```
 
 #### Constraint validation api
+
 This allows us to do things like set a custom error, check whether an element is valid, and determine the reason that an element is invalid.
 
 Basically, the idea is to trigger JavaScript on some form field event (like onchange) to calculate whether the constraint is violated, and then to use the method `field.setCustomValidity()` to set the result of the validation: an empty string means the constraint is satisfied, and any other string means there is an error and this string is the error message to display to the user.
@@ -736,22 +743,24 @@ Basically, the idea is to trigger JavaScript on some form field event (like onch
 
 ```js
 function checkFileSize() {
-  var FS = document.getElementById("FS");
-  var files = FS.files;
+  var FS = document.getElementById('FS')
+  var files = FS.files
 
   // If there is (at least) one file selected
   if (files.length > 0) {
-     if (files[0].size > 75 * 1024) { // Check the constraint
-       FS.setCustomValidity("The selected file must not be larger than 75 kB");
-       return;
-     }
+    if (files[0].size > 75 * 1024) {
+      // Check the constraint
+      FS.setCustomValidity('The selected file must not be larger than 75 kB')
+      return
+    }
   }
   // No custom constraint violation
-  FS.setCustomValidity("");
+  FS.setCustomValidity('')
 }
 ```
 
 ##### Real time feedback with pseudo classes
+
 | class         | Description                                                 |
 | ------------- | ----------------------------------------------------------- |
 | :valid        | when the value meets all of the validation requirements.    |
@@ -763,27 +772,27 @@ function checkFileSize() {
 
 ```css
 input.dirty:not(:focus):invalid {
-  background-color: #FFD9D9;
+  background-color: #ffd9d9;
 }
 input.dirty:not(:focus):valid {
-  background-color: #D9FFD9;
-}
-```
-```js
-const inputs = document.getElementsByTagName("input");
-const inputs_len = inputs.length;
-const addDirtyClass = (evt) => {
-  sampleCompleted("Forms-order-dirty");
-  evt.srcElement.classList.toggle("dirty", true);
-};
-for (let i = 0; i < inputs_len; i++) {
-  const input = inputs[i];
-  input.addEventListener("blur", addDirtyClass);
-  input.addEventListener("invalid", addDirtyClass);
-  input.addEventListener("valid", addDirtyClass);
+  background-color: #d9ffd9;
 }
 ```
 
+```js
+const inputs = document.getElementsByTagName('input')
+const inputs_len = inputs.length
+const addDirtyClass = (evt) => {
+  sampleCompleted('Forms-order-dirty')
+  evt.srcElement.classList.toggle('dirty', true)
+}
+for (let i = 0; i < inputs_len; i++) {
+  const input = inputs[i]
+  input.addEventListener('blur', addDirtyClass)
+  input.addEventListener('invalid', addDirtyClass)
+  input.addEventListener('valid', addDirtyClass)
+}
+```
 
 Thanks for following along this huge summary.  
 I hope you learned some new concepts or taking away some points to investigate more on.  

@@ -15,6 +15,7 @@ tags:
 
 1. Create a new spreadsheet or clone from a similar existing one and share it same people so that it is shared with the google service account which has the access to edit sheet.
 2. Add .env files with all these env variables and also on netlify build env variables.
+
 ```js
   SPREADSHEET_ID=****
   CONTACT_FORM_SHEETS_API=****
@@ -22,10 +23,10 @@ tags:
   CONTACT_FROM_EMAIL_ADDRESS=****
   CONTACT_TO_EMAIL_ADDRESS=****
 ```
+
 3. Add site domain in the allowed origins on google-sheets-service project and email-service project.
 4. Push the changes so that automatically new functions are deployed.
 5. Get the front-end work done.
-
 
 That's all folks. I hope it was helpful.
 

@@ -27,6 +27,7 @@ https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl
 Restart your machine.
 
 ## 2. Install a Linux Distribution
+
 Open Microsoft Store App, search for a disto and install it.
 I went with Ubuntu 20.04
 
@@ -38,6 +39,7 @@ sudo apt-get upgrade
 sudo apt-get install zsh
 zsh
 ```
+
 Proceed with the basic configuration of zsh
 If you have an existing .zshrc .profile .bashrc which you want to use then go to c:/Users/{name}/AppData/Local/Packages/{disto name}/LocalState/rootfs/home/{name} and then update those files and restart your terminal.
 
@@ -49,6 +51,7 @@ I usually set all the default starting script in the .profile file and then sour
 eval $(ssh-agent)
 ssh-add ~/.ssh/githu
 ```
+
 Make sure that only owner has the read permission to this file. set chmod 400 to the private public key files
 
 ## 4. Install Oh My Zsh!
@@ -73,6 +76,7 @@ So replaced this with
 `"terminal.integrated.shell.windows": "C:\\Users\\ayush.sharma\\AppData\\Local\\Microsoft\\WindowsApps\\ubuntu.exe",`
 
 ## 6. Install Node
+
 Node for windows is fine but you will need to install it for your disto as well.
 
 ```sh
@@ -85,6 +89,7 @@ export NVM_DIR="$HOME/.nvm" && (
 ) && \. "$NVM_DIR/nvm.sh"
 
 ```
+
 Need to add this in the .profile or .zshrc wherever you are keeping the default startup commands
 
 ```sh

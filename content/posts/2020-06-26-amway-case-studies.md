@@ -19,6 +19,7 @@ Planning a successful future - John Sestina
 - You cannot succeed untill you help others succeed.
 
 What is an Ideal business?
+
 - Sells to the world rather than one place. Opportunity to expand globally. Huge market.
 - Product with inelastic demand.
 - Low labour requirements.
@@ -50,6 +51,7 @@ Key To Financial Freedom - Kulin Desai
 - If you don't have money then you leverage your time to get money. Once you have money then instead of time you can use that money as a leverage to get more money.
 
 Qualities of ambitious people
+
 - You know your needs. Don't be satisfied with what you have.
 - Willing to listen to somebody who can help them achieve what they what to achieve.
 - Willing to make some change. Doing the same thing will not bring different results.
@@ -79,7 +81,6 @@ Why amway business? - Sugeet and Kaajal Ajmani
 - Problems will be there and we need to overcome those problems.
 - Make amway business the core of your daily routine, that's the only way to build your business.
 
-
 ---
 
 Network Marketing Business - Kaise chunein, samjhein aur bada banayein? - Ankur & Taru Gupta
@@ -96,6 +97,7 @@ Network Marketing Business - Kaise chunein, samjhein aur bada banayein? - Ankur 
 - Network distribution model finally gives cash in hand and not on paper.
 
 Create a winning team by
+
 1. Choosing the right people.
 2. Train/equip those people.
 3. Practice and hardwork to give best performance.
@@ -113,15 +115,18 @@ Britt worldwide teaches how to do this business because the mentors cannot be th
 Clear indication how much money you can make.
 
 Turning Points In Life - Sumeet & Tanya Bahadur
+
 - Tanya's challenges in her life.
 
 Supplements
+
 - In an ideal world we do not need supplements but we are not in an ideal world.
 - Current lifestyle of people is leading to health problems and supplements are needed to boost immunity.
 - Better to take these supplements as preventive strategies rather than cure.
 - Nutritional supplements are way forward because the vegetables, fruits we are getting are no longer in the pure form and high nutrition value.
- 
+
 Chapter 1 - What your doctor doesn't know
+
 - Spending on medicines has increased.
 - Health conditions are declining in general.
 - Better to maintain health rather than trying to regain it once after it has been lost.
@@ -138,8 +143,8 @@ Chapter 1 - What your doctor doesn't know
 - Excessive exercise is also not good, it leads to creation of more free-radicals.
 - Free-radicals vs Anti-oxidants.
 - Air pollution, water polution, ultraviolet sunlight, cigerette smoke, all of these are harmful as they increase oxidative stress.
- 
- ### Nutrilite
+
+### Nutrilite
 
 - Process is monitored closely from beggining to end to ensure high quality.
 - Values of efficacy, safety, purity and assurance

@@ -16,11 +16,12 @@ tags:
 Code Review is an extremely important step in developing quality applications. Here's the checklist of things to keep in mind while doing self code review and peer reviews of front-end code.
 
 Curently few points are Angular specific so going forward I will update this blog by splitting it into 3 sections-
+
 1. Common front-end checklist
 2. Angular specific
 3. React specifics
 
-In  the meantime here's the list of good practices.
+In the meantime here's the list of good practices.
 
 1. Does the folder structure, file, functions and variables names makes sense.
 2. Use of small pure functions and small isolated reusable components.

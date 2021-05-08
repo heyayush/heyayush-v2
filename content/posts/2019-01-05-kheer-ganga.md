@@ -15,8 +15,10 @@ tags:
   - Travel
   - Trekking
   - Himachal
+socialImage: '/media/image-3.jpg'
 ---
->Where God meditates
+
+> Where God meditates
 
 Located in the Parvati Valley, this is a mystical place which we should not just visit but stay there for some days.
 

@@ -7,6 +7,7 @@ My personal website which provides details about me, my social contacts and my b
 Feel free to provide feedback, suggest enhancements, report issues, or contribute with some pull requests.
 
 ### Features-
+
 1. Ready to use Landing page and blogging platform.
 2. Admin interface of netlify cms to take control over all published content.
 3. Simple and minimal UI to provide more focus on content.

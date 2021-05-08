@@ -14,6 +14,7 @@ tags:
   - Trekking
   - Himachal
 ---
+
 > Reaching summit doesn't seem feasible, but let's see how far we can make it...
 
 It's a long weekend due to holi festival and pleasing wheather in mid of march is tempting to go for another trip to the mountains before summer arrives.
@@ -30,10 +31,12 @@ Churdhar trek is about 15km which can be divided into 3 parts of 5 kms.
 As soon as the middle part of forest area ends. We get to see outstanding views.
 
 ### Getting There
+
 Nohradhar is the base camp for Churdhar trek. It's 5-6 hours drive from Chandigarh.  
 Road was in average condition. Traffic was much less then expectation. Beautiful views of the valley area makes it pleasant driving and I prefer taking many breaks along the way to see those views.
 
 ### Planning
+
 We left around 13:00 from Chandigarh. Our target was to reach Nohradhar by the evening, stay there for the night and then start our trek in the morning.
 
 Rahul had been to Churdhar before and based on his experiences our plan was to reach summit by late afternoon and then stay there in one of cottages near the temple.

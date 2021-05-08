@@ -12,7 +12,7 @@ tags:
   - Javascript
 ---
 
->It's quite common feature these days to have multiple user roles and based upon the user role we grant him access to different features of the application. Let's see how to create a similar feature in a React + MobX application along with react-router
+> It's quite common feature these days to have multiple user roles and based upon the user role we grant him access to different features of the application. Let's see how to create a similar feature in a React + MobX application along with react-router
 
 Packages used are-
 
@@ -31,7 +31,7 @@ High level steps to follow-
 5. Use react-router and sync it's history with mobx router store using mobx-react-router
 6. Setup ProtectedRoutes component which verifies authentication from auth store.
 
-```javascript
+````javascript
 export const allPages = {
   home: {
     component: lazy(() => import(/* webpackChunkName: "home" */ '../containers/home')),
@@ -62,21 +62,22 @@ const roleAccess = {
     page: [home],
   },
 }
-```
+````
 
 ```javascript
 class RouterStore extends MobxRouterStore {
   @observable pages = []
-  hasAccess = path => this.pages.includes(path)
+  hasAccess = (path) => this.pages.includes(path)
   @action
-  updateAccess = user => {
+  updateAccess = (user) => {
     const role = (user.role || lastRole).toLowerCase()
     this.pages = roleAccess[role].page
   }
 }
 ```
+
 ```javascript
-const ReactRouter = props => (
+const ReactRouter = (props) => (
   <Router history={syncHistoryWithStore(createBrowserHistory(), router)}>
     <Switch>
       <Route path="/login" component={Login} {...props} />
@@ -104,7 +105,7 @@ const AppRoutes = inject('router')(({ router: { pages } }) => {
 ```javascript
 const NestedRoutes = ({ routes }) =>
   routes.map(({ component: Component, routes: nestedRoutes, switchRoutes, ...rest }) => {
-    const component = props => (
+    const component = (props) => (
       <>
         <Component {...props} {...rest} />
         {nestedRoutes && <NestedRoutes routes={nestedRoutes} />}
@@ -168,7 +169,7 @@ class AuthStore {
   @observable isAuthenticating = false
   @observable token = null
 
-  setAuthToken = token => {
+  setAuthToken = (token) => {
     let tokenParam
     let currentUrl
 
@@ -202,7 +203,7 @@ class AuthStore {
   checkAuthToken = async () => {
     this.isAuthenticating = true
     // eslint-disable-next-line no-console
-    const response = await graphqlClient.query({ query: GET_ME }).catch(err => console.error(err))
+    const response = await graphqlClient.query({ query: GET_ME }).catch((err) => console.error(err))
     this.isAuthenticated = !!response
     if (this.isAuthenticated) {
       router.updateAccess(response.data.me)
@@ -212,4 +213,5 @@ class AuthStore {
   }
 }
 ```
+
 \- Ayush 🙂

@@ -1,59 +1,79 @@
-'use strict';
+/* eslint-disable */
+'use strict'
 
-const activeEnv = process.env.ACTIVE_ENV || process.env.NODE_ENV || 'development';
+const activeEnv = process.env.ACTIVE_ENV || process.env.NODE_ENV || 'development'
+
 require('dotenv').config({
-  path: `.env.${activeEnv}`
-});
+  path: `.env.${activeEnv}`,
+})
 
 module.exports = {
-  url: 'https://heyayush.com/',
-  title: 'Ayush Sharma | Web developer freelancer',
-  subtitle: `Portfolio and Personal blog of Ayush Sharma | Web developer,
+  siteMetadata: {
+    url: 'https://heyayush.com',
+    title: 'Ayush Sharma | Web developer freelancer',
+    description: 'A minimal, lightweight, and mobile-first starter for creating blogs using Gatsby.',
+    subtitle: `Portfolio and Personal blog of Ayush Sharma | Web developer,
     front-end specialist, freelancer, web consultant, travel blogger`,
-  categoryMeta: 'articles written by the author Ayush Sharma',
-  copyright: '© All rights reserved.',
-  disqusShortname: 'heyayush',
-  postsPerPage: 6,
-  googleAnalyticsId: process.env.GOOGLE_ANALYTICS,
-  menu: [
-    {
-      label: 'Articles by category',
-      path: '/categories'
+    copyright: '© All rights reserved.',
+    author: 'heyAyush',
+    disqusShortname: 'heyayush',
+    postsPerPage: 6,
+    useKatex: false,
+    menu: [
+      {
+        label: 'Articles by categories',
+        path: '/categories',
+      },
+      {
+        label: 'Frontend',
+        path: '/category/front-end',
+      },
+      {
+        label: 'Travel',
+        path: '/category/travel',
+      },
+      {
+        label: 'Contact me',
+        path: '/contact',
+      },
+    ],
+    author: {
+      name: 'Ayush Sharma',
+      photo: '/photo.jpg',
+      bio: 'Professional, Web Developer, Blogger, Gamer, Traveler Batman and Linkin Park fan',
+      contacts: {
+        email: 'hey.ayush.sharma@gmail.com',
+        twitter: 'heyayush',
+        github: 'heyayush',
+        rss: '/rss.xml',
+        linkedin: 'hey-ayush',
+        instagram: 'hey.ayush.sharma',
+        facebook: 'ayush.sharma.5015',
+        codepen: 'heyayush',
+        stackoverflow: '4337809/ayush-sharma',
+        telegram: '',
+        youtube: '',
+        soundcloud: '',
+        medium: '',
+      },
     },
-    {
-      label: 'Front-end/',
-      path: '/category/front-end'
-    },
-    {
-      label: 'Travel/',
-      path: '/category/travel'
-    },
-    {
-      label: 'About me',
-      path: '/about'
-    },
-    {
-      label: 'Contact me',
-      path: '/contact'
-    }
-  ],
-  author: {
-    name: 'Ayush Sharma',
-    photo: '/photo.jpg',
-    bio: 'Professional Web Developer, Blogger, Traveler, Gamer, Batman and Linkin Park fan',
-    contacts: {
-      email: 'hey.ayush.sharma@gmail.com',
-      twitter: 'heyayush',
-      github: 'heyayush',
-      rss: '/rss.xml',
-      linkedin: 'hey-ayush',
-      instagram: 'hey.ayush.sharma',
-      facebook: 'ayush.sharma.5015',
-      codepen: 'heyayush',
-      stackoverflow: '4337809/ayush-sharma'
-    }
+    siteUrl: 'https://example.com',
+    spreadsheetId: process.env.SPREADSHEET_ID,
+    contactFormSheetsAPI: process.env.CONTACT_FORM_SHEETS_API,
+    contactFormEmailAPI: process.env.CONTACT_FORM_EMAIL_API,
+    contactToEmailAddress: process.env.CONTACT_TO_EMAIL_ADDRESS,
+    contactFromEmailAddress: process.env.CONTACT_FROM_EMAIL_ADDRESS,
   },
-  api: {
-    emailSub: 'https://w11znw8r96.execute-api.ap-south-1.amazonaws.com/prod/hey-ayush'
-  }
-};
+  siteManifest: {
+    name: 'template-lumen',
+    short_name: 'template-lumen',
+    description: 'template-lumen',
+    start_url: '/',
+    background_color: '#372428',
+    theme_color: '#372428',
+    display: 'minimal-ui',
+    lang: 'en',
+    icon: 'static/logo.svg',
+  },
+  googleAnalyticsId: process.env.GOOGLE_ANALYTICS,
+}

@@ -32,6 +32,7 @@ example.com/app3/ -> app3
 For subdomains approach it is simple. Go to your DNS configuration and keep on adding CNAME for each of your app
 
 For routing approach
+
 1. I am creating a monolith repo
 2. Each app is cloned into a folder of its own.
 3. Installing node_modules for each of them. This is tricky as different apps will depend on different node versions.

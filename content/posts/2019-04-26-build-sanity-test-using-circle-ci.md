@@ -20,6 +20,7 @@ CircleCI fits my use case as I have a small project and I want to quickly get st
 TravisCI looks good when we need to run on Linux and Mac OS X at same time and require support of various programming languages. It's free for open source projects.
 
 ### Quick summary of steps to follow
+
 1. SignUp/Login to your CircleCI account.
 2. Add new project and link it with your git repo (github integration was smooth).
 3. Add a `.circleci` folder in your project and place a `config.yml` file in it.
@@ -88,16 +89,16 @@ jobs:
           command: yarn test
 
 workflows:
-    version: 2
-    sanity_test:
-      jobs:
-        - install
-        - lint:
-            requires:
-              - install
-        - test:
-            requires:
-              - install
+  version: 2
+  sanity_test:
+    jobs:
+      - install
+      - lint:
+          requires:
+            - install
+      - test:
+          requires:
+            - install
 ```
 
 \- Ayush 🙂

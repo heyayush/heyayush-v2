@@ -17,7 +17,7 @@ tags:
 ## Development Setup
 
 1. Identify the common components which can be a part of your library.
-2. Create an angular workspace using `ng new <project-name>  --createApplication=false`.
+2. Create an angular workspace using `ng new <project-name> --createApplication=false`.
 3. `--createApplication=false` flag will provide an angular workspace without any app inside it.
 4. `cd <project-name>`
 5. Create a library inside your angular workspace.

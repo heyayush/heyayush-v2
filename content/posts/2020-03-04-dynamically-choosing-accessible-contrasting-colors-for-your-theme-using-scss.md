@@ -14,9 +14,8 @@ tags:
 
 > Ability to change color theme is a powerful feature and here is an easier way to achieve it while ensuring that accessibility is not compromised and text colors automatically adjusts according to the choosen theme.
 
-
 1. For this implementation, we need to ensure that there is consistency across our UI components.
-For example if the basic theme colors are as follows.
+   For example if the basic theme colors are as follows.
 
 ```scss
 $color-primary: #cde8e7;
@@ -26,18 +25,16 @@ $text-dark: #03525b;
 ```
 
 2. Then we can calculate whether to use `$text-light` or `$text-dark` for `text-primary` and `text-secondary` colors.
-And we can calculate this by using the below formula.
+   And we can calculate this by using the below formula.
 
 ```scss
 @function text-contrast($n, $w, $b) {
   $color-brightness: round((red($n) * 299) + (green($n) * 587) + (blue($n) * 114) / 1000);
   $light-color: round((red(#ffffff) * 299) + (green(#ffffff) * 587) + (blue(#ffffff) * 114) / 1000);
-  
-  @if abs($color-brightness) < ($light-color/2){
-    @return $w;
-  }
 
-  @else {
+  @if abs($color-brightness) < ($light-color/2) {
+    @return $w;
+  } @else {
     @return $b;
   }
 }
@@ -51,7 +48,7 @@ $text-secondary: text-contrast($color-secondary, $text-light, $text-dark);
 ```
 
 4. Next, all we need to ensure is that there is consistency in our components.
-If `background: $primary` then put `color: $text-primary` and similarly for secondary.
+   If `background: $primary` then put `color: $text-primary` and similarly for secondary.
 
 And a good way to do this will be use mixins.
 
@@ -68,7 +65,7 @@ And a good way to do this will be use mixins.
 ```
 
 5. That's all the smart work needed. Feel free to add other required properties as well.
-Now, in our components we can simply include this mixins to ensure consistency.
+   Now, in our components we can simply include this mixins to ensure consistency.
 
 ```scss
 .primary-box {
@@ -87,6 +84,7 @@ Now, in our components we can simply include this mixins to ensure consistency.
 That's all we need to switch between different themes on the fly without losing accessiblity and maintaining proper color-contrasts for easily readable text.
 
 Here's a codepen to play with the code
+
 <div>
   <iframe height="265" style="width: 100%;" scrolling="no" title="Choosing contrasting text colors with scss" src="https://codepen.io/heyayush/embed/dyozEBW?height=265&theme-id=dark&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
     See the Pen <a href='https://codepen.io/heyayush/pen/dyozEBW'>Choosing contrasting text colors with scss</a> by Ayush Sharma

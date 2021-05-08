@@ -67,15 +67,18 @@ WHERE p.age BETWEEN 13 AND 19;
 
 - Fuzzy version of =
 - Allows using String with special characters to do matching.
+
 ```sql
 SELECT p.first_name FROM person p
 WHERE p.first_name LIKE 'A%';
 ```
 
 ### IN operator
+
 - It's a multi-value version of = operator
 - List of potential values.
 - True if any of the values in the list "hit".
+
 ```sql
 SELECT p.first_name FROM person p
 WHERE p.last_name IN ('Sharma', 'Modi');
@@ -132,6 +135,7 @@ SELECT COUNT (p.first_name) FROM person p;
 SELECT COUNT (DISTINCT p.first_name) FROM person p;
 SELECT AVG (p.age) FROM person p;
 ```
+
 ### GROUP BY clause
 
 - Create subsets.
@@ -211,6 +215,7 @@ SELECT p.first_name, e.email_address FROM person p
 LEFT OUTER JOIN email_address e
 ON p.person_id = e.email_address_person_id;
 ```
+
 #### RIGHT OUTER JOIN
 
 - Opposite of LEFT OUTER JOIN
@@ -237,6 +242,7 @@ ON p.person_id = e.email_address_person_id;
 INSERT INTO person (person_id, first_name, last_name)
 VALUES (1, 'Ayush', 'Sharma'), (2, 'Hello', 'World');
 ```
+
 #### Bulk Insert
 
 ```sql
@@ -245,6 +251,7 @@ WHERE pa.person_id > 100;
 ```
 
 ### UPDATE command
+
 ```sql
 UPDATE email_address e SET e.email_address = 'abc@mail.com'
 WHERE e.email_address_id = 5;
@@ -339,7 +346,6 @@ DROP TABLE person
 - INSERT UPDATE DELTE only applies to one table at a time.
 - AND and OR enables us to add multiple expressions in the WHERE clause.
 - ALTER TABLE allows us to change columns and constraints.
-
 
 I hope this was useful. let me know your feedback in the comments below.
 

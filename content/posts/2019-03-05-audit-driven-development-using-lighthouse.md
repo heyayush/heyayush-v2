@@ -26,7 +26,7 @@ Now my blog scores `100/100` in this audit. Yey!!
 
 ![Lighthouse audit report 100% score](/media/audit-driven-development-1.png 'Lighthouse audit report 100/100')
 
-Here’s the [link](https://googlechrome.github.io/lighthouse/viewer/?gist=d7095d1546e1f42209658b2c2201f9e1) to see the audit report in detail 
+Here’s the [link](https://googlechrome.github.io/lighthouse/viewer/?gist=d7095d1546e1f42209658b2c2201f9e1) to see the audit report in detail
 
 **Bonus-** This also helped me bring my website to 3<sup>rd</sup> number in google search if someone searches `"travel blog ayush sharma"`.
 

@@ -27,13 +27,13 @@ getChildContext() {
   }
 }
 ```
+
 Context API made unit testing harder hence the concept of -
 Tree rendering vs Shallow rendering and the use of Enzyme for shallow rendering
 
 Benefits of shallow rendering-
 It is faster to shallow render a component than to fully render it. When a React project contains a large number of components, this performance difference can have a significant impact on the total time taken for unit tests to execute.
 Shallow rendering prevents testing outside the boundaries of the component being tested—a best practice of unit testing.
-
 
 displayName property of React
 
@@ -53,7 +53,7 @@ Avoid async initializations in componentWllMount()
 
 Adding a decorator to a component is similar to passing the component into a function.
 
-Implementing Server side rendering using *ReactDOMServer.renderToString(<App />)*
+Implementing Server side rendering using _ReactDOMServer.renderToString(<App />)_
 
 static getDerivedStateFromProps() lifecycle method is invoked after a component is instantiated as well as before it is re-rendered. It can return an object to update state, or null to indicate that the new props do not require any state updates.
 
@@ -71,7 +71,7 @@ React uses the key attributes of objects in an array to determine how to update 
 
 ```js
 const [counter, setCounter] = useState(0)
-const [notes, setNotes] = useState([]) 
+const [notes, setNotes] = useState([])
 ```
 
 We can combine the two by making the React state be the “single source of truth”. Then the React component that renders a form also controls what happens in that form on subsequent user input.

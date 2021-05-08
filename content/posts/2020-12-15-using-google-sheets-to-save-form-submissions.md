@@ -17,6 +17,7 @@ Data in Google Sheets can be read and written using REST api thus we can store f
 This is a serverless and cost effective solution for simple features such as storing contact form submissions or list of email ids of newsletter subscription.
 
 ## Architecture Explaination
+
 1. **Front-end** which captures the form data and sends it to backend.
 2. **Backend** which is simply a lambda function combined with api gateway which accepts form data coming from front-end and saves it in database.
 3. **Database** which is simply a google sheet that stores the form data as rows.
@@ -48,6 +49,7 @@ exports.handler = async (event, context, callback) => {
   }
 }
 ```
+
 That's all folks. I hope it was helpful.
 
 \- Ayush 🙂

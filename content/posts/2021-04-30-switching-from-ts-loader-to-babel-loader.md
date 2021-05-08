@@ -13,6 +13,7 @@ tags:
 ---
 
 ## Why to switch?
+
 - Babel's ecosystem has evolved for supporting typescript. Now its no more just a javascript transpiler for various targets.
 - Babel is comparitively faster than tsc. Because it ignores types and works as if it is a javascript code.
 - Downside of this is that it ignores type-checking.
@@ -21,12 +22,15 @@ tags:
 - Better tree-shaking resulting in smaller bundle size.
 
 ## What are we doing?
+
 1. We will convert typescript directly to target environment javascript bundle using babel-loader and its supporting presets and plugins.
 2. For the missing type-checking we will use eslint and tsc with --noEmit option, so that it does type-checking but do not output any files because babel is already doing that.
 
 ## Alright, how to do it?
+
 1. `npm install -D babel-loader @babel/core @babel/preset-react @babel/preset-typescript`
 2. Change your webpack configuration.
+
 ```js
 module.exports = {
     module: {

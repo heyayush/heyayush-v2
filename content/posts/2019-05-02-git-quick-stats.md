@@ -17,6 +17,7 @@ There is an interesting tool called [git-quick-stats](https://github.com/arzzen/
 
 It's straightforward to install on linux, mac by following [these steps.](https://github.com/arzzen/git-quick-stats#installation)
 However, on windows it's bit tricky, hence follow these steps-
+
 1. Download git-quick-stats file (either clone [this](https://github.com/arzzen/git-quick-stats.git) repo or just that single file).
 2. Put this file in some path which is added in path environment variable.
 3. Open global .gitconfig file and add this alias

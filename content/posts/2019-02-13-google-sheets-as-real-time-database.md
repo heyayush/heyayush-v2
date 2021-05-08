@@ -12,6 +12,7 @@ tags:
   - Proof of Concept
   - Developer Tools
   - CMS
+socialImage: '/media/image-4.jpg'
 ---
 
 This was just a small POC showcasing the integration of different tools.
@@ -22,7 +23,7 @@ This was just a small POC showcasing the integration of different tools.
 4. Zapier is used to automate deployments whenever google sheet is updated.
 
 Here's the google sheet which has simple table of data
-![Google Sheet's screentshot](/media/google-sheets-as-database-1.png) 
+![Google Sheet's screentshot](/media/google-sheets-as-database-1.png)
 
 And the front-end looks like [this](https://heyayush.github.io/cafe-menu-card/) ![Cafe's Menu Card](/media/google-sheets-as-database-2.png)
 
@@ -31,6 +32,7 @@ Admin can simply update data in his google sheet and it will trigger a new deplo
 After the deployment the new data will reflect on refreshing the web page.
 
 Here is the step by step procedure:
+
 1. Create a new project in GCP.
 2. Enable google sheets api.
 3. Add a service account to this project.

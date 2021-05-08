@@ -11,7 +11,7 @@ tags:
   - Unit testing
 ---
 
->   Summarized notes on various types of tests developer should write and focus on unit testing with jest.
+> Summarized notes on various types of tests developer should write and focus on unit testing with jest.
 
 ## Various types of test and their purpose
 
@@ -58,7 +58,6 @@ tags:
 - Provide the best assurance that the application works.
 
 ## Some important unit testing concepts
-
 
 ### What is Mocking?
 
@@ -108,4 +107,3 @@ tags:
 | From the React team                                                    | From an unrelated, but respected team (AirBnB)                                         |
 | Useful for getting the output HTML of a component for snapshot testing | Useful for testing a variety of interactions including click, keyboard input, and more |
 | Recommended by the Jest Team                                           | Has a variety of open bugs which make using it a challenge                             |
-

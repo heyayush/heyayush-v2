@@ -1,23 +1,26 @@
-import React from 'react';
-import renderer from 'react-test-renderer';
-import { PureComments as Comments } from './Comments';
+// @flow strict
+import React from 'react'
+import renderer from 'react-test-renderer'
+import { useStaticQuery, StaticQuery } from 'gatsby'
+import Comments from './Comments'
+import siteMetadata from '../../../../jest/__fixtures__/site-metadata'
+import type { RenderCallback } from '../../../types'
 
 describe('Comments', () => {
-  it('renders correctly', () => {
-    const props = {
-      data: {
-        site: {
-          siteMetadata: {
-            url: 'http://localhost',
-            disqusShortname: 'test'
-          }
-        }
-      },
-      postTitle: 'test',
-      postSlug: '/test'
-    };
+  beforeEach(() => {
+    StaticQuery.mockImplementationOnce(
+      ({ render }: RenderCallback) => render(siteMetadata),
+      useStaticQuery.mockReturnValue(siteMetadata)
+    )
+  })
 
-    const tree = renderer.create(<Comments {...props} />).toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-});
+  const props = {
+    postTitle: 'test',
+    postSlug: '/test',
+  }
+
+  it('renders correctly', () => {
+    const tree = renderer.create(<Comments {...props} />).toJSON()
+    expect(tree).toMatchSnapshot()
+  })
+})

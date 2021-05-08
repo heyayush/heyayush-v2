@@ -38,6 +38,7 @@ Child process and load balancing
 ### Global Object, Process, and Buffer Object
 
 - Process object is an instance of event emitter.
+
 ```js
 process.env
 process.on('exit', (code) => {
@@ -53,10 +54,11 @@ process.on('uncaughtException', (err) => {
 process.stdin.on('readable', () => {
   const chunk = process.stdin.read()
 })
-process.nextTick(()=>{})
+process.nextTick(() => {})
 ```
 
 #### Buffer
+
 - Buffer to work with binary streams of data.
 - Buffer is a chunk of memory allocated outside V8 and we can put some data in that memory.
 - Once a buffer is allocated it cannot be resized.
@@ -76,9 +78,11 @@ process.nextTick(()=>{})
 - non-blocking I/O resolves the performance issues.
 
 #### Event Loop
+
 - A loop that picks events from the event queue and pushes their callbacks to the call stack.
 
 #### Call Stack
+
 - Simple a list of functions. Stack is first in last out kind of data structure.
 - If there is something in Event Queue then put that from queue to call stack.
 
@@ -91,41 +95,43 @@ process.nextTick(()=>{})
 - Core of Event driven architecture.
 
 ```js
-const EventEmitter = require('events');
-class Logger extends EventEmitter{}
-const logger = new Logger();
-logger.emit('event');
-logger.on('event', listenerFunc);
-logger.on('error', errorHandler); // error handling in event driven architecture
-process.once('uncaughtException', errHandler);
-logger.prependListener('event', someOtherListenerFunc);
+const EventEmitter = require('events')
+class Logger extends EventEmitter {}
+const logger = new Logger()
+logger.emit('event')
+logger.on('event', listenerFunc)
+logger.on('error', errorHandler) // error handling in event driven architecture
+process.once('uncaughtException', errHandler)
+logger.prependListener('event', someOtherListenerFunc)
 ```
 
 ### Basics
 
 #### Creating server
+
 ```js
-const http = require('http');
+const http = require('http')
 
 const server = http.createServer((request, response) => {
-  response.writeHead(200, { 'Content-Type': 'text/plain' });
-  response.end('Hello World');
-});
-server.listen(8000);
+  response.writeHead(200, { 'Content-Type': 'text/plain' })
+  response.end('Hello World')
+})
+server.listen(8000)
 ```
 
 #### Serving a static file
+
 ```js
-const http = require('http');
-const fs = require('fs');
+const http = require('http')
+const fs = require('fs')
 
 const server = http.createServer((request, response) => {
-  response.writeHead(200, { 'Content-Type': 'text/html' });
+  response.writeHead(200, { 'Content-Type': 'text/html' })
   fs.readFile('./index.html', (err, file) => {
-    response.end(file);
-  });
-});
-server.listen(8000);
+    response.end(file)
+  })
+})
+server.listen(8000)
 ```
 
 ### Express.js
@@ -158,30 +164,33 @@ nodemon will watch the files in the directory in which nodemon was started, and 
 `node_modules/.bin/nodemon index.js`
 
 #### Fetching a single resource
+
 ```js
 app.get('/notes/:id', (request, response) => {
-  const id = Number(request.params.id);
-  const note = notes.find(note => note.id === id);
+  const id = Number(request.params.id)
+  const note = notes.find((note) => note.id === id)
 
   if (note) {
-    response.json(note);
+    response.json(note)
   } else {
-    response.status(404).end();
+    response.status(404).end()
   }
-});
+})
 ```
 
 #### Deleting resources
+
 ```js
 app.delete('/notes/:id', (request, response) => {
   const id = Number(request.params.id)
-  notes = notes.filter(note => note.id !== id)
+  notes = notes.filter((note) => note.id !== id)
 
   response.status(204).end()
 })
 ```
 
 ### Receiving data
+
 ```js
 const express = require('express')
 const app = express()
@@ -199,9 +208,7 @@ app.post('/notes', (request, response) => {
 
 ```js
 const generateId = () => {
-  const maxId = notes.length > 0
-    ? Math.max(...notes.map(n => n.id))
-    : 0
+  const maxId = notes.length > 0 ? Math.max(...notes.map((n) => n.id)) : 0
   return maxId + 1
 }
 
@@ -209,8 +216,8 @@ app.post('/notes', (request, response) => {
   const body = request.body
 
   if (!body.content) {
-    return response.status(400).json({ 
-      error: 'content missing' 
+    return response.status(400).json({
+      error: 'content missing',
     })
   }
 
@@ -245,12 +252,14 @@ Middleware are functions that can be used for handling request and response obje
 #### CORS on server
 
 `npm install cors --save`
+
 ```js
 const cors = require('cors')
 app.use(cors())
 ```
 
 #### Using express for static content
+
 ```js
 // To serve the 'build' folder
 app.use(express.static('build'))
@@ -269,7 +278,7 @@ Models are so called constructor functions that create new JavaScript objects ba
 ##### Saving object to db
 
 ```js
-note.save().then(result => {
+note.save().then((result) => {
   console.log('note saved!')
   mongoose.connection.close()
 })

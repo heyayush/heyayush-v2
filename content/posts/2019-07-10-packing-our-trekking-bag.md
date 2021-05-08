@@ -14,7 +14,7 @@ tags:
 
 > I often go for trekking and few days before our trek is an exciting phase when we are getting ourself ready for challenge. Preparation and right equipments helps a lot, so here's my checklist of things to pack...
 
-Packing for trek is an interesting trade-off where neither we like to carry any extra weight which isn't necessary, nor we want to miss on essentials. Good trekking gears helps a lot in comforting us, easing our journey and for our safety and well-being. 
+Packing for trek is an interesting trade-off where neither we like to carry any extra weight which isn't necessary, nor we want to miss on essentials. Good trekking gears helps a lot in comforting us, easing our journey and for our safety and well-being.
 Here is a checklist of things to carry which will help us in this adventure.
 
 ## Things to carry

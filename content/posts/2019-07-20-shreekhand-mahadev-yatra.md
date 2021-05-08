@@ -4,8 +4,7 @@ title: Shreekhand Mahadev Yatra
 slug: shreekhand-mahadev-yatra
 draft: false
 date: '2019-07-20T12:00:00.000Z'
-description:
-  Shreekhand Mahadev is a difficult trek but offers magnificent views of the mountains and glaciers.
+description: Shreekhand Mahadev is a difficult trek but offers magnificent views of the mountains and glaciers.
   Like Amarnath yatra, this is also considered a sacred pilgrim trail and lots of people from nearby places in himachal visit this every year.
   This year, I also took the challenge and went on an adventure trek...
 category: Travel
@@ -33,14 +32,14 @@ However, on the other days you are on your own. Locals do setup camps along the 
 ### Itenary
 
 On an average it's a 5-6 days trek and 4 days if you stretch up a little. It is around 70km round trip from the base Jaon.
-We finished it up in 4 days. With my walking pace I felt it was a bit hectic and better to make it 5 days so that we get more time to enjoy the beauty, click lifetime memorable pics/vids and enjoy the natural beauty.  
+We finished it up in 4 days. With my walking pace I felt it was a bit hectic and better to make it 5 days so that we get more time to enjoy the beauty, click lifetime memorable pics/vids and enjoy the natural beauty.
 
 ##### Our plan was:
 
 Day 1: Up (exhausting) | 16-18 km  
 Day 2: Up (easy going, take rest to prepare for summit) | 6-8 km  
 Day 3: Up-down (summit day) | 24-26 km  
-Day 4: Down | 20-22 km  
+Day 4: Down | 20-22 km
 
 ### Day 1 (Sat): Jaon to Bhim talai
 
@@ -71,19 +70,19 @@ Evening was even more beautiful at the time of sunset. We played ludo, cards for
 
 Monday is considered auspious for visiting Shiva and our plan was perfect to make sure summit climb comes on Monday. Its toughest journey from here to summit and hence we got up around 4:00 and started our journey by 4:30. Soon by 5:00 am sunlight started to take over and now I get to see that the views around me are astonishing. Soon we reached Parvati Bagh but it was mist around so could not see at distant. From here, it was a steep 5km non stop climb on the glacier to reach directly at summit. This was challenging as its slippery on snow and we need to make sure our first step is firm before taking the next step. Mist and sunlight kept on playing hide and seek with us. When the sun was shining brightly then the light getting reflected was too bright that it was getting tough for me to completely open my eyes. I was so excited today that I forgot to wear sunglasses.
 
-Reaching peak was an amazing feeling. There were tears of happiness rolling out of eyes and I was just lost in the moment. The magnificent 75 feet tall Shivlinga was in front of me and I could touch and feel it. This feeling of accomplishment is hard to describe in words. Many people turned around from mid way, couple of hours ago I was also in dual minds if I can make it or not but here I am at the top, chanting Jai Shri Mahakaal at 17,150 feets.  
+Reaching peak was an amazing feeling. There were tears of happiness rolling out of eyes and I was just lost in the moment. The magnificent 75 feet tall Shivlinga was in front of me and I could touch and feel it. This feeling of accomplishment is hard to describe in words. Many people turned around from mid way, couple of hours ago I was also in dual minds if I can make it or not but here I am at the top, chanting Jai Shri Mahakaal at 17,150 feets.
 
 ![Shreekhand Mahadev top](/media/shreekhand-mahadev-1.jpg 'Shreekhand Mahadev top')
 
 It was crowded at the top as it was Monday and there's isn't much space to accomodate many people. I clicked some pics in the mist and once weather was clear I clicked some more.
 I did not get to sit and rest since morning as the rocks were usually occupied and sitting on snow isn't a smart choice, so mostly I was resting by taking support on trekking pole. Finally, I came down a bit to find a plane area to sit and eat some dry fruits.
 
-The job was half done. Going down safely was the next challenge. 
+The job was half done. Going down safely was the next challenge.
 
 I had some paranthe to eat but did not feel like eating. At high altitude all your activities consume much more energy and even simple tasks like eating, tying lace of shoes seems like a big task.
 
 We decided to come down from the Nain-Sarovar side which was long but safer route as compared to the steep glacier route which we used on our way up.
-There were beautiful scenes on the way down and there were also some moments where it was narrow path involving high risks.  
+There were beautiful scenes on the way down and there were also some moments where it was narrow path involving high risks.
 
 First 2 hour on the way down were trickier and I was glad that we didn't pick this path on our way up. Later when the slope wasn't steep then I slided on the snow so as to save energy and quickly come down. That was amazing experience. By this time my camera battery was dead but I was enjoying the view. Also my confidence was high and that boosted my speed.
 
@@ -94,7 +93,7 @@ Last few miles towards Kuncha were exhausting and we were walking in the dark. C
 ### Day 4 (Tue): Kuncha to Jaon
 
 There wasn't any hurry today but still by 7:00 am we were ready to leave towards Jaon. Which was the starting point of this trek. It's hard to sleep for long hours when you are sharing your tent with other fellows and you miss the cosy comfort bed of your home.
-First 2 hours we had to climb up to Kali Ghati and then from there it was all down.  
+First 2 hours we had to climb up to Kali Ghati and then from there it was all down.
 
 I was high on confidence and was giving advices to the fellows crossing me on their way up. It was raining on Kali-Ghati and hence the vision was limited. I wasn't lucky to see panorama views from here.
 

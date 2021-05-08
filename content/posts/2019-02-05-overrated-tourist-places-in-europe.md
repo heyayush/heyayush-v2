@@ -4,12 +4,12 @@ title: Over-Rated Tourist Places In Europe
 slug: over-rated-tourist-places-in-europe
 draft: false
 date: '2019-02-05T12:00:00.000Z'
-description:
-  Some places in europe are hyped to much and upon visiting it feels that our expectations are not met because we were expecting a lot from these places. Here are few places which are over-hyped in my experiences.
+description: Some places in europe are hyped to much and upon visiting it feels that our expectations are not met because we were expecting a lot from these places. Here are few places which are over-hyped in my experiences.
 category: Travel
 tags:
   - Travel
   - Europe
+socialImage: '/media/image-0.jpg'
 ---
 
 > Some places in europe are hyped to much and upon visiting it feels that our expectations are not met because we were expecting a lot from these places. Here are few places which are over-hyped in my experiences.

@@ -1,10 +1,10 @@
-'use strict';
+'use strict'
 
-const path = require('path');
-const siteConfig = require('../../config.js');
+const path = require('path')
+const siteConfig = require('../../config.js')
 
 module.exports = async (graphql, actions) => {
-  const { createPage } = actions;
+  const { createPage } = actions
 
   const result = await graphql(`
     {
@@ -12,15 +12,15 @@ module.exports = async (graphql, actions) => {
         totalCount
       }
     }
-  `);
+  `)
 
-  const { postsPerPage } = siteConfig;
-  const numPages = Math.ceil(result.data.allMarkdownRemark.totalCount / postsPerPage);
+  const { postsPerPage } = siteConfig.siteMetadata
+  const numPages = Math.ceil(result.data.allMarkdownRemark.totalCount / postsPerPage)
 
   for (let i = 0; i < numPages; i += 1) {
     createPage({
       path: i === 0 ? '/' : `/page/${i}`,
-      component: path.resolve('./src/templates/index-template.js'),
+      component: path.resolve('./src/templates/index-template.tsx'),
       context: {
         currentPage: i,
         postsLimit: postsPerPage,
@@ -28,8 +28,8 @@ module.exports = async (graphql, actions) => {
         prevPagePath: i <= 1 ? '/' : `/page/${i - 1}`,
         nextPagePath: `/page/${i + 1}`,
         hasPrevPage: i !== 0,
-        hasNextPage: i !== numPages - 1
-      }
-    });
+        hasNextPage: i !== numPages - 1,
+      },
+    })
   }
-};
+}

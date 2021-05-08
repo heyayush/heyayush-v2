@@ -1,12 +1,12 @@
 node_modules/
 .cache/
-public/
-npm-debug.log
-.eslintcache
-.gatsby-context.js
-.idea
-gatsby-starter-lumen.iml
+public
 
-.env.*
+# dotenv environment variable files
+.env*
+
+yarn-error.log
+debug.log
+.eslintcache
 
 templates/

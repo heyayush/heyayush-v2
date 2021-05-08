@@ -1,6 +1,7 @@
-import React from 'react';
-import renderer from 'react-test-renderer';
-import Contacts from './Contacts';
+// @flow strict
+import React from 'react'
+import renderer from 'react-test-renderer'
+import Contacts from './Contacts'
 
 describe('Contacts', () => {
   const props = {
@@ -10,12 +11,12 @@ describe('Contacts', () => {
       vkontakte: '#',
       github: '#',
       rss: '#',
-      telegram: '#'
-    }
-  };
+      telegram: '#',
+    },
+  }
 
   it('renders correctly', () => {
-    const tree = renderer.create(<Contacts {...props} />).toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-});
+    const tree = renderer.create(<Contacts {...props} />).toJSON()
+    expect(tree).toMatchSnapshot()
+  })
+})

@@ -31,7 +31,6 @@ When looking for building wealth and reaching financial freedom we need to first
 
 **E B S I** are the four cashflow quadrants and each of them represents a particular category of people based on their source of income.
 
-
 ### E quadrant
 
 This represents the people in Employee category. Majority of people belong to this quadrant and they work for some company who has employed them.

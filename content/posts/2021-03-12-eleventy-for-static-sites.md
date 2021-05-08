@@ -14,6 +14,7 @@ tags:
 Benefits of static site generation along with CMS driven content.
 
 ## Getting started
+
 Create a new project folder and do `npm init` and `git init`
 Install dev dependency of 11ty `npm i @11ty/eleventy --save-dev`
 Copy the html or any template available.
@@ -22,10 +23,11 @@ Run build and/or serve commands as needed.
 Watch and fix for paths of src and href as assets and other html files.
 
 ## What is Eleventy
+
 Alternate to jekyll.
 
 Assuming local project installation
-Searches the current directory, outputs to ./_site `npx @11ty/eleventy`
+Searches the current directory, outputs to ./\_site `npx @11ty/eleventy`
 It is same as `npx @11ty/eleventy --input=. --output=_site`
 If we want to use only few specific templates `npx @11ty/eleventy --formats=md,html,ejs`
 For serving `npx @11ty/eleventy --serve`
@@ -38,10 +40,12 @@ config file where we can specify what static assets we want to copy from src to 
 Utility is that we can use template available in any format and use 11ty to compile a static site from it.
 
 ## Template Languages
+
 html, markdown, javascript, liquid, nunjucks .njk, handlebars .hbs, mustache .mustache, EJS, Haml, Pug
 
 Overriding template engines
 for a .liquid file we can include this to parse it as a njk.
+
 ```js
 templateEngineOverride: njk
 ```

@@ -1,43 +1,41 @@
-import React, { useState } from 'react';
-import { graphql, StaticQuery } from 'gatsby';
-import styles from './EmailSub.module.scss';
+import React, { useState } from 'react'
+import { graphql, StaticQuery } from 'gatsby'
+import styles from './EmailSub.module.scss'
 
 const _emailSub = ({ data }) => {
-  const { emailSub } = data.site.siteMetadata;
-  const [isSubSuccess, setIsSubSuccess] = useState(false);
+  const { emailSub } = data.site.siteMetadata
+  const [isSubSuccess, setIsSubSuccess] = useState(false)
 
-  const handleEmailSub = async e => {
-    e.preventDefault();
-    const formData = new FormData(e.target);
-    const res = await sendSubReq(formData.get('email'));
+  const handleEmailSub = async (e) => {
+    e.preventDefault()
+    const formData = new FormData(e.target)
+    const res = await sendSubReq(formData.get('email'))
     if (res && res.email) {
-      setIsSubSuccess(true);
+      setIsSubSuccess(true)
     }
-  };
+  }
 
-  const sendSubReq = async email => {
-    let response;
+  const sendSubReq = async (email) => {
+    let response
     const options = {
       method: 'POST',
       headers: {
-        'Content-type': 'application/json'
+        'Content-type': 'application/json',
       },
-      body: JSON.stringify({ email })
-    };
-    try {
-      response = await (await fetch(emailSub, options)).json();
-    } catch (error) {
-      console.error('error', error);
-      response = error;
+      body: JSON.stringify({ email }),
     }
-    return response;
-  };
+    try {
+      response = await (await fetch(emailSub, options)).json()
+    } catch (error) {
+      console.error('error', error)
+      response = error
+    }
+    return response
+  }
 
   const subForm = () => (
     <div className={styles['email-sub']}>
-      <h4 className={styles['title']}>
-        Subscribe for monthly email newsletter
-      </h4>
+      <h4 className={styles['title']}>Subscribe for monthly email newsletter</h4>
       <form name="email-sub" className={styles['form']} onSubmit={handleEmailSub}>
         <div className={styles['email-field']}>
           <input
@@ -57,16 +55,16 @@ const _emailSub = ({ data }) => {
         </div>
       </form>
     </div>
-  );
+  )
 
   const subSuccess = () => (
     <div className={styles['sub-success']}>
       <span>Subscription Successful !!!</span>
     </div>
-  );
+  )
 
-  return isSubSuccess === false ? subForm() : subSuccess();
-};
+  return isSubSuccess === false ? subForm() : subSuccess()
+}
 
 export const EmailSub = () => (
   <StaticQuery
@@ -79,8 +77,8 @@ export const EmailSub = () => (
         }
       }
     `}
-    render={data => <_emailSub data={data} />}
+    render={(data) => <_emailSub data={data} />}
   />
-);
+)
 
-export default EmailSub;
+export default EmailSub
