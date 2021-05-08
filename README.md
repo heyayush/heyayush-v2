@@ -1,4 +1,4 @@
-Build Status: [![Build Status](https://circleci.com/gh/heyayush/heyayush-v2/tree/master.svg?style=svg)](https://circleci.com/gh/heyayush/heyayush-v2/tree/master)
+Build Status: [![Build Status](https://circleci.com/gh/heyayush/heyayush-v2/tree/master.svg?style=svg)](https://circleci.com/gh/heyayush/heyayush-v2/tree/master) [![Netlify Status](https://api.netlify.com/api/v1/badges/549112de-29df-44fe-b5a7-04649b48ce25/deploy-status)](https://app.netlify.com/sites/ayush-sharma/deploys)
 
 My personal website which provides details about me, my social contacts and my blog where I keep on posting my thoughts, ideas, travel experiences, developer tutorials and some random shit.
 

@@ -53,7 +53,7 @@ Shifting traffic to diferent versions.
 
 We need to install the packages alongside our code and zip it together.
 
-```sh
+```
 npm i abc
 chmod a+r \*
 zip -r function.zip .

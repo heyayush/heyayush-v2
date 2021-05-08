@@ -16,7 +16,7 @@ const PostTemplate: FC<PostTemplateI> = ({ data }) => {
   const { frontmatter } = data.markdownRemark
   const { title: postTitle, description: postDescription = '', socialImage } = frontmatter
   const metaDescription = postDescription || siteSubtitle
-  const socialImageUrl = socialImage?.publicURL
+  const socialImageUrl = socialImage
 
   return (
     <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription} socialImage={socialImageUrl}>

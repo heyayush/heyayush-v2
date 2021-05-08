@@ -33,12 +33,14 @@ export type Node = {
     category?: string
     tags?: string[]
     title: string
-    socialImage?: {
-      publicURL: string
-    }
+    socialImage?: string
   }
   html: string
   id: string
+}
+
+export interface SocialImageI {
+  publicURL?: string
 }
 
 export type Edge = {

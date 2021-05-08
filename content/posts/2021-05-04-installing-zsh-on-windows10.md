@@ -33,7 +33,7 @@ I went with Ubuntu 20.04
 
 ## 3. Install Zsh
 
-```sh
+```
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install zsh
@@ -47,7 +47,7 @@ Adding github ssh keys to .profile so that I don't have to enter credentials eve
 I usually set all the default starting script in the .profile file and then source it in .zshrc
 `source ~/.profile`
 
-```sh
+```
 eval $(ssh-agent)
 ssh-add ~/.ssh/githu
 ```
@@ -56,7 +56,7 @@ Make sure that only owner has the read permission to this file. set chmod 400 to
 
 ## 4. Install Oh My Zsh!
 
-```sh
+```
 sudo apt-get install curl
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
@@ -79,7 +79,7 @@ So replaced this with
 
 Node for windows is fine but you will need to install it for your disto as well.
 
-```sh
+```
 sudo apt-get install build-essential
 
 export NVM_DIR="$HOME/.nvm" && (
@@ -92,7 +92,7 @@ export NVM_DIR="$HOME/.nvm" && (
 
 Need to add this in the .profile or .zshrc wherever you are keeping the default startup commands
 
-```sh
+```
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 ```
