@@ -7,7 +7,7 @@ interface FeedI {
 }
 
 const Feed: FC<FeedI> = ({ edges }) => (
-  <div className="feed">
+  <div className="feed" id="feeds">
     {edges.map((edge) => (
       <div className="feed__item" key={edge.node.fields.slug}>
         <div className="feed__item-meta">

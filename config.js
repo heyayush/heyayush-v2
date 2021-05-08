@@ -25,11 +25,11 @@ module.exports = {
         path: '/categories',
       },
       {
-        label: 'Frontend',
+        label: 'Frontend/',
         path: '/category/front-end',
       },
       {
-        label: 'Travel',
+        label: 'Travel/',
         path: '/category/travel',
       },
       {
@@ -48,9 +48,8 @@ module.exports = {
         rss: '/rss.xml',
         linkedin: 'hey-ayush',
         instagram: 'hey.ayush.sharma',
-        facebook: 'ayush.sharma.5015',
-        codepen: 'heyayush',
-        stackoverflow: '4337809/ayush-sharma',
+        facebook: '',
+        codepen: '',
         telegram: '',
         youtube: '',
         soundcloud: '',

@@ -6,7 +6,7 @@ My personal website which provides details about me, my social contacts and my b
 
 Feel free to provide feedback, suggest enhancements, report issues, or contribute with some pull requests.
 
-### Features-
+## Features-
 
 1. Ready to use Landing page and blogging platform.
 2. Admin interface of netlify cms to take control over all published content.
@@ -23,5 +23,7 @@ Feel free to provide feedback, suggest enhancements, report issues, or contribut
 13. Google Analytics.
 14. Disqus comments.
 
-Dev Notes-
-You need to use Node v10 while installing node modules because node-sass depends on it.
+## Dev Notes-
+
+1. Reordering contact items in useSiteMetadata reorders the icons in sidebar.
+2. yarn start is sometimes not responding.
