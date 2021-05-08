@@ -1,5 +1,4 @@
 import React, { FC, useState } from 'react'
-import './contact-form.scss'
 import { Link } from 'gatsby'
 import useSiteMetadata from '../../hooks/use-site-metadata'
 
@@ -15,8 +14,8 @@ interface sendEmailNotificationPayloadI {
 
 const ContactForm: FC = () => {
   const {
-    spreadsheetId,
-    contactFormSheetsAPI,
+    contactFormSpreadsheetId,
+    googleSheetsAPI,
     contactFormEmailAPI,
     contactFromEmailAddress,
     contactToEmailAddress,
@@ -36,7 +35,7 @@ const ContactForm: FC = () => {
     }
 
     setIsSubmissionInProgress(true)
-    const payloadWriteToSheets = { formData: formData, spreadsheetId: spreadsheetId }
+    const payloadWriteToSheets = { formData: formData, spreadsheetId: contactFormSpreadsheetId }
     const payloadSendEmailNotification = {
       formData: formData,
       emailContacts: { contactFromEmailAddress, contactToEmailAddress },
@@ -58,7 +57,7 @@ const ContactForm: FC = () => {
   const writeToSheets = async (payload: WriteToSheetsPayloadI) => {
     let result
     try {
-      result = await fetch(contactFormSheetsAPI, {
+      result = await fetch(googleSheetsAPI, {
         method: 'POST',
         body: JSON.stringify(payload),
       })

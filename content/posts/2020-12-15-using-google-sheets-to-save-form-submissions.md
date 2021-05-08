@@ -50,6 +50,12 @@ exports.handler = async (event, context, callback) => {
 }
 ```
 
+**Important Note-**
+
+On your google sheet you must have first row with the name of form field values you are expecting.
+
+For eg. If your form is expecting "name", "email" and "message" then after creating the google sheet and providing necessary access to service account user. You need to create a first row of "name", "email" and "message" as corresponding column headers.
+
 That's all folks. I hope it was helpful.
 
 \- Ayush 🙂

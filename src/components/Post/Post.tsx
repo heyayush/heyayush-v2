@@ -6,6 +6,7 @@ import Content from './Content'
 import Meta from './Meta'
 import Tags from './Tags'
 import type { Node } from '../../types'
+import EmailSub from '../EmailSub/EmailSub'
 
 interface PostI {
   post: Node
@@ -38,6 +39,7 @@ const Post: FC<PostI> = ({ post }) => {
         <Meta date={date} />
         {tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />}
         <Author />
+        <EmailSub />
       </div>
 
       <div className="post__comments">

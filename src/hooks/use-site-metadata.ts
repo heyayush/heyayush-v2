@@ -35,11 +35,12 @@ const useSiteMetadata = (): SiteMetadataI => {
             subtitle
             copyright
             disqusShortname
-            spreadsheetId
-            contactFormSheetsAPI
+            googleSheetsAPI
+            contactFormSpreadsheetId
             contactFormEmailAPI
             contactToEmailAddress
             contactFromEmailAddress
+            emailSubSpreadsheetId
           }
         }
       }

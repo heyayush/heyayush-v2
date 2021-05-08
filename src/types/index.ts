@@ -88,11 +88,12 @@ export interface SiteMetadataI {
   subtitle: string
   copyright: string
   disqusShortname: string
-  spreadsheetId: string
-  contactFormSheetsAPI: string
+  googleSheetsAPI: string
+  contactFormSpreadsheetId: string
   contactFormEmailAPI: string
   contactToEmailAddress: string
   contactFromEmailAddress: string
+  emailSubSpreadsheetId: string
 }
 
 export interface PostGroupI {
