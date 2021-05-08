@@ -45,18 +45,18 @@ jobs:
           name: Check Linting
           command: yarn lint
 
-  test:
-    <<: *defaults
-    steps:
-      - checkout
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-            - v1-dependencies-
+  # test:
+  #   <<: *defaults
+  #   steps:
+  #     - checkout
+  #     - restore_cache:
+  #         keys:
+  #           - v1-dependencies-{{ checksum "package.json" }}
+  #           - v1-dependencies-
 
-      - run: # run tests
-          name: Verify Tests
-          command: yarn test
+  #     - run: # run tests
+  #         name: Verify Tests
+  #         command: yarn test
 
 workflows:
   version: 2
