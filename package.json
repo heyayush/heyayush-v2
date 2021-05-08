@@ -10,7 +10,7 @@
     "template"
   ],
   "scripts": {
-    "build": "gatsby build",
+    "build": "yarn run clean && gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,scss,json,md}\"",
     "start": "yarn run develop",
