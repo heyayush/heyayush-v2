@@ -45,7 +45,6 @@ module.exports = {
         allExtensions: true, // defaults to false
       },
     },
-    'gatsby-plugin-netlify-cms',
     {
       resolve: 'gatsby-plugin-sass',
       options: {
@@ -99,7 +98,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-relative-images`,
             options: {
-              name: 'media',
+              name: 'media', // Must match the source name ^
             },
           },
           {
@@ -186,6 +185,7 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    'gatsby-plugin-netlify-cms',
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
