@@ -14,7 +14,6 @@ tags:
   - Travel
   - Bike ride
   - Himachal
-socialImage: '/media/image-1.jpg'
 ---
 
 _It's Friday 16:00 and I am at work at my Chandigarh office. I knew the clock is ticking and I won't be able to cover much distance on bike once it's dark and cold wind starts to freeze me._

@@ -9,7 +9,6 @@ category: Travel
 tags:
   - Travel
   - Europe
-socialImage: '/media/image-0.jpg'
 ---
 
 > Some places in europe are hyped to much and upon visiting it feels that our expectations are not met because we were expecting a lot from these places. Here are few places which are over-hyped in my experiences.

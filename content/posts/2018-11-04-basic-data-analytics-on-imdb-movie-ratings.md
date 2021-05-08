@@ -11,7 +11,6 @@ tags:
   - Data Visualization
   - Data Scraping
   - D3
-socialImage: '/media/image-2.jpg'
 ---
 
 > This is a short story how I ended up using web-scraping, data-visualization and automation to derive conclusions from IMDB ratings.

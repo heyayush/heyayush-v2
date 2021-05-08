@@ -15,7 +15,6 @@ tags:
   - Travel
   - Trekking
   - Himachal
-socialImage: '/media/image-3.jpg'
 ---
 
 > Where God meditates

@@ -11,6 +11,8 @@ interface PostTemplateI {
   }
 }
 
+// TODO: Add social image functionality
+
 const PostTemplate: FC<PostTemplateI> = ({ data }) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata()
   const { frontmatter } = data.markdownRemark
@@ -39,7 +41,6 @@ export const query = graphql`
         description
         tags
         title
-        socialImage
       }
     }
   }

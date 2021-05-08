@@ -12,7 +12,6 @@ tags:
   - Proof of Concept
   - Developer Tools
   - CMS
-socialImage: '/media/image-4.jpg'
 ---
 
 This was just a small POC showcasing the integration of different tools.
