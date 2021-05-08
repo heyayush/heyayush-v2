@@ -17,6 +17,34 @@ module.exports = {
         allExtensions: true, // defaults to false
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/static`,
+        name: 'assets',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/static/media`,
+        name: 'media',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'css',
+        path: `${__dirname}/static/css`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'posts',
+        path: `${__dirname}/content/posts`,
+      },
+    },
     'gatsby-plugin-netlify-cms',
     {
       resolve: 'gatsby-plugin-sass',
@@ -153,34 +181,6 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/static`,
-        name: 'assets',
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/static/media`,
-        name: 'media',
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'css',
-        path: `${__dirname}/static/css`,
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'posts',
-        path: `${__dirname}/content/posts`,
-      },
-    },
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
