@@ -6,7 +6,7 @@ version: 2
 
 defaults: &defaults
   docker:
-    - image: circleci/node:10.15.3
+    - image: circleci/node:14.16.0
   working_directory: ~/repo
 
 jobs:
@@ -59,13 +59,13 @@ jobs:
           command: yarn test
 
 workflows:
-    version: 2
-    sanity_test:
-      jobs:
-        - install
-        - lint:
-            requires:
-              - install
-        - test:
-            requires:
-              - install
+  version: 2
+  sanity_test:
+    jobs:
+      - install
+      - lint:
+          requires:
+            - install
+      - test:
+          requires:
+            - install
