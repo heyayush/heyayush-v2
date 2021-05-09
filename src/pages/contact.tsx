@@ -11,10 +11,18 @@ const Contact: FC = () => {
         </p>
         <p>
           Or, connect on
-          <a href="https://www.linkedin.com/in/hey-ayush">LinkedIn</a>
-          <a href="https://www.twitter.com/heyayush">Twitter</a>
-          <a href="https://github.com/heyayush">Github</a>
-          <a href="https://www.instagram.com/hey.ayush.sharma">Instagram</a>
+          <a href="https://www.linkedin.com/in/hey-ayush" style={{ marginLeft: '6px' }}>
+            LinkedIn,
+          </a>
+          <a href="https://www.twitter.com/heyayush" style={{ marginLeft: '6px' }}>
+            Twitter,
+          </a>
+          <a href="https://github.com/heyayush" style={{ marginLeft: '6px' }}>
+            Github,
+          </a>
+          <a href="https://www.instagram.com/hey.ayush.sharma" style={{ marginLeft: '6px' }}>
+            Instagram
+          </a>
         </p>
         <ContactForm />
       </div>
