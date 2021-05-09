@@ -27,3 +27,16 @@ Feel free to provide feedback, suggest enhancements, report issues, or contribut
 
 1. Reordering contact items in useSiteMetadata reorders the icons in sidebar.
 2. yarn start is sometimes not responding.
+
+### Environment variables
+```js
+NODE_VERSION=14.16.0
+NODE_ENV=development || production
+GOOGLE_ANALYTICS=id of google analytics
+GOOGLE_SHEETS_API=google sheets api
+CONTACT_FORM_SPREADSHEET_ID=google sheet id of contact form responses
+CONTACT_FORM_EMAIL_API=sending email notifications api
+CONTACT_TO_EMAIL_ADDRESS=send email notification to this address
+CONTACT_FROM_EMAIL_ADDRESS=send email notification from this email id
+EMAIL_SUB_SPREADSHEET_ID=google sheet id of email subscribtions sheet
+```
