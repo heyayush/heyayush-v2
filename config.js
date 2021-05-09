@@ -25,6 +25,10 @@ module.exports = {
         path: '/categories',
       },
       {
+        label: 'Projects',
+        path: '/t',
+      },
+      {
         label: 'Frontend/',
         path: '/category/front-end',
       },

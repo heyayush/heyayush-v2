@@ -10,3 +10,6 @@ debug.log
 .eslintcache
 
 templates/
+
+# Local Netlify folder
+.netlify

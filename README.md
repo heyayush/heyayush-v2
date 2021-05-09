@@ -29,6 +29,7 @@ Feel free to provide feedback, suggest enhancements, report issues, or contribut
 2. yarn start is sometimes not responding.
 
 ### Environment variables
+
 ```js
 NODE_VERSION=14.16.0
 NODE_ENV=development || production
