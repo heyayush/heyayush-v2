@@ -21,7 +21,7 @@ const MyTemplates: FC = () => {
         <ul>
           {MY_TEMPLATES.map((item) => (
             <li key={item.url}>
-              <a href={item.url} title={item.label}>
+              <a href={item.url} title={item.label} target="_blank" rel="noreferrer noopener">
                 {item.label}
               </a>
             </li>
