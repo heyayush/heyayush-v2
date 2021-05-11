@@ -2,8 +2,16 @@ import React, { FC } from 'react'
 import PageTemplate from '../templates/page-template'
 
 const MY_TEMPLATES = [
-  { label: 'Photo-book', url: '/t/photo-book' },
-  { label: 'London', url: '/t/london' },
+  { label: 'Massively', url: 'https://heyayush-massively.netlify.app/' },
+  { label: 'Wardruna', url: 'https://photoarts.netlify.app/' },
+  { label: 'GCP', url: 'https://heyayush-gcp.netlify.app/' },
+  { label: 'lumen', url: 'https://heyayush-lumen.netlify.app' },
+  { label: 'Mansarover', url: 'https://happyholidays.netlify.app/' },
+  { label: 'London', url: 'https://heyayush-london.netlify.app' },
+  { label: 'Photo-book', url: 'https://heyayush-photo-book.netlify.app' },
+  { label: 'Pao-bhaji', url: 'https://heyayush-pao-bhaji.netlify.app' },
+  { label: 'Oberoy', url: 'https://oberoy.netlify.app' },
+  { label: 'Doors', url: 'https://heyayush-doors.netlify.app' },
 ]
 
 const MyTemplates: FC = () => {
