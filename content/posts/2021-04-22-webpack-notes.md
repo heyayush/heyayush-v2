@@ -2,7 +2,7 @@
 template: post
 title: Webpack notes
 slug: webpack-notes
-draft: true
+draft: false
 date: '2021-04-22T12:00:00.000Z'
 description: >
   Summarized notes on webpack configuration
@@ -11,6 +11,8 @@ tags:
   - Javascript
   - Node.js
 ---
+
+> Some points notes while working on webpack configuration.
 
 Here I am considering webpack version 5.
 Bundling all the resources and getting the build ready to serve.
@@ -110,5 +112,6 @@ return <MyComponent />
 
 ## Replacing ts-loader with babel-loader
 
-npm install -D babel-loader @babel/core @babel/preset-react @babel/preset-typescript
-make sure to exclude node_modules folder from transpiling
+Check <a href="/2021-04-30-switching-from-ts-loader-to-babel-loader" target="_blank" title="Switching from ts-loader to babel-loader">this article</a> for full details on replacing ts-loader with babel-loader.
+
+\- Ayush 🙂

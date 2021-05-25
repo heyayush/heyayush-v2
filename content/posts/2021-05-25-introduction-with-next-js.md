@@ -3,6 +3,7 @@ template: post
 title: Introduction with Next.js
 draft: false
 date: '2021-05-25T12:00:00.000Z'
+category: Developer Guides
 description: >-
   Let's checkout what is the buzz around Next.js, what it offers and how is it different from its alternatives.
 tags:
