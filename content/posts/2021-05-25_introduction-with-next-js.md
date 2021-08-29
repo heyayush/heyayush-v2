@@ -35,6 +35,12 @@ So for the the first approach, deployment can be as simple as putting a dump of 
 
 Create a fresh app by running `npx create-next-app` or `npx create-next-app --typescript` if you want typescript instead of javascript.
 
+**getServerSideProps** - Always run the server side code, for every single request this will be executed, then generate a fresh page and serve it. **Data is fetched on every single page load request**.
+
+**getStaticProps** - Only execute this at build time and if revalidate time is passed. **Data is fetched only at build time** and then store the html + json which is ready to serve on the CDN, hence that is served imediately without new request to fetch data.
+
+If there is neither getServerSideProps nor getStaticProps then we can call it completely static page which will never be modified and ready to use html will be thrown to user.
+
 That's all in a nutshell. Hope it was useful.
 
 \- Ayush 🙂

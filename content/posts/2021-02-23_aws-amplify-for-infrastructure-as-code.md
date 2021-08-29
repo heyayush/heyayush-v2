@@ -65,6 +65,10 @@ import { AmplifySignOut } from '@aws-amplify/ui-react'
 ...
 ```
 
+*I however, ran into a painful issue -*
+
+When deploying the front-end app, aws-exports.js file is git ignored then build fails because this file is not found. Hence either do amplifyPush on the build step or use the better option I think and I use is to use values from aws-exports.js in an environment variable and then import that from env variable instead of from aws-export.js file
+
 Let me know your feedback/suggestions in the comments.
 
 \- Ayush 🙂
