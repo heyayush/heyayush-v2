@@ -67,6 +67,7 @@ module.exports = {
     contactToEmailAddress: process.env.CONTACT_TO_EMAIL_ADDRESS,
     contactFromEmailAddress: process.env.CONTACT_FROM_EMAIL_ADDRESS,
     emailSubSpreadsheetId: process.env.EMAIL_SUB_SPREADSHEET_ID,
+    sendWishesSpreadsheetId: process.env.SEND_WISHES_SPREADSHEET_ID,
   },
   siteManifest: {
     name: 'template-lumen',

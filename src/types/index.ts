@@ -96,6 +96,7 @@ export interface SiteMetadataI {
   contactToEmailAddress: string
   contactFromEmailAddress: string
   emailSubSpreadsheetId: string
+  sendWishesSpreadsheetId: string
 }
 
 export interface PostGroupI {

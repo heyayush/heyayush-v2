@@ -75,6 +75,31 @@ So more out of money less is the Delta. and for in the money Delta is close to 1
 
 Gamma is like d/dx of Delta. So how much Delta changes is called Gamma.
 
+#### Option selling
+- Option buyer speculates where the market will go. Option Seller speculates where the market will not go.
+- Option sellers eat like chicken and shit like Elephants.
+- Making strangle you can't go for 1:2 risk to reward when playing out of money.
+- Trend is not really your friend because you want market to stay range bound and eat premiums, so breakouts with trend is not actually desired.
+- Avoid opening both the CE and PE legs together.
+- Enter like a scalper, have SL like a scalper but if trade goes in your favour then have target like a positional along with trailing SL.
+- Friday and Monday can be trending as it is start of new weekly expiry and hence not ideal for selling range bound OTM CE and PE options. So a option seller can just do trading on Tue, Wed and Thu.
+- Mitigate risk in option selling by deploying only part capital and not full.
+
+#### Spread Trading
+- Avoid unlimited loss of option selling by making hedges.
+
+##### Vertical Spread
+- Easier one by just having 2 legs.
+- Bell curve. Normal distribution is important concept to understand here. That tell how much probability of profit or loss in this spread. Like in performance appraisals 80% people in 4,3,2,1 band and only 20% in top band of 5. So it is like probability of profits in 4,3,2,1 band but loss if ending up in 20% band of 5. And average profit in 4,3,2,1 band where 80% chances of ending up. But if ended up in 20% then high loss value as it is the top of that bell.
+- Spreads are an options strategy where you simultaneously buy and sell options that are of same class (puts or calls), same expiry, but with different strike prices.
+
+#### Implied Volatility
+- IV percentile and IV rank, follow any one of this.
+- If IVP higher than 70 then possibility of short trade.
+- IV shoots up in case of uncertainity/high volatility.
+- Higher IV means higher premium value, hence more opportunity for option sellers.
+- Safe option selling trade is when after a shoot up, if slowly IV starts decreasing then good time to sell that option.
+
 ### Intraday stock picking
 
 Need homework a day before. When market closes then in evening you have to study what happened the whole day and analysis all the data of that day.

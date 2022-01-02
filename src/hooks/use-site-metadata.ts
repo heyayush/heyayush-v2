@@ -41,6 +41,7 @@ const useSiteMetadata = (): SiteMetadataI => {
             contactToEmailAddress
             contactFromEmailAddress
             emailSubSpreadsheetId
+            sendWishesSpreadsheetId
           }
         }
       }
