@@ -10,8 +10,7 @@ tags:
   - Scrum
 ---
 
->   It is not over till it's over. And for that last mile to get past the finishing line, you may need to consider different strategy than the one for start and mid way.
-
+> It is not over till it's over. And for that last mile to get past the finishing line, you may need to consider different strategy than the one for start and mid way.
 
 **Q:** Are you kidding? Changing the ongoing processes, discarding honorable agile model and switching to kanban, and that too when we are so close to our release?
 
@@ -21,7 +20,7 @@ Strategy which provided a good start and a smooth mid-way may or may not be the 
 
 Agile is awesome, quick releases and early user feedback really helps in planning and prioritising the way forward. But there are cases when kanban can be useful as well and could improve team's productivity and product quality.
 
-*Why kanban for the last mile?*
+_Why kanban for the last mile?_
 
 In agile model, sprints are more of a step jump, let's say 1 sprint takes you takes you 50 steps forward (that's your sprint velocity). But in the last mile you are not sure if you need to walk just 20 steps or 70 steps, and regression testing may surprise by adding 30 more steps or maybe adding nothing more. Hence considering these variables kanban suits well to get par the finishing line and release your software.
 

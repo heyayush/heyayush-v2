@@ -60,6 +60,7 @@ Market Wide Position Limit - Say if stock distribution is 75% promoter and 25% f
 If stock is in ban then no new position can be opened. Already existing positions will stay intact and need to be squared off. However, fresh intraday positions can still be opened.
 
 ### Options Trading
+
 Options was introduced as an insurance to your portfolio.
 Example of a property selling buying scenario to understand premium and psycology of option buyer and seller as well as what is contract.
 What is CE PE?
@@ -76,6 +77,7 @@ So more out of money less is the Delta. and for in the money Delta is close to 1
 Gamma is like d/dx of Delta. So how much Delta changes is called Gamma.
 
 #### Option selling
+
 - Option buyer speculates where the market will go. Option Seller speculates where the market will not go.
 - Option sellers eat like chicken and shit like Elephants.
 - Making strangle you can't go for 1:2 risk to reward when playing out of money.
@@ -86,14 +88,17 @@ Gamma is like d/dx of Delta. So how much Delta changes is called Gamma.
 - Mitigate risk in option selling by deploying only part capital and not full.
 
 #### Spread Trading
+
 - Avoid unlimited loss of option selling by making hedges.
 
 ##### Vertical Spread
+
 - Easier one by just having 2 legs.
 - Bell curve. Normal distribution is important concept to understand here. That tell how much probability of profit or loss in this spread. Like in performance appraisals 80% people in 4,3,2,1 band and only 20% in top band of 5. So it is like probability of profits in 4,3,2,1 band but loss if ending up in 20% band of 5. And average profit in 4,3,2,1 band where 80% chances of ending up. But if ended up in 20% then high loss value as it is the top of that bell.
 - Spreads are an options strategy where you simultaneously buy and sell options that are of same class (puts or calls), same expiry, but with different strike prices.
 
 #### Implied Volatility
+
 - IV percentile and IV rank, follow any one of this.
 - If IVP higher than 70 then possibility of short trade.
 - IV shoots up in case of uncertainity/high volatility.
@@ -195,7 +200,6 @@ However, Rupee weakning is good for IT companies and other exporters.
 
 Mindspace, Embassy, Trust are 3 listed REITs in India
 
-
 # Settlement
 
 For a call optino to be in-the-money, the strike price needs to be LOWER than the market price of the underlying stock.
@@ -206,7 +210,7 @@ If it is in the money then need to take/give delivery to settle it. If there is 
 
 Right and obligation for stocks while right or obligation for index.
 
-Buyer CE      | Seller CE     | Buyer PE      | Seller PE     |
+Buyer CE | Seller CE | Buyer PE | Seller PE |
 Take delivery | Give delivery | Give delivery | Take Delivery |
 
 Index options settlement is by cash and in stock options, settlement is by delivery.
@@ -218,7 +222,6 @@ So more chances of winning if you are option seller.
 
 Call option gives the buyer of the call option the right to BUY at the strike price at expiry.
 Put option gives the buyer of the put option the right to SELL at the strike price at expiry.
-
 
 # Diwali special zee program
 

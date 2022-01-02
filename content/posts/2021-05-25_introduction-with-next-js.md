@@ -26,6 +26,7 @@ Under the hood, the api endpoints you are serving as well as all the dynamic pag
 ### Another big difference is deployment
 
 Here you got two choices.
+
 1. Complete static site where all pages are generated at build time and dumped on a CDN, thus ready to serve instantly, which is blazing fast and that's what Gatsby does. Still there can be dynamic data fetching inside the page on event handlers.
 2. Do not generate pages during build time. Keep the build small and then dynamically generate each page at run time.
 

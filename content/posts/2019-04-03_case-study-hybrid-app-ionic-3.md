@@ -64,7 +64,7 @@ However, there were 2 major issues-
 
 Anyway, the conclusion was to feature freeze our app and start migrating feature by feature to the new app and once regression tests provide stable results then shut down the older app.
 
-Complete details on this upgrade is available in another article [Upgrading Ionic-3 Angular-5 app](/2019-02-20_upgrading-ionic3-angular5-app "Upgrading Ionic Angular app")
+Complete details on this upgrade is available in another article [Upgrading Ionic-3 Angular-5 app](/2019-02-20_upgrading-ionic3-angular5-app 'Upgrading Ionic Angular app')
 
 ### 😃 Some pleasing features
 
