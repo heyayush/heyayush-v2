@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import AyushPic from '../../../static/1.png'
+import AyushPic from '../../../static/1-flip.png'
 import YogitaPic from '../../../static/2.png'
 import Ganesh from '../../../static/ganesh.png'
 import GaneshFlip from '../../../static/ganesh-flip.png'
@@ -12,24 +12,28 @@ const Functions: FC = () => {
     <div className="section">
       <div className="section-title">Functions -</div>
       <div className="list-item">
+        <span>Matapujan</span>
+        <span>10:00 AM, Wed, 19 Jan (Guna)</span>
+      </div>
+      <div className="list-item">
         <span>Mandap and Grahshanti</span>
-        <span>11:00 AM, Friday, 21 Jan</span>
+        <span>10:00 AM, Wed, 20 Jan (Guna)</span>
       </div>
       <div className="list-item">
         <span>Sangeet</span>
-        <span>08:00 PM, Friday, 21 Jan</span>
+        <span>08:00 PM, Fri, 21 Jan (Ujjain)</span>
       </div>
       <div className="list-item">
-        <span>Varnikasi</span>
-        <span>06:00 PM, Sat, 22 Jan</span>
+        <span>Ring ceremony - godee teeka</span>
+        <span>11:00 AM, Sat, 22 Jan (Ujjain)</span>
       </div>
       <div className="list-item">
         <span>Reception</span>
-        <span>08:00 PM, Sat, 22 Jan</span>
+        <span>08:00 PM, Sat, 22 Jan (Ujjain)</span>
       </div>
       <div className="list-item">
         <span>Shubh Lagna, phere</span>
-        <span>11:30 PM, Sat, 22 Jan</span>
+        <span>11:30 PM, Sat, 22 Jan (Ujjain)</span>
       </div>
     </div>
   )
@@ -69,7 +73,7 @@ const SendWishes: FC = () => {
   )
 }
 
-const WeddingInviteComponent: FC = () => {
+const WeddingInviteComponent2: FC = () => {
   return (
     <div className="wedding-invite-container">
       <div className="first-page">
@@ -82,16 +86,16 @@ const WeddingInviteComponent: FC = () => {
           <div>Together with their families</div>
           <div className="pic-container">
             <div className="pic">
-              <img src={AyushPic} alt="Ayush" />
+              <img src={YogitaPic} alt="Yogita" />
             </div>
             <div className="name-container">
-              <div className="name">Ayush and Yogita</div>
+              <div className="name">Yogita and Ayush</div>
               <div className="knot">
                 <img src={Knot} alt="Knot" style={{ maxHeight: '120px' }} />
               </div>
             </div>
             <div className="pic">
-              <img src={YogitaPic} alt="Yogita" />
+              <img src={AyushPic} alt="Ayush" />
             </div>
           </div>
           <div>Joyfully invite you to their wedding celebrations on</div>
@@ -111,4 +115,4 @@ const WeddingInviteComponent: FC = () => {
   )
 }
 
-export default WeddingInviteComponent
+export default WeddingInviteComponent2
