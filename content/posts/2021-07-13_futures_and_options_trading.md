@@ -1,7 +1,7 @@
 ---
 template: post
 title: Futures and Options Trading
-draft: true
+draft: false
 date: '2021-07-13T12:00:00.000Z'
 description: >-
   Everything to get started with Futures and Options Trading.
@@ -59,7 +59,7 @@ Stock and Index futures are settled at the time of expiry, so whatever price is 
 Market Wide Position Limit - Say if stock distribution is 75% promoter and 25% free float then 20% of that free float that is 5% will be market wide position limit, that's it only.
 If stock is in ban then no new position can be opened. Already existing positions will stay intact and need to be squared off. However, fresh intraday positions can still be opened.
 
-### Options Trading
+### Options Trading -Power of stocks
 
 Options was introduced as an insurance to your portfolio.
 Example of a property selling buying scenario to understand premium and psycology of option buyer and seller as well as what is contract.
@@ -105,6 +105,21 @@ Gamma is like d/dx of Delta. So how much Delta changes is called Gamma.
 - Higher IV means higher premium value, hence more opportunity for option sellers.
 - Safe option selling trade is when after a shoot up, if slowly IV starts decreasing then good time to sell that option.
 
+Big players do not buy naked positions, they always keep an hedge. For example taking delivery of stock and also buying an OTM PE hence this OTM PE is like an insurance.
+If it moves up then stock in delivery is their whose value will increase and OTM premium is small which they will lose but will get compensated by the earning because of delivery in that stock. Similary if price goes down then that OTM PE will increase so they will earn on it and keep the delivery in losses for longer timeframe.
+
+Short Straddle - for sideways market.
+Sell CE and PE of same strike price. But in case market goes trending on either side then losses. So once a trending market is taking a halt and expected to be sideways with low volatility then this strategy can be used.
+
+Short Strangle - for rangebound market.
+Sell OTM CE of upper range and Sell OTM PE of lower range.
+
+If market direction is clear and need to get maximum from the margin you have then this strategy is best.
+If the market direction is bullish then buy OTM CE and sell ATM or little bit OTM PE, make sure PE premium is higher than CE premium so that if it remains rangebound then still you end up in net profit. But if market does not move in expected direction then huge losses. So it is a high risk high reward strategy.
+
+If market is in a channel and high probability of breaking on upside but not sure and need an insurance if it breaks downside then this hedging strategy can give good returns if it breaks up and minor profit if it breaks down. Only scenario of loss is that if market goes sideways.
+So here sell 1 lot ITM CE and buy 2 lot OTM CE and now wait for market to break on either side of those strike prices.
+
 ### Intraday stock picking
 
 Need homework a day before. When market closes then in evening you have to study what happened the whole day and analysis all the data of that day.
@@ -128,10 +143,13 @@ Need homework a day before. When market closes then in evening you have to study
 17. When market is falling and vix is increasing then probably fall can continue.
 18. When market is going up then vix should fall, if vix increases probably the top is reached.
 19. When last 1-2 hours market was moving up steeply then premium of PE fall too much for next and CE high so next day if flat opening then sell CE instead of buy PE.
+20. If very good closing today (nice bullish daily candle) but tomorrow big gap down then SL will get hit of all the buyers of today and hence tomorrow it can crash down very fast even after that gap down.
+21. If it Doji candle today and then tomorrow is gap down then buyers are not trapped hence in that case there might be a recovery after that gap down.
+22. Support/Resistance when tested 2nd 3rd time then it is weak and high probability it will be broken.
 
 ### Candlestick Patterns
 
-Complexity- how many candles are combining to form the paatern.
+Complexity- how many candles are combining to form that pattern.
 Types of patterns- Reversal, Continuation, Neutral.
 
 Neutral Patterns
@@ -248,3 +266,23 @@ Now for stable profits option selling is preferred instead of option buying or t
 And option selling requires huge margin. So you need to have a good capital for making 50k or 1L profit a month.
 
 Now for 1L a month, that's around 20 trading days so every day you need to make 5k so as to reach 1L in a month and that's apart from brokerage and tax expenses.
+
+# Real Estate outlook
+
+- Over the last 5 years, salary has increased more as compared to the cost of property. Hence now the buyer has the ability to shell out some more money for buying property and hence we may see increase in property prices in coming years.
+- Home loans are at minimum rate. NPA in home loan is lowest in the world and hence is the safest lending option and hence high competition among banks for home loans. Inflation is 5% so if home loan is 6.5% then basically you are just paying 1.5% interest and if you are taking income tax benefit of that then virtually it is 0% interest. It seems as if borrowing for free without paying any interest.
+- Building material cost is increasing thus property prices is expected to increase.
+- Culture of work from home and increasing sentiment towards personal space demanding separate rooms from every individual is promoting larger homes.
+- Registration revenue figures from various state govt showing increase in month on month basis, showing that more property transactions are taking places. Also cut in stamp duty by govt makes it lucrative to buy property.
+
+
+
+
+
+
+Statements and Records
+
+on 1st Jan
+
+log in and get statement of last year. and put it on the drive.
+
