@@ -44,7 +44,7 @@ module.exports = {
     author: {
       name: 'Ayush Sharma',
       photo: '/photo.jpg',
-      bio: 'Professional, Web Developer, Blogger, Gamer, Traveler Batman and Linkin Park fan',
+      bio: 'Professional Web Developer, Blogger, Gamer, Traveler Batman and Linkin Park fan',
       contacts: {
         email: 'hey.ayush.sharma@gmail.com',
         twitter: 'heyayush',

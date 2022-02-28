@@ -1,7 +1,7 @@
 ---
 template: post
 title: Futures and Options Trading
-draft: false
+draft: true
 date: '2021-07-13T12:00:00.000Z'
 description: >-
   Everything to get started with Futures and Options Trading.
@@ -276,13 +276,58 @@ Now for 1L a month, that's around 20 trading days so every day you need to make 
 - Registration revenue figures from various state govt showing increase in month on month basis, showing that more property transactions are taking places. Also cut in stamp duty by govt makes it lucrative to buy property.
 
 
+# Option Spreads
+
+## Bull Call Spread
+
+- Bullish strategy.
+- Call option which is cheap and has less time value decay.
+- Moderately bullish view. Limited upmove expected.
+- Buy a call at strike(ATM) and sell a higher strike cheaper call (OTM)
+- Margin required is less as compared to naked option selling.
+- Max Loss: Net Premium. So as premium decays you lose.
+- Max Profit: Difference in strikes - net premium.
+- Effect of time and volatility - As time passes we will lose as premiums decay but if IV goes up we will gain as premiums will go up.
 
 
+## Bull Put Spread
 
+- Market view is mildly bullish.
+- Sell a ATM put option.
+- Buy a lower strike cheaper put to protect losses (OTM).
+- We receive premium in this strategy.
+- Max Loss: Difference in strikes - net premium.
+- Max Profit: net premium.
+- Effect of time and volatility - As time passes we will gain and eat premium but if IV goes up we will lose as premiums will go up.
+## Long Straddle
 
-Statements and Records
+- When you expect the market to give a big move either up or down .
+- Buy a put and call option of ATM strike.
+- Buy at low IV so when IV goes up you earn.
+- If IV goes down you will lose premiums.
 
-on 1st Jan
+## Strangle management
 
-log in and get statement of last year. and put it on the drive.
+- Sell PE and CE, both far out of money.
+- High IV like 30 means premium are high.
+- Make strangle when vix is high so that when vix will fall then it is good for you.
+- Key is to manage delta, that is what you need to balance.
+- If your view is bullish then have slighly +ve delta and if bearish then slightly -ve delta. But keep it under +-10 to avoid high risk.
+- So book profit of 1 leg and shift to closer strike price to get more premium.
+- Keep shifting to closer strike price as per risk.
+- Max reach at the stage so that you are selling PE and CE of same strike price.
+- If you go even more in the money then it is inverted strangle and that is very risky.
+- Keep booking profit after 50% decay and shift to closer strike price to extract 50 %
 
+## Tax understanding
+What are the taxable incomes?
+### Dividend 
+TDS is deducted on dividend paid which is 10% if that company is paying more than 5000. Gets added to your income and have to pay tax as per your slab.
+### Short term capital gain
+15%. Loss can settled with other short term or else long term. Losses can be carried forward till 8 years.
+### Long term capital gain
+10% and only on income above 1 Lakh. Loss can be settled with other long term. Losses can be carried forward till 8 years.
+### Intraday Cash market
+Comes under speculative income.
+
+### Futures and Options
