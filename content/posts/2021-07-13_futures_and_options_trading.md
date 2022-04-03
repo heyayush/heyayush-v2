@@ -71,119 +71,7 @@ Option selling will give money when market moves in predicted direction as well 
 
 Option buying is limited risk but option selling is unlimited risk theoretically.
 
-Delta is the value how much premium in ce/pe will increase/decrease if spot price icncrease/decrease by 1 Rs.
-So more out of money less is the Delta. and for in the money Delta is close to 1.
-
-Gamma is like d/dx of Delta. So how much Delta changes is called Gamma.
-
-#### Option selling
-
-- Option buyer speculates where the market will go. Option Seller speculates where the market will not go.
-- Option sellers eat like chicken and shit like Elephants.
-- Making strangle you can't go for 1:2 risk to reward when playing out of money.
-- Trend is not really your friend because you want market to stay range bound and eat premiums, so breakouts with trend is not actually desired.
-- Avoid opening both the CE and PE legs together.
-- Enter like a scalper, have SL like a scalper but if trade goes in your favour then have target like a positional along with trailing SL.
-- Friday and Monday can be trending as it is start of new weekly expiry and hence not ideal for selling range bound OTM CE and PE options. So a option seller can just do trading on Tue, Wed and Thu.
-- Mitigate risk in option selling by deploying only part capital and not full.
-
-#### Spread Trading
-
-- Avoid unlimited loss of option selling by making hedges.
-
-##### Vertical Spread
-
-- Easier one by just having 2 legs.
-- Bell curve. Normal distribution is important concept to understand here. That tell how much probability of profit or loss in this spread. Like in performance appraisals 80% people in 4,3,2,1 band and only 20% in top band of 5. So it is like probability of profits in 4,3,2,1 band but loss if ending up in 20% band of 5. And average profit in 4,3,2,1 band where 80% chances of ending up. But if ended up in 20% then high loss value as it is the top of that bell.
-- Spreads are an options strategy where you simultaneously buy and sell options that are of same class (puts or calls), same expiry, but with different strike prices.
-
-#### Implied Volatility
-
-- IV percentile and IV rank, follow any one of this.
-- If IVP higher than 70 then possibility of short trade.
-- IV shoots up in case of uncertainity/high volatility.
-- Higher IV means higher premium value, hence more opportunity for option sellers.
-- Safe option selling trade is when after a shoot up, if slowly IV starts decreasing then good time to sell that option.
-
-Big players do not buy naked positions, they always keep an hedge. For example taking delivery of stock and also buying an OTM PE hence this OTM PE is like an insurance.
-If it moves up then stock in delivery is their whose value will increase and OTM premium is small which they will lose but will get compensated by the earning because of delivery in that stock. Similary if price goes down then that OTM PE will increase so they will earn on it and keep the delivery in losses for longer timeframe.
-
-Short Straddle - for sideways market.
-Sell CE and PE of same strike price. But in case market goes trending on either side then losses. So once a trending market is taking a halt and expected to be sideways with low volatility then this strategy can be used.
-
-Short Strangle - for rangebound market.
-Sell OTM CE of upper range and Sell OTM PE of lower range.
-
-If market direction is clear and need to get maximum from the margin you have then this strategy is best.
-If the market direction is bullish then buy OTM CE and sell ATM or little bit OTM PE, make sure PE premium is higher than CE premium so that if it remains rangebound then still you end up in net profit. But if market does not move in expected direction then huge losses. So it is a high risk high reward strategy.
-
-If market is in a channel and high probability of breaking on upside but not sure and need an insurance if it breaks downside then this hedging strategy can give good returns if it breaks up and minor profit if it breaks down. Only scenario of loss is that if market goes sideways.
-So here sell 1 lot ITM CE and buy 2 lot OTM CE and now wait for market to break on either side of those strike prices.
-
-### Intraday stock picking
-
-Need homework a day before. When market closes then in evening you have to study what happened the whole day and analysis all the data of that day.
-
-1. Checkout charts of all the sectors and nifty indices. Note down if any nifty index is breaking above or below yesterday's high or low. So identify the sector and then stock. That is topdown approach.
-2. Make a list of stocks to buy or sell if that sector is strong or weak next day.
-3. Don't buy gap up or gap down opening. Wait a while for that gap to fill up and then take a trade.
-4. Don't be stubborn that at any cost i want to sell or buy a stock.
-5. If you were not able to make a decent entry then forget it and move on.
-6. I will enter the trade on my conditions or i won't.
-7. If you are entering before the breakout then use trailing stoploss and see how long you can ride, but if entering after the breakout then keep strict stoploss at buyprice to avoid loss and book profit soon.
-8. First 1 hour of morning, as soon as 5 min candle or a long shadow on 5 min candle is seen, that's the indication of trend reversal.
-9. Playing for range bound so contra call at one end of the range but did not have stop loss.
-10. Not quick in squaring of positions in put call momentum trades.
-11. If breakout in Nifty then doesn't mean you trade with BajFinance hoping that it is high beta and will give better return.
-12. Keep all indices open like bank, metals, IT, FMCG to form a better view on Nifty 50.
-13. Keep your trading levels ready before the opening bell.
-14. Stop Loss should not be just in mind, you need to punch that in system as well.
-15. If it was supposed to be intraday then square it off, do not carry losses or you will not have capital to make new trades tomorrow.
-16. Don't take all intraday trades in the same sector, diversify them.
-17. When market is falling and vix is increasing then probably fall can continue.
-18. When market is going up then vix should fall, if vix increases probably the top is reached.
-19. When last 1-2 hours market was moving up steeply then premium of PE fall too much for next and CE high so next day if flat opening then sell CE instead of buy PE.
-20. If very good closing today (nice bullish daily candle) but tomorrow big gap down then SL will get hit of all the buyers of today and hence tomorrow it can crash down very fast even after that gap down.
-21. If it Doji candle today and then tomorrow is gap down then buyers are not trapped hence in that case there might be a recovery after that gap down.
-22. Support/Resistance when tested 2nd 3rd time then it is weak and high probability it will be broken.
-
-### Candlestick Patterns
-
-Complexity- how many candles are combining to form that pattern.
-Types of patterns- Reversal, Continuation, Neutral.
-
-Neutral Patterns
-
-1. Doji
-
-Doji Family-
-
-1. Doji star- Upper and Lower shadow are almost equal, hence completely neutral.
-2. Long-Legged Doji- Similar to Doji Star but more longer shadows, hence more volatility.
-3. Gravestone Doji- Long upper shadow.
-4. Butterfly Doji- Long lower shadow.
-5. Four Price Doji- open close high low were all almost same.
-
-Simple Reversal Pattern
-
-1. Hammer - Large lower shadow but then closing in green at high.
-2. Inverted Hammer - Large Upper tail but closing in green. So still a reversal but not that strong as Hammer pattern.
-3. Shooting Star - Same as inverted hammer but closing in red hence it is bearish reversal while Inverted Hammer is bullish reversal. Shooting star is more powerful then Hanging man.
-4. Hnaging Man - Another Bearish reversal, it is similar to Hammer but the candle is red instead of green.
-
-Complex Reversal Patterns
-
-1. Bullish Engulfing.
-2. Bearish Engulfing.
-3. Piercing Line - First candle is bearish and second is bullish which is piercing the closing value of previous line and closing above it but below the high of previous candle.
-4. Dark Cloud - Bearish version of Piercing Line.
-
-### Option Chain for direction prediction
-
-Open Interest is number of contracts.
-Change in open Interest is the number of contracts added today.
-
-# Economic activities around
+## Economic activities around
 
 China hosting Beijing winter olympics wants clear skies so more focus on environment and pollution. Thus clean energy demands and facing power crisis as the infra is not yet in place for fully relying on renewable energy sources. Thus pollutin gindustries like smelters, power plants, textile, chemical units and some food processing units are hit.
 Thus lower produciton of goods from China. hence better opportunity for Indian exports.
@@ -214,11 +102,11 @@ China in this energy crisis is clamping down on various tech giants, and areas l
 Increasing oil prices is a risk for indian economy as that can result in INR weakining to 75.5-76 levels
 However, Rupee weakning is good for IT companies and other exporters.
 
-# REIT
+## REIT
 
 Mindspace, Embassy, Trust are 3 listed REITs in India
 
-# Settlement
+## Settlement
 
 For a call optino to be in-the-money, the strike price needs to be LOWER than the market price of the underlying stock.
 For a put option to be in-the-money, the strike price needs to be HIGHER than the market price of the underlying stock.
@@ -255,79 +143,3 @@ IT sector contributes a lot in US market but not so much in India yet and is exp
 Metal sector and commodity linked metals may outperform.
 Real Estate sector can also grow. Residential as well as commercial both with positive outlook.
 Auto sector is underperforming as it is going through a structural change. but as soon as the dark cloud clears then it will outperform.
-
-# Shifting to full time trading
-
-Let's say your salary is 12 lpa so you are getting 1L per month and wants similar profit from market.
-But that's ambitious. So let's plan to reach say 50k profit per month first while continuing your job and once you are comfortably making 50k then move to 1L and think of quitting job to become full time trader.
-Option selling is also preferred because you don't need to monitor price action every second. Reviewing your trade in 30 min 1 hour is also fine. Just ensure that stop loss is placed.
-
-Now for stable profits option selling is preferred instead of option buying or trading in futures or cash market.
-And option selling requires huge margin. So you need to have a good capital for making 50k or 1L profit a month.
-
-Now for 1L a month, that's around 20 trading days so every day you need to make 5k so as to reach 1L in a month and that's apart from brokerage and tax expenses.
-
-# Real Estate outlook
-
-- Over the last 5 years, salary has increased more as compared to the cost of property. Hence now the buyer has the ability to shell out some more money for buying property and hence we may see increase in property prices in coming years.
-- Home loans are at minimum rate. NPA in home loan is lowest in the world and hence is the safest lending option and hence high competition among banks for home loans. Inflation is 5% so if home loan is 6.5% then basically you are just paying 1.5% interest and if you are taking income tax benefit of that then virtually it is 0% interest. It seems as if borrowing for free without paying any interest.
-- Building material cost is increasing thus property prices is expected to increase.
-- Culture of work from home and increasing sentiment towards personal space demanding separate rooms from every individual is promoting larger homes.
-- Registration revenue figures from various state govt showing increase in month on month basis, showing that more property transactions are taking places. Also cut in stamp duty by govt makes it lucrative to buy property.
-
-
-# Option Spreads
-
-## Bull Call Spread
-
-- Bullish strategy.
-- Call option which is cheap and has less time value decay.
-- Moderately bullish view. Limited upmove expected.
-- Buy a call at strike(ATM) and sell a higher strike cheaper call (OTM)
-- Margin required is less as compared to naked option selling.
-- Max Loss: Net Premium. So as premium decays you lose.
-- Max Profit: Difference in strikes - net premium.
-- Effect of time and volatility - As time passes we will lose as premiums decay but if IV goes up we will gain as premiums will go up.
-
-
-## Bull Put Spread
-
-- Market view is mildly bullish.
-- Sell a ATM put option.
-- Buy a lower strike cheaper put to protect losses (OTM).
-- We receive premium in this strategy.
-- Max Loss: Difference in strikes - net premium.
-- Max Profit: net premium.
-- Effect of time and volatility - As time passes we will gain and eat premium but if IV goes up we will lose as premiums will go up.
-## Long Straddle
-
-- When you expect the market to give a big move either up or down .
-- Buy a put and call option of ATM strike.
-- Buy at low IV so when IV goes up you earn.
-- If IV goes down you will lose premiums.
-
-## Strangle management
-
-- Sell PE and CE, both far out of money.
-- High IV like 30 means premium are high.
-- Make strangle when vix is high so that when vix will fall then it is good for you.
-- Key is to manage delta, that is what you need to balance.
-- If your view is bullish then have slighly +ve delta and if bearish then slightly -ve delta. But keep it under +-10 to avoid high risk.
-- So book profit of 1 leg and shift to closer strike price to get more premium.
-- Keep shifting to closer strike price as per risk.
-- Max reach at the stage so that you are selling PE and CE of same strike price.
-- If you go even more in the money then it is inverted strangle and that is very risky.
-- Keep booking profit after 50% decay and shift to closer strike price to extract 50 %
-
-## Tax understanding
-What are the taxable incomes?
-### Dividend 
-TDS is deducted on dividend paid which is 10% if that company is paying more than 5000. Gets added to your income and have to pay tax as per your slab.
-### Short term capital gain
-15%. Loss can settled with other short term or else long term. Losses can be carried forward till 8 years.
-### Long term capital gain
-10% and only on income above 1 Lakh. Loss can be settled with other long term. Losses can be carried forward till 8 years.
-### Intraday Cash market
-Comes under speculative income.
-
-### Futures and Options
