@@ -32,3 +32,5 @@ For 17L capital
 0.4 is 6800
 
 Psycology, money management, technical chart reading.
+
+In stock market every crash/crisis is an opportunity.
