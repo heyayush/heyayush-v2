@@ -1,7 +1,7 @@
 ---
 template: post
 title: Option Selling
-draft: false
+draft: true
 date: '2022-02-21T12:00:00.000Z'
 description: >-
   Fundamental knowledge of different sectors.

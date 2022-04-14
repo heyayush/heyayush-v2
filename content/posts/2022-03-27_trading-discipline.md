@@ -1,7 +1,7 @@
 ---
 template: post
 title: Trading Discipline
-draft: false
+draft: true
 date: '2022-03-27T12:00:00.000Z'
 description: >-
   Discipline is the most important trait for a successful trader. Simple to say that be disciplined but extreamly difficult to follow.

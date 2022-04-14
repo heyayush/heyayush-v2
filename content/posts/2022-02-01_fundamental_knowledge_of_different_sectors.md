@@ -1,7 +1,7 @@
 ---
 template: post
 title: Futures and Options Trading
-draft: false
+draft: true
 date: '2022-02-01T12:00:00.000Z'
 description: >-
   Fundamental knowledge of different sectors.

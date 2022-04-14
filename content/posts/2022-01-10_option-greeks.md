@@ -1,7 +1,7 @@
 ---
 template: post
 title: Option Greeks Simplified
-draft: false
+draft: true
 date: '2022-01-10T12:00:00.000Z'
 description: >-
   Option Greeks are not that hard to understand and definitely not something to ignore especially for big position size traders and Option sellers.

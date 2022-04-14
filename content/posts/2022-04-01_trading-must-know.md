@@ -1,7 +1,7 @@
 ---
 template: post
 title: Trading Must Know
-draft: false
+draft: true
 date: '2022-04-01T12:00:00.000Z'
 description: >-
   Some of the must know stuff from basic to advance level in your trading career.

@@ -1,6 +1,6 @@
 ---
 template: post
-title: Checklist for packing our trekking bag
+title: IITF tourist guide programme
 draft: true
 date: '2019-07-10T12:00:00.000Z'
 description: >-

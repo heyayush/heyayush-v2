@@ -1,7 +1,7 @@
 ---
 template: post
 title: Option Strategies
-draft: false
+draft: true
 date: '2022-03-20T12:00:00.000Z'
 description: >-
   Let's dive deep into various Option Strategies and understand when to execute them and what is the risk and reward involved in them.
