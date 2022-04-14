@@ -7,13 +7,13 @@ interface LayoutI {
   children: ReactNode
   title: string
   description?: string
-  socialImage?: string
+  seoImage?: string
 }
 
-const Layout: FC<LayoutI> = ({ children, title, description, socialImage = '' }) => {
-  const { author, url } = useSiteMetadata()
-  const metaImage = socialImage || author.photo
-  const metaImageUrl = url + metaImage
+const Layout: FC<LayoutI> = ({ children, title, description, seoImage }) => {
+  const { author } = useSiteMetadata()
+  const metaImage = seoImage || author.photo
+  const metaImageUrl = seoImage ? `/seoImages/${metaImage}` : metaImage
 
   return (
     <div className="layout">

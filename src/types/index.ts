@@ -33,7 +33,7 @@ export type Node = {
     category?: string
     tags?: string[]
     title: string
-    socialImage?: string
+    seoImage?: string
   }
   html: string
   id: string

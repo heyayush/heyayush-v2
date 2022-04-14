@@ -1,6 +1,7 @@
 ---
 template: post
 title: All You Need to Know About Sovereign Gold Bonds
+seoImage: gold-bars.jpg
 draft: false
 date: '2021-03-05T12:00:00.000Z'
 description: >-

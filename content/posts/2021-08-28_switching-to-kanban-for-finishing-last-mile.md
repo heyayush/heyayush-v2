@@ -1,6 +1,7 @@
 ---
 template: post
 title: Switching to Kanban for finishing the last mile
+seoImage: ganesh.png
 draft: false
 date: '2021-08-28T12:00:00.000Z'
 description: >-
