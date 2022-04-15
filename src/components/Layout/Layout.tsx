@@ -12,9 +12,9 @@ interface LayoutI {
 }
 
 const Layout: FC<LayoutI> = ({ children, title, description, seoImage, url }) => {
-  const { author, fbAppId, twitterUsername } = useSiteMetadata()
+  const { author, siteUrl, fbAppId, twitterUsername } = useSiteMetadata()
   const metaImage = seoImage || author.photo
-  const metaImageUrl = seoImage ? `/seoImages/${metaImage}` : metaImage
+  const metaImageUrl = seoImage ? `${siteUrl}/seo-images/${metaImage}` : metaImage
 
   return (
     <div className="layout">
