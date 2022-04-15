@@ -17,7 +17,7 @@ const PostTemplate: FC<PostTemplateI> = ({ data }) => {
     frontmatter,
     fields: { slug },
   } = data.markdownRemark
-  const { title: postTitle, description: postDescription = '', seoImage = '' } = frontmatter
+  const { title: postTitle, description: postDescription = '', seoImage = '', date } = frontmatter
   const metaDescription = postDescription || siteSubtitle
 
   return (
@@ -26,6 +26,7 @@ const PostTemplate: FC<PostTemplateI> = ({ data }) => {
       description={metaDescription}
       seoImage={seoImage}
       url={siteUrl + slug}
+      publishedDate={date}
     >
       <Post post={data.markdownRemark} />
     </Layout>
@@ -46,6 +47,7 @@ export const query = graphql`
         description
         tags
         title
+        date
         seoImage
       }
     }

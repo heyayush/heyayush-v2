@@ -15,7 +15,6 @@ module.exports = {
     subtitle: `Portfolio and Personal blog of Ayush Sharma | Web developer,
     front-end specialist, freelancer, web consultant, travel blogger`,
     copyright: '© All rights reserved.',
-    author: 'heyAyush',
     disqusShortname: 'heyayush',
     postsPerPage: 6,
     useKatex: false,
