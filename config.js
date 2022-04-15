@@ -9,7 +9,7 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    url: 'https://heyayush.com',
+    siteUrl: 'https://heyayush.com',
     title: 'Ayush Sharma | Web developer freelancer',
     description: 'A minimal, lightweight, and mobile-first starter for creating blogs using Gatsby.',
     subtitle: `Portfolio and Personal blog of Ayush Sharma | Web developer,
@@ -19,6 +19,8 @@ module.exports = {
     disqusShortname: 'heyayush',
     postsPerPage: 6,
     useKatex: false,
+    fbAppId: '337828055080053',
+    twitterUsername: '@heyayush',
     menu: [
       {
         label: 'Articles by categories',
@@ -60,7 +62,6 @@ module.exports = {
         medium: '',
       },
     },
-    siteUrl: 'https://example.com',
     googleSheetsAPI: process.env.GOOGLE_SHEETS_API,
     contactFormSpreadsheetId: process.env.CONTACT_FORM_SPREADSHEET_ID,
     contactFormEmailAPI: process.env.CONTACT_FORM_EMAIL_API,

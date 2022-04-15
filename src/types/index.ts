@@ -85,7 +85,7 @@ export interface SiteMetadataI {
     label: string
     path: string
   }[]
-  url: string
+  siteUrl: string
   title: string
   subtitle: string
   copyright: string
@@ -97,6 +97,8 @@ export interface SiteMetadataI {
   contactFromEmailAddress: string
   emailSubSpreadsheetId: string
   sendWishesSpreadsheetId: string
+  fbAppId: string
+  twitterUsername: string
 }
 
 export interface PostGroupI {

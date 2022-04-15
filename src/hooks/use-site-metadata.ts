@@ -30,7 +30,7 @@ const useSiteMetadata = (): SiteMetadataI => {
               label
               path
             }
-            url
+            siteUrl
             title
             subtitle
             copyright
@@ -42,6 +42,8 @@ const useSiteMetadata = (): SiteMetadataI => {
             contactFromEmailAddress
             emailSubSpreadsheetId
             sendWishesSpreadsheetId
+            fbAppId
+            twitterUsername
           }
         }
       }

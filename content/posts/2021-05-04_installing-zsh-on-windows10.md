@@ -1,6 +1,7 @@
 ---
 template: post
 title: Installing Zsh on Windows 10
+seoImage: zsh.png
 draft: false
 date: '2021-05-04T12:00:00.000Z'
 description: >-

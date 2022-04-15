@@ -1,6 +1,7 @@
 ---
 template: post
 title: Switching from ts-loader to babel-loader
+seoImage: babel.png
 draft: false
 date: '2021-04-30T12:00:00.000Z'
 description: >

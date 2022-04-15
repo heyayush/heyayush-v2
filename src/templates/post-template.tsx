@@ -11,16 +11,22 @@ interface PostTemplateI {
   }
 }
 
-// TODO: Add social image functionality
-
 const PostTemplate: FC<PostTemplateI> = ({ data }) => {
-  const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata()
-  const { frontmatter } = data.markdownRemark
+  const { title: siteTitle, subtitle: siteSubtitle, siteUrl } = useSiteMetadata()
+  const {
+    frontmatter,
+    fields: { slug },
+  } = data.markdownRemark
   const { title: postTitle, description: postDescription = '', seoImage = '' } = frontmatter
   const metaDescription = postDescription || siteSubtitle
 
   return (
-    <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription} seoImage={seoImage}>
+    <Layout
+      title={`${postTitle} - ${siteTitle}`}
+      description={metaDescription}
+      seoImage={seoImage}
+      url={siteUrl + slug}
+    >
       <Post post={data.markdownRemark} />
     </Layout>
   )

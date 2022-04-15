@@ -1,6 +1,7 @@
 ---
 template: post
 title: Webpack notes
+seoImage: webpack.png
 draft: false
 date: '2021-04-22T12:00:00.000Z'
 description: >

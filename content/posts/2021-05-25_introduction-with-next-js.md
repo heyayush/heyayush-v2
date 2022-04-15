@@ -1,6 +1,7 @@
 ---
 template: post
 title: Introduction with Next.js
+seoImage: nextjs.png
 draft: false
 date: '2021-05-25T12:00:00.000Z'
 category: Developer Guides

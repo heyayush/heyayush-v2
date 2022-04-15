@@ -1,6 +1,7 @@
 ---
 template: post
 title: Eleventy for Static Sites
+seoImage: 11ty.jpg
 draft: false
 date: '2021-03-12T12:00:00.000Z'
 description: >
