@@ -10,8 +10,9 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     siteUrl: 'https://heyayush.com',
+    siteName: 'HeyAyush.com',
     title: 'Ayush Sharma | Web developer freelancer',
-    description: 'A minimal, lightweight, and mobile-first starter for creating blogs using Gatsby.',
+    description: 'Portfolio and Personal blog of Ayush Sharma',
     subtitle: `Portfolio and Personal blog of Ayush Sharma | Web developer,
     front-end specialist, freelancer, web consultant, travel blogger`,
     copyright: '© All rights reserved.',
@@ -70,9 +71,9 @@ module.exports = {
     sendWishesSpreadsheetId: process.env.SEND_WISHES_SPREADSHEET_ID,
   },
   siteManifest: {
-    name: 'template-lumen',
-    short_name: 'template-lumen',
-    description: 'template-lumen',
+    name: 'heyayush',
+    short_name: 'heyayush',
+    description: 'Portfolio and Personal blog of Ayush Sharma',
     start_url: '/',
     background_color: '#372428',
     theme_color: '#372428',

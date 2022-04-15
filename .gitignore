@@ -9,7 +9,5 @@ yarn-error.log
 debug.log
 .eslintcache
 
-templates/
-
 # Local Netlify folder
 .netlify

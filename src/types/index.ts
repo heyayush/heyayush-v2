@@ -86,6 +86,7 @@ export interface SiteMetadataI {
     path: string
   }[]
   siteUrl: string
+  siteName: string
   title: string
   subtitle: string
   copyright: string
