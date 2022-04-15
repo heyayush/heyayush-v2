@@ -12,17 +12,17 @@ interface PostTemplateI {
 }
 
 const PostTemplate: FC<PostTemplateI> = ({ data }) => {
-  const { title: siteTitle, subtitle: siteSubtitle, siteUrl } = useSiteMetadata()
+  const { description: siteDescription, siteUrl } = useSiteMetadata()
   const {
     frontmatter,
     fields: { slug },
   } = data.markdownRemark
-  const { title: postTitle, description: postDescription = '', seoImage = '', date, category, tags } = frontmatter
-  const metaDescription = postDescription || siteSubtitle
+  const { title: postTitle, description: postDescription, seoImage, date, category, tags } = frontmatter
+  const metaDescription = postDescription || siteDescription
 
   return (
     <Layout
-      title={`${postTitle} - ${siteTitle}`}
+      title={postTitle}
       description={metaDescription}
       seoImage={seoImage}
       url={siteUrl + slug}

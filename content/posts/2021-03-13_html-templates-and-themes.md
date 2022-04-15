@@ -1,7 +1,7 @@
 ---
 template: post
 title: HTML Templates and Themes
-seoImage: html5.png
+seoImage: html5.jpeg
 draft: false
 date: '2021-03-13T12:00:00.000Z'
 description: >

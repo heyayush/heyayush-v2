@@ -49,10 +49,10 @@ const Layout: FC<LayoutI> = ({ children, title, description, seoImage, url, publ
         ))}
 
         {/* Twitter*/}
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image:src" content={metaImageUrl} />
+        <meta name="twitter:image" content={metaImageUrl} />
         <meta name="twitter:url" content={url} />
         <meta name="twitter:site" content={twitterUsername} />
         <meta name="twitter:creator" content={twitterUsername} />

@@ -88,6 +88,7 @@ export interface SiteMetadataI {
   siteUrl: string
   siteName: string
   title: string
+  description: string
   subtitle: string
   copyright: string
   disqusShortname: string

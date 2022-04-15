@@ -33,6 +33,7 @@ const useSiteMetadata = (): SiteMetadataI => {
             siteUrl
             siteName
             title
+            description
             subtitle
             copyright
             disqusShortname
