@@ -34,3 +34,7 @@ For 17L capital
 Psycology, money management, technical chart reading.
 
 In stock market every crash/crisis is an opportunity.
+
+Market is all about risk to reward. Even if you make 9/10 profit trade but if in that one loss trade you are losing all the money earned in 9 profit trades then you earned nothing and that is just the loss of opportunity cost and your time and efforts.
+
+Markets go up by stairs and come down via escalator.

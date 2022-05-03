@@ -56,13 +56,16 @@ For example real state prices increases because cement, steel prices are increas
 - Crude Oil
 - Gold
 - Ammonia
--
+- Crude Palm Oil from Indonesia and Malaysia.
+- Coal is also imported dispite India having huge reserves because of lack of infrastructure to mine it.
 
 ## India Exports
 
 - Software Services
 - Pharmacy
 - Wheat (second biggest producer in the world)
+- Rice
+- Tea
 
 ## Indian States
 
@@ -90,7 +93,8 @@ For example real state prices increases because cement, steel prices are increas
 
 ### China
 
-- Biggest consumer of metals.
+- Biggest consumer of metals, steel.
+-
 
 ### Belarus
 

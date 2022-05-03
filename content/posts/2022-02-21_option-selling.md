@@ -54,7 +54,7 @@ tags:
 
 ## Volatility
 
-- Volatility is your biggest enemy.
+- Volatility is your enemy if you are already having positions, however look forward to increase in vix as a good time to go for new far OTM positions especially in next week or next monthly expiry.
 
 ## Technicals
 

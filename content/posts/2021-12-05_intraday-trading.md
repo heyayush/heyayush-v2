@@ -24,3 +24,5 @@ Need homework a day before. When market closes then in evening you have to study
 20. If very good closing today (nice bullish daily candle) but tomorrow big gap down then SL will get hit of all the buyers of today and hence tomorrow it can crash down very fast even after that gap down.
 21. If it Doji candle today and then tomorrow is gap down then buyers are not trapped hence in that case there might be a recovery after that gap down.
 22. Support/Resistance when tested 2nd 3rd time then it is weak and high probability it will be broken.
+23. If the distance between swing high or swing lows is very less, meaning the channel angel is not that high either upside or downside then more probability of breaking channel in the opposite direction to trend. Ref: 19-04-2022
+24. If there is a big buying or fall or rise in the last 30 mins then the IV's gets mismatched and with average closing far away from provisional closing the PE and CE options on the next day will get adjusted, so if you are sure of flat opening then make good profits by going contra to that fall or rise on last 30 mins of previous day. Ref: 19-04-2022
