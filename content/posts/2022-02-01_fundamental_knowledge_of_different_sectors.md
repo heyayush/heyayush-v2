@@ -51,6 +51,10 @@ For example real state prices increases because cement, steel prices are increas
 - Making India global hub for the production and export of green hydrogen.
 - Reduce emission of green house gases thus addressing pollution and climate concerns.
 
+## Diamonds
+
+India imports rough diamonds from many countries especially Russia, Africa and then polish those diamonds and export it. Surat diamond industry is huge and India is exporting in big numbers.
+
 ## India Imports
 
 - Crude Oil
@@ -66,6 +70,7 @@ For example real state prices increases because cement, steel prices are increas
 - Wheat (second biggest producer in the world)
 - Rice
 - Tea
+- Diamond
 
 ## Indian States
 

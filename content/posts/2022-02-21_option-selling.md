@@ -60,3 +60,17 @@ tags:
 
 - On screen breakouts of crucial levels are more sustainable than gap-up breakouts. Minor gap-up breakouts might be sustained however major levels and if market has already moved up before that breakout than most likely that gap-up will not sustain and gap will be filled. https://www.tradingview.com/x/Muk9bly5
 - If some range gets broken after a big time wise consolidation then the moves are also big.
+
+## Points
+
+- Sufficient reserves and maintaining margin money.
+- Diversify your monthly strategies around sectors.
+
+## Mistakes
+
+- Overtrading
+- Overconfidence
+- Option selling needs sufficient capital. Choose your segment wisely.
+- Must have a exit plan with any strategy.
+- Never go against the trend without a considering levels, risk reward and ready to take SL.
+-
