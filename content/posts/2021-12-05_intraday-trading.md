@@ -27,3 +27,4 @@ Need homework a day before. When market closes then in evening you have to study
 23. If the distance between swing high or swing lows is very less, meaning the channel angel is not that high either upside or downside then more probability of breaking channel in the opposite direction to trend. Ref: 19-04-2022
 24. If there is a big buying or fall or rise in the last 30 mins then the IV's gets mismatched and with average closing far away from provisional closing the PE and CE options on the next day will get adjusted, so if you are sure of flat opening then make good profits by going contra to that fall or rise on last 30 mins of previous day. Ref: 19-04-2022
 25. Positive sentiment in yesterday's candle and then next day gap down then it is likely to continue falling and one can go for aggressive selling. Ref: 13-05-2022
+26. If on expiry day, market goes against the sentiment of previous days then it is most likely going to be trending.

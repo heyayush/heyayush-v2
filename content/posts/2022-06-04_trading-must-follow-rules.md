@@ -1,0 +1,3 @@
+- When creating a strangle or selling OTM Options on Thu, Fri and next day due to gap opening it has eaten 50% premium then book it right away. For example selling a next expiry Option for 60 on Thursday and on Friday opening it is around 30 then book 30 profit and exit. Because at max it will go to 0 on next Thursday which is 4 days away. If you got 50% premium decay in 1 day then why to wait 4 days for next 50% decay and carry risks, better book it right away and look for fresh trades.
+- Intraday you can have SL as a hedge but for carry over trades a hedge is must to prevent BIG LOSS scenario.
+- Exiting one leg of spread and holding other, looking for a better exit for that leg can backfire heavily and needs to be handled like a directional trade immediately.

@@ -1,3 +1,17 @@
+---
+template: post
+title: Taxes on Trading and Investment
+draft: true
+date: '2022-02-01T12:00:00.000Z'
+description: >-
+  Here's the complete guide on taxes on trading and investment to help you file income tax return with most benefits.
+category: Finance
+tags:
+  - Business
+  - Finance
+  - Trading
+---
+
 ## Tax understanding
 
 What are the taxable incomes?

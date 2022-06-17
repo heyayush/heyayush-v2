@@ -38,3 +38,5 @@ In stock market every crash/crisis is an opportunity.
 Market is all about risk to reward. Even if you make 9/10 profit trade but if in that one loss trade you are losing all the money earned in 9 profit trades then you earned nothing and that is just the loss of opportunity cost and your time and efforts.
 
 Markets go up by stairs and come down via escalator.
+
+Be doubtful about every trade that will make you think of losing scenarios that when that trade can go against our view and then what will be our plan to avoid crash landing.

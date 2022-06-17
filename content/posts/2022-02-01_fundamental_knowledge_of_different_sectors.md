@@ -1,10 +1,10 @@
 ---
 template: post
-title: Futures and Options Trading
+title: Fundamental Knowledge of Different Sectors
 draft: true
 date: '2022-02-01T12:00:00.000Z'
 description: >-
-  Fundamental knowledge of different sectors.
+  Let's check out the some fundamental concepts related to various sectors and how that affects industry's performance and economy.
 category: Finance
 tags:
   - Business
@@ -20,6 +20,8 @@ Lot's of environment awareness on coal causing pollution but reality is that wit
 ## Metals mining
 
 Huge multifold growth in metals mining specially Lithium, Nickel, Cobalt, Copper, Zinc. 1000 % - 2000 % we just don't know how big growth is there depending on EV and battery storage needs. Since these are rare earth metals, the limited supply and mining concerns are causing huge shortfall in demand in this segment. Automobile industry is also suffering due to this.
+
+Iron ore, coking coal are raw materials for steel but their prices are directly co-related if demand of steel goes down then iron-ore required is less and its price goes down as well.
 
 ## Energy
 
@@ -40,6 +42,10 @@ For example real state prices increases because cement, steel prices are increas
 - Culture of work from home and increasing sentiment towards personal space demanding separate rooms from every individual is promoting larger homes.
 - Registration revenue figures from various state govt showing increase in month on month basis, showing that more property transactions are taking places. Also cut in stamp duty by govt makes it lucrative to buy property.
 
+## Technology
+
+- Govt. looking to upgrade manual system to automatic and data driven, so lots of upcoming contracts for IT industry.
+
 ## Automobiles
 
 - Developed nation is not the one where poor can afford personal vehicles but the one where rich also prefers public transport.
@@ -54,6 +60,14 @@ For example real state prices increases because cement, steel prices are increas
 ## Diamonds
 
 India imports rough diamonds from many countries especially Russia, Africa and then polish those diamonds and export it. Surat diamond industry is huge and India is exporting in big numbers.
+
+## Indian Railway
+
+- Cargo business is not proving much profits due to higher operating costs. Need to focus on creating infrastructure for small customers that is non-bulk freight as well.
+- Coal makes a big portion of railway freight followed by cement, fertilizers, petroleum products, foodgrains.
+- Road Transport of goods is much more than Railway transport.
+- Bulk transports have well defined origin and destination however small parcels can origin from and land at any place, hence the need of infrastructure to accomodate this segment.
+- Need of proper loading and unloading process and infra.
 
 ## India Imports
 
@@ -71,6 +85,7 @@ India imports rough diamonds from many countries especially Russia, Africa and t
 - Rice
 - Tea
 - Diamond
+- Petroleum products made from imported crude oil
 
 ## Indian States
 

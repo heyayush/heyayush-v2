@@ -11,6 +11,8 @@ tags:
   - Trading
 ---
 
+As an Option Strategist, I am not interested in perfect entries and exit. I am interested in High Probability broader sense of market direction.
+
 ## 1. Non-directional Strategies
 
 ### Paying premium
@@ -156,6 +158,19 @@ Although there are few more strategies but does not make much sense to implement
 - Buy at low IV so when IV goes up you earn.
 - If IV goes down you will lose premiums.
 
+## Calendar Spread
+
+- Sell Options in the Current Week. Buy Options in Next Week.
+- Try to create a net credit spread or net debit but more PoP.
+- Implement when you are expecting volatility to go up. And not to implement if Vix is already high.
+- Strategy should be + vega.
+- Diagonal Calendar if you go for Iron Condor with hedges of next expiry. This will increase the profit if price falls within the range.
+- Good to create them on Wed and also exit on Wed.
+
+### Calendar Ratio Spread
+
+Similar to Calendar Spread with a slight change that sell 2 lot in current expiry and 1 buy 1 OTM lot in current expiry and 1 in next expiry.
+
 ## Strangle management
 
 - Sell PE and CE, both far out of money.
@@ -168,6 +183,7 @@ Although there are few more strategies but does not make much sense to implement
 - Max reach at the stage so that you are selling PE and CE of same strike price.
 - If you go even more in the money then it is inverted strangle and that is very risky.
 - Keep booking profit after 50% decay and shift to closer strike price to extract 50 %
+- If it is trending market then just take SL and exit because no firefighting effort will be worth it.
 
 ## Vertical Spread
 
@@ -179,6 +195,27 @@ Although there are few more strategies but does not make much sense to implement
 
 Big players do not buy naked positions, they always keep an hedge. For example taking delivery of stock and also buying an OTM PE hence this OTM PE is like an insurance.
 If it moves up then stock in delivery is their whose value will increase and OTM premium is small which they will lose but will get compensated by the earning because of delivery in that stock. Similary if price goes down then that OTM PE will increase so they will earn on it and keep the delivery in losses for longer timeframe.
+
+## Call Ratio Back Spread
+
+- Bullish unlimited profit and Bearish limited losses and slighlt Bullish to neutral than limited losses.
+- Sell ATM and Buy OTM.
+
+## Call Ratio Spread
+
+- View: Slightly Bullish
+- Volatility Less
+- Limited Profit but Unlimited risk so need to take stop loss exit.
+- In greeks term it is theta long strategy.
+- For management we take SL in case of big upmove and then shift the call ratio in further away strike prices.
+
+## Put Ratio Spread
+
+- View: Slow and steady downside or quick upmove.
+- Make this strategy on support levels. If there is a sharp bounce from that support then take profits and exit. Else if there is slow and steady fall then theta gain but losses in case of sharp fall.
+- Make ratio in a way to receive net credit if playing for theta decay and carryover trades of Thu Fri Mon.
+- If playing for expiry move then more risk involved and need to exit at right time because if there is a sharper move instead of slow and steady then losses.
+- Play with far OTM if expiry is away and closer to ATM if expiry is near.
 
 Hope this was useful.
 
