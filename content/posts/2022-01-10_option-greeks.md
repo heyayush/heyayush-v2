@@ -59,3 +59,9 @@ Key takeaways from this chapter
 
 - For a given change in the underlying, what will be the corresponding change in the delta of the option?
 - Gamma is like d/dx of Delta. So how much Delta changes is called Gamma.
+
+### Vega
+
+- Negative vega means profit decreases if IV increases.
+- Positive vega means profit increases if IV increases.
+- 12-15 is the lower range of VIX where you can go for classic calendar spreads.

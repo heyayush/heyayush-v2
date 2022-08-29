@@ -69,6 +69,11 @@ India imports rough diamonds from many countries especially Russia, Africa and t
 - Bulk transports have well defined origin and destination however small parcels can origin from and land at any place, hence the need of infrastructure to accomodate this segment.
 - Need of proper loading and unloading process and infra.
 
+## Diagnosis Industry
+
+- Rationalization of prices is going on.
+- In last decade the growth is on the basis of increase in volume. Now the industry is trying to be more efficient and enter into B2C segment.
+
 ## India Imports
 
 - Crude Oil
@@ -85,7 +90,7 @@ India imports rough diamonds from many countries especially Russia, Africa and t
 - Rice
 - Tea
 - Diamond
-- Petroleum products made from imported crude oil
+- Petroleum products made from imported crude oil are exported to countries like UAE, Hong Kong, Malaysia, Mauritious, Africa.
 
 ## Indian States
 
@@ -143,3 +148,13 @@ Tussle between center and non BJP states on clearing env and land acquisitions r
 New policy to allow building infrastructure on land allocated for coal mining so that projects utilising coal can be setup on the site instead of transporting coal to distant plants.
 
 Decline of tea production in Sri Lanka is an opportunity for India.
+
+### Economy Recovery Signs
+
+- Increase in capacity utilisation is a good sign of natural growth in economy.
+
+### Black Swan Event
+
+- Extreamely rare.
+- Impact is severe.
+-

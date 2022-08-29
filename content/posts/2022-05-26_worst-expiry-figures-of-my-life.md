@@ -51,3 +51,49 @@ Should have bought 16400 call after all those losses in selling because Nifty su
 - Probability of this kind of big short covering increases if the market was falling last few days.
 - Vice-versa is the case of long unwinding after a few continues days of rising up.
 - If there is some big upcoming event then also short covering or long unwinding chances increases because people will not like to carry positions.
+
+# 7 July 2022
+
+## My Plan
+
+Flat and cross up then buy for 16200 target. If Flat and going down then it will be tired till 15800 so don't sell if 15800 breaks down. If gap down and breaks 15800 or consolidates around 15800 and then breaks after 1 pm then sell. Bank short covering above 34500 and long unwinding below 34000. Big gapup then BN will fall as PCR is overbought. Big gapdown then can be down trending for whole day.
+
+## Execution
+
+### Trade 1
+
+Around 1:40 PM bank nifty breakout and nifty was about to, so I created Nifty PE sell, had to do near to ATM as premiums were very low. So sold PE of 6 Rs and had to square of at 16 as there was a sudden fall. News came about UK prime minister resignation, Dow futures and Euro market also made a Red candle. Nifty broke last swing and even day's low. But then in next 30 mins it recovered. So it was just SL hunting, Nifty going below day's low for few mins and then came back. So all the losses in just 30 mins.
+
+### Trade 2
+
+Played for Hero Zero, thinking that ok PCR is still overbought so maybe long positions will keep on unwinding and day's low will break again so buy a far away option of 5 rs. But it did not came down after that, rather kept rising up.
+
+## Learnings
+
+- If whole day on expiry, market was sideways then in last 2 hours it will either trend in 1 direction or give a spike in either direction so just play a contra trade on safe strike.
+- If whole day sideways premium eating then do not go for penny leftovers in the last hour. You missed it, accept that.
+- When one SL hits then instantly shifting to further strike with double quantity is not the right approach. For example you sold at 10 and SL hit at 20. Hence lost 10 points. Now to recover that 10 If you sell further strike of 5 with double quantity then it will be even bigger loss if that 5 will hit SL of 10.
+- When positions are heavy, that is big big data build up on both the sides then keep SL a bit away, because it should be a small spike and not sustain else big big trap will happen and then if still SL hit then go hero zero on other side.
+- Check if OI is unwinding or not if not then it was most likely just a volatility spike.
+
+# 25 Aug 2022
+
+## My Plan
+
+If holds 39200-400 till 12:00 then more upside due to shortcovering. Agar neeche aa gya gapup k baad bhi then RB and volatile for rest of the day.
+
+## Execution
+
+### Trade 1
+
+200-200 Quantity of 20-25 premiums PE sell. SL hit due to intraday tweezer candle.
+
+### Trade 2
+
+Played for 3 Rs theta and lost 30 Rs to gamma. Sold 39000 PE in big 1600 quantity for just 4 rs hoping it will go to zero so will make 5k but big sudden fall and did not put SL in system and had to panic square off at 30. So 35k lost in 15 mins for a play of 5k in 1 hour.
+
+## Learnings
+
+- Put SL in system even if you are going for last hour 3-4 Rs decay.
+- If 2:45 pm and 3:00 pm candle is big on expiry then more big move in that direction. Play this by buying 2-3 strike away option of 5-10 Rs and then partial booking at 15-20-25-30.
+- If it is monthly expiry and you are making a strangle to carry over for next month then look at futures level and not spot for a better CE PE strike selection.

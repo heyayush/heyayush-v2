@@ -160,12 +160,16 @@ Although there are few more strategies but does not make much sense to implement
 
 ## Calendar Spread
 
+- View is neutral to slightly trending.
 - Sell Options in the Current Week. Buy Options in Next Week.
 - Try to create a net credit spread or net debit but more PoP.
-- Implement when you are expecting volatility to go up. And not to implement if Vix is already high.
+- Implement when IV is low and you are expecting volatility to go up but not too much directional movement. Hence not to implement if Vix is already high.
 - Strategy should be + vega.
 - Diagonal Calendar if you go for Iron Condor with hedges of next expiry. This will increase the profit if price falls within the range.
 - Good to create them on Wed and also exit on Wed.
+- MTM line is not that steep so we don't see that big MTM losses as compared to naked strangle.
+- Need highly liquid index like Nifty so that we can easily create poition in further away expiries as well.
+- January is a good month to create this strategy because since budget on 1st Feb so IV's increase as we approach 1st Feb.
 
 ### Calendar Ratio Spread
 
@@ -216,6 +220,11 @@ If it moves up then stock in delivery is their whose value will increase and OTM
 - Make ratio in a way to receive net credit if playing for theta decay and carryover trades of Thu Fri Mon.
 - If playing for expiry move then more risk involved and need to exit at right time because if there is a sharper move instead of slow and steady then losses.
 - Play with far OTM if expiry is away and closer to ATM if expiry is near.
+
+## Back Spread
+
+- Beneficial if deployed on Thu, Fri for next week expiry, so expecting market to move atleast some side in 5 days.
+- Good if expecting a big big upside or downside and not to lose a penny even if direction was wrong.
 
 Hope this was useful.
 

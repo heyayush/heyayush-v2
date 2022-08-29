@@ -30,6 +30,10 @@ tags:
 
 - Buying or selling CE & PE of same strike.
 - Long or short straddle based upon the volatility expectations.
+- Must carry hedges for positional straddles. 300 point for bank nifty and 150 point away strike for nifty is fine.
+- Good time to open straddle is when both CE PE prices are almost same. It shouldn't be like CE leg is at 300 and PE leg is at 250.
+- Friday is a good time to open positional straddle.
+- When 60% premiums have decayed then start getting off that straddle.
 
 ## Learnings from losses
 
@@ -55,6 +59,9 @@ tags:
 ## Volatility
 
 - Volatility is your enemy if you are already having positions, however look forward to increase in vix as a good time to go for new far OTM positions especially in next week or next monthly expiry.
+- If vix is above 22 then just stay away from straddle strangle.
+- If vix is in 16-20 and is in falling mode then we can go for straddle strangle.
+- If vix goes below 15 then premiums are very low and it is not that worthy to take risk of straddle strangle.
 
 ## Technicals
 
@@ -73,4 +80,4 @@ tags:
 - Option selling needs sufficient capital. Choose your segment wisely.
 - Must have a exit plan with any strategy.
 - Never go against the trend without a considering levels, risk reward and ready to take SL.
--
+- It is a myth that you can adjust, firefight any position but practically need to square-off losses after a limit.
