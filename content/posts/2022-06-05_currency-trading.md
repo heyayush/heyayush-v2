@@ -54,9 +54,15 @@
 
 ## Events
 
-- Initial jobless claims stronger than forecast then negative (bearish) for USD.
-- Existing Home Sales stronger than forecast is Positive (bullish) for USD.
-- US xyz state's manufacturing index if it is stronger than forecast then Positive (bullish) for USD.
+- Initial jobless claims stronger than forecast then Bearish for USD.
+- Existing Home Sales stronger than forecast is Bullish for USD.
+- US xyz state's manufacturing index if it is stronger than forecast then Bullish for USD.
+- US JOLTs Job Openings if it isstronger than forecast than Bullish for USD. More job openings means better for USD.
+
+## Schedules
+
+- RBI forex reserves data is released every Friday 11:30 AM
+- US API Weekly Crude Stock (how much oil storage they have). Released every Wednesday night(needs to confirm Wed or Tue night for Indian time zone) and impacts Thursday's USDINR opening.
 
 https://www.nseindia.com/api/reports?archives=%5B%7B%22name%22%3A%22CD%20-%20Bhavcopy%22%2C%22type%22%3A%22archives%22%2C%22category%22%3A%22derivatives%22%2C%22section%22%3A%22currency%22%7D%5D&date=22-Aug-2022&type=currency&mode=single
 
