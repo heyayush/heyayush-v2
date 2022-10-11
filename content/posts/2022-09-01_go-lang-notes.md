@@ -1,11 +1,21 @@
+---
+template: post
+title: Go lang notes from tutorial in official documentation
+seoImage: go.png
+draft: false
+date: '2022-09-01T12:00:00.000Z'
+description: >-
+  Here are my notes created while learning Go lang...
+category: Programming
+tags:
+  - Go
+  - Backend
+  - HTTP
+---
+
 ## Introduction
 
-### Shortcuts
-
-```
-x int, y int
-x, y int
-```
+Go lang seems a strong choice for developing web services. So I decided to learn it and try some hands on. These are my concise notes while learning it.
 
 ### Packages
 
@@ -20,7 +30,7 @@ x, y int
 - Function can return any number of results.
 - A return statement without arguments returns the names return values. AKA naked return. Should only be used in short functions as it may harm readability in longer functions.
 
-```
+```Go
 func swap(x, y string) (string, string) {
 	return y, x
 }
@@ -32,6 +42,11 @@ func main() {
 ```
 
 ### Variables
+
+```Go
+x int, y int
+x, y int
+```
 
 - **var** statement declares a list of variables. the type is last.
 - **var** declaration can include initializers, one per variable.
@@ -59,7 +74,7 @@ int, uint types are automatically 32 bits or 64 bits as per the system on which 
 
 ### Type conversions
 
-```
+```Go
 i := 42
 f := float64(i)
 ```
@@ -72,7 +87,7 @@ The basic for loop has three components separated by semicolons:
 2. The condition expression: evaluated before every iteration
 3. The post statement: executed at the end of every iteration
 
-```
+```Go
 	for i := 0; i < 10; i++ {
 		sum += i
 	}
@@ -80,7 +95,7 @@ The basic for loop has three components separated by semicolons:
 
 ### If Condition
 
-```
+```Go
 	if x < 0 {
 		return "Less than 0"
 	}
@@ -94,7 +109,7 @@ The basic for loop has three components separated by semicolons:
 - No need of _break_ statement that is inbuilt and only the selected case is executed not the others that follow.
 - Switch without a condition is the same as switch true.
 
-```
+```Go
 	switch os := runtime.GOOS; os {
 	case "darwin":
 		fmt.Println("OS X.")
@@ -144,7 +159,7 @@ var a [10]int // declares a variable a as an array of ten integers
 - The default is zero for the low bound and the length of the slice for the high bound.
 -
 
-```
+```Go
 a[low : high]
 ```
 
@@ -170,7 +185,7 @@ a[low : high]
 - Built-in _make_ function is how you create dynamically-sized arrays.
 - _make_ function allocates a zeroed array and returns a slice that refers to that array.
 
-```
+```Go
 a := make([]int, 0, 5)  // len(a)=0, cap(a)=5
 ```
 
@@ -179,7 +194,7 @@ a := make([]int, 0, 5)  // len(a)=0, cap(a)=5
 - Built-in _append_ function to append new elements to a slice.
 - The first parameter s of append is a slice of type T, and the rest are T values to append to the slice.
 
-```
+```Go
 var s []int
 s = append(s, 0) // s=[0]
 s = append(s, 5) // s=[0,5]
@@ -191,7 +206,7 @@ s = append(s, 5) // s=[0,5]
 - The _range_ form of the for loop iterates over a slice or map.
 - When ranging over a slice, two values are returned for each iteration. The first is the index, and the second is a copy of the element at that index.
 
-```
+```Go
 var pow = []int{1, 2, 4, 8, 16, 32, 64, 128}
 for i, v := range pow {
 	fmt.Printf("2**%d = %d\n", i, v)
@@ -210,19 +225,19 @@ for i, v := range pow {
 
 Insert or update an element in map m:
 
-```
+```Go
 m[key] = elem
 ```
 
 Retrieve an element:
 
-```
+```Go
 elem = m[key]
 ```
 
 Delete an element:
 
-```
+```Go
 delete(m, key)
 ```
 
@@ -231,7 +246,7 @@ delete(m, key)
 - Go functions may be closures.
 - A closure is a function value that references variables from outside its body. The function may access and assign to the referenced variables.
 
-```
+```Go
 func adder() func(int) int {
 	sum := 0
 	return func(x int) int {
@@ -258,12 +273,12 @@ func main() {
 
 - Simple difference between function and method is
 
-```
+```Go
  foo(a) is a function
  a.foo() is a method
 ```
 
-```
+```Go
 type Vertex struct {
 	X, Y float64
 }
@@ -282,9 +297,8 @@ func main() {
 
 - Methods with pointer receivers can modify the value to which the receiver points. Since methods often need to modify their receiver, pointer receivers are more common than value receivers.
 - When you want to modify the original value that the receiver points to then use pointer receiver else value receiver.
--
 
-```
+```Go
 type Vertex struct {
 	X, Y float64
 }
@@ -310,14 +324,14 @@ func main() {
 - An interface type is defined as a set of method signatures.
 - Under the hood, interface values can be thought of as a tuple of a value and a concrete type:
 
-```
+```Go
 (value, type)
 ```
 
 - A nil interface value holds neither value nor concrete type.
 - The interface type that specifies zero methods is known as the empty interface:
 
-```
+```Go
 interface{}
 ```
 
@@ -327,11 +341,11 @@ interface{}
 
 - A type assertion provides access to an interface value's underlying concrete value.
 
-```
+```Go
 t := i.(T)
 ```
 
-```
+```Go
 var i interface{} = "hello"
 
 s := i.(string)
@@ -350,7 +364,7 @@ fmt.Println(f, ok) // 0 false
 - A type switch is a construct that permits several type assertions in series.
 - A type switch is like a regular switch statement, but the cases in a type switch specify types (not values), and those values are compared against the type of the value held by the given interface value.
 
-```
+```Go
 // If type is int then do this else if type is string then do this and so on...
 switch v := i.(type) {
 case T:
@@ -364,9 +378,8 @@ default:
 
 #### Generic types
 
-```
-// List represents a singly-linked list that holds
-// values of any type.
+```Go
+// List represents a singly-linked list that holds values of any type.
 type List[T any] struct {
 	next *List[T]
 	val  T
@@ -383,7 +396,7 @@ type List[T any] struct {
 
 3. Create `main.go` and setup the data structure with dummy data
 
-```
+```Go
 package main
 
 // album represents data about a record album.
@@ -404,7 +417,7 @@ var albums = []album{
 
 4. `getAlbums` function
 
-```
+```Go
 // getAlbums responds with the list of all albums as JSON.
 func getAlbums(c *gin.Context) {
     c.IndentedJSON(http.StatusOK, albums)
@@ -417,7 +430,7 @@ func getAlbums(c *gin.Context) {
 
 5. `main` handler function
 
-```
+```Go
 func main() {
     router := gin.Default()
     router.GET("/albums", getAlbums)
@@ -432,7 +445,7 @@ func main() {
 
 6. Import the required packages
 
-```
+```Go
 import (
     "net/http"
 
@@ -445,7 +458,7 @@ import (
 9. Hit the endpoint using curl `curl http://localhost:8080/albums` and check the response.
 10. Complete code with post and get specific requests as well.
 
-```
+```Go
 package main
 
 import (
@@ -487,8 +500,7 @@ func getAlbums(c *gin.Context) {
 func postAlbums(c *gin.Context) {
     var newAlbum album
 
-    // Call BindJSON to bind the received JSON to
-    // newAlbum.
+    // Call BindJSON to bind the received JSON to newAlbum.
     if err := c.BindJSON(&newAlbum); err != nil {
         return
     }
@@ -498,8 +510,7 @@ func postAlbums(c *gin.Context) {
     c.IndentedJSON(http.StatusCreated, newAlbum)
 }
 
-// getAlbumByID locates the album whose ID value matches the id
-// parameter sent by the client, then returns that album as a response.
+// getAlbumByID locates the album whose ID value matches the id parameter sent by the client, then returns that album as a response.
 func getAlbumByID(c *gin.Context) {
     id := c.Param("id")
 
@@ -519,7 +530,7 @@ func getAlbumByID(c *gin.Context) {
 
 This example will show how to store data in session cookies using the popular gorilla/sessions package in Go.
 
-```
+```Go
 // sessions.go
 package main
 

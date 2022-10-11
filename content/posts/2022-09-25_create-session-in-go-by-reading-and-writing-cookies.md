@@ -6,11 +6,11 @@ draft: false
 date: '2022-09-25T12:00:00.000Z'
 description: >-
   Getting 403 forbidden error as your http request is missing required cookies? Here is the solution...
-category: DevOps
+category: Web Dev
 tags:
-  - DevOps
-  - cron
-  - GO
+  - Go
+  - Backend
+  - HTTP
 ---
 
 > Getting 403 forbidden error as your http request is missing required cookies? Here is the solution...
@@ -23,7 +23,7 @@ tags:
 
 Here's the code
 
-```GO
+```Go
 package main
 
 import (

@@ -1,6 +1,6 @@
 ---
 template: post
-title: Creating a simple system-alert or desktop notification in go language
+title: Creating a simple system-alert or desktop notification in Go language
 seoImage: system-alert.jpg
 draft: false
 date: '2022-09-20T12:00:00.000Z'
@@ -10,7 +10,7 @@ category: DevOps
 tags:
   - DevOps
   - cron
-  - GO
+  - Go
 ---
 
 > Need a alarm every 20 min to get up, relax your eyes and refocus? Or maybe a cron job schedule to run every 10 mins or so? Here's a easy solution...
@@ -36,7 +36,7 @@ Let's dive into the code of `main.go` file.
 
 Firt we have all the packages imports.
 
-```GO
+```Go
 package main
 
 import (
@@ -50,7 +50,7 @@ import (
 
 Next we have the beep function which is our job that we want to run at scheduled times.
 
-```GO
+```Go
 func beep() {
 	err := beeep.Beep(beeep.DefaultFreq, DefaultDuration)
 	if err != nil {
@@ -62,7 +62,7 @@ func beep() {
 Next is the scheduler function. Here I want to run my job at every 15 min, starting from the next rounded 15 min as per the standard time.
 So for example if you run this at 10:21 then next rounded 15 min is 10:30 so it will start from 10:30 and then trigger at every 15 min 10:45, 11:00, 11:15 and so on...
 
-```GO
+```Go
 // Function to calculate start time at next 15 min
 func getStartTime() time.Time {
 	var startTime time.Time
@@ -87,7 +87,7 @@ func runCronJobs() {
 
 Finally call this in main function
 
-```GO
+```Go
 func main() {
 	runCronJobs()
 }
