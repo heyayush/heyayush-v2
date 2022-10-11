@@ -1,12 +1,12 @@
 ---
 template: post
-title: Google Colaboratory (Colab) Notes
+title: Google Colaboratory (Colab) notes
 seoImage: colab.png
 draft: false
 date: '2022-08-28T12:00:00.000Z'
 description: >-
   Google Colaboratory is awesome tool for running python code or say jupyter notebooks online in the cloud...
-category: AI-ML
+category: Data Science
 tags:
   - Python
   - Machine Learning
@@ -24,4 +24,8 @@ Google Colaboratory is awesome tool for running python code or say jupyter noteb
 - Make use of checkpoints and revision history for managing versions.
 - Resources are allocated via virtual machines for a limited time.
 - Dataframes can be viewed as an interactive table.
-- Third party packages can be installed using pip `!pip install youtube_transcript_api`.
+- Third party packages can be installed using pip `!pip install pandas`.
+
+Thanks!!
+
+\- Ayush 🙂
