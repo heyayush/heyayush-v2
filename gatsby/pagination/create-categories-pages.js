@@ -8,16 +8,16 @@ module.exports = async (graphql, actions) => {
   const { createPage } = actions
   const { postsPerPage } = siteConfig.siteMetadata
 
-  const result = await graphql(`
-    {
-      allMarkdownRemark(filter: { frontmatter: { template: { eq: "post" }, draft: { ne: true } } }) {
-        group(field: frontmatter___category) {
-          fieldValue
-          totalCount
-        }
-      }
+  const result = await graphql(`{
+  allMarkdownRemark(
+    filter: {frontmatter: {template: {eq: "post"}, draft: {ne: true}}}
+  ) {
+    group(field: {frontmatter: {category: SELECT}}) {
+      fieldValue
+      totalCount
     }
-  `)
+  }
+}`)
 
   _.each(result.data.allMarkdownRemark.group, (category) => {
     const numPages = Math.ceil(category.totalCount / postsPerPage)
