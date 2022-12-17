@@ -28,6 +28,18 @@ const MyTemplates: FC = () => {
           ))}
         </ul>
       </div>
+      <div>
+        <h2>Trading Journal</h2>
+        <ul>
+          <li>
+            <a href="trading-journal.heyayush.com" title="trading journal" target="_blank" rel="noreferrer noopener">
+              A simple digital trading journal
+            </a>
+            to keep track of trading activities, note down plan, action items and outcome. Also lots of tools to help in
+            making better trading decisions
+          </li>
+        </ul>
+      </div>
     </PageTemplate>
   )
 }
