@@ -34,7 +34,7 @@ const MyTemplates: FC = () => {
           <li>
             <a href="trading-journal.heyayush.com" title="trading journal" target="_blank" rel="noreferrer noopener">
               A simple digital trading journal
-            </a>
+            </a>{' '}
             to keep track of trading activities, note down plan, action items and outcome. Also lots of tools to help in
             making better trading decisions
           </li>
