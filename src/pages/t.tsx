@@ -32,7 +32,7 @@ const MyTemplates: FC = () => {
         <h2>Trading Journal</h2>
         <ul>
           <li>
-            <a href="trading-journal.heyayush.com" title="trading journal" target="_blank" rel="noreferrer noopener">
+            <a href="/trading-journal.heyayush.com" title="trading journal" target="_blank" rel="noreferrer noopener">
               A simple digital trading journal
             </a>{' '}
             to keep track of trading activities, note down plan, action items and outcome. Also lots of tools to help in
