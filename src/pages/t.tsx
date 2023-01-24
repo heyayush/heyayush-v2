@@ -41,7 +41,19 @@ const MyTemplates: FC = () => {
               A simple digital trading journal
             </a>{' '}
             to keep track of trading activities, note down plan, action items and outcome. Also lots of tools to help in
-            making better trading decisions
+            making better trading decisions.
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3>Story Book</h3>
+        <ul>
+          <li>
+            <a href="https://kahaniyaan.netlify.app/" title="Short Stories" target="_blank" rel="noreferrer noopener">
+              Kahaniyaan
+            </a>{' '}
+            is a collection of short stories. Easily write stories with markdown or from admin interface and it creates
+            an elegant UI for easy browsing and reading.
           </li>
         </ul>
       </div>
